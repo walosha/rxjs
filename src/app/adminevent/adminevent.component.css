@@ -1,0 +1,17 @@
+.event_tbl_head {
+    padding: 5px;
+}
+
+.event_tbl_row td {
+    padding: 5px;
+}
+
+.season_btn{
+    cursor: pointer;
+    color: #ff891e;
+}
+
+.season_btn:hover{
+    color: #ff891e;
+    text-decoration: underline;
+}

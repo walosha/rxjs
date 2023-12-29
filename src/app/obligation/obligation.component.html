@@ -1,0 +1,75 @@
+<div class="main-wrapper">
+    <!-- PAGE TITLE -->
+    <section class="pageTitle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="titleTable">
+                        <div class="titleTableInner">
+                            <div class="pageTitleInfo">
+                                <h1>All Obligations</h1>
+                                <div class="under-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE CONTENT -->
+    <section class="mainContentSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <table class="table table-bordered ">
+                        <thead>
+                          <tr>
+                            <th scope="col">Obligation Name</th>
+                            <th scope="col">Added By</th>
+                            <th scope="col">Task Owners</th>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let ob of obligation_list">
+                            <td>{{ob.name}}</td>
+                            <td>{{ob.addedBy.displayName}}</td>
+                            <td>
+                                <p *ngFor="let owner of ob.taskOwners" style="display: flex; align-items: center;">
+                                    <i class="fa fa-circle" aria-hidden="true" style="font-size: 10px; margin-right: 5px;"></i>{{owner.displayName}}
+                                </p>
+                            </td>
+                            <td>{{ob.priority}}</td>
+                            <td>{{ob.category.displayName}}</td>
+                            <td>{{ob.recurring.startDateString}}</td>
+                            <td>{{ob.status}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="darkSection aboutComments">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="commentsTable">
+                        <div class="commentsTableInner">
+                            <div class="commentsInfo">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                <h3>Our Approach</h3>
+                                <h5>We work hard to bring you the best possible experience for your events!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,317 @@
+<div class="content_section">
+
+    <div class="steppers-1">
+        <span class="step_text">
+            Steps :
+        </span>
+
+        <div [ngClass]="globalService.CurrentIndex >= 1 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1" (click)="goToHotel()">
+                <div class="sb_img_box">
+                    <img class="sb_img_1" src="../../assets/images/sb_1_img.svg">
+                </div>
+                <p class="sb_number">1</p>
+                <div class="text-color-1 sb_text">
+                    <span>Select</span>
+                    <span>Hotel</span>
+                </div>
+            </div>
+        </div>
+
+        <div [ngClass]="globalService.CurrentIndex >= 2 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1">
+                <div class="sb_img_box">
+                    <img class="sb_img_2" src="../../assets/images/sb_2_img.svg">
+                </div>
+                <p class="sb_number">2</p>
+                <div class="text-color-1 sb_text">
+                    <span>Select</span>
+                    <span>Venue</span>
+                </div>
+            </div>
+            <img src="../../assets/images/right_arrow.svg">
+        </div>
+
+        <div [ngClass]="globalService.CurrentIndex >= 3 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1" (click)="goToConfirm()">
+                <div class="sb_img_box">
+                    <img class="sb_img_3" src="../../assets/images/sb_3_img.svg">
+                </div>
+                <p class="sb_number">3</p>
+                <div class="text-color-1 sb_text">
+                    <span>Couple</span>
+                    <span>Pricing</span>
+                </div>
+            </div>
+        </div>
+
+        <div [ngClass]="globalService.CurrentIndex >= 4 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1">
+                <div class="sb_img_box">
+                    <img class="sb_img_4" src="../../assets/images/sb_4_img.svg">
+                </div>
+                <p class="sb_number">4</p>
+                <div class="text-color-1 sb_text">
+                    <span>Proposal</span>
+                    <span>Details</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header_bg">
+        <span class="header_bg_text_1">
+            SELECT VENUE
+        </span>
+        <span class="header_bg_text_2">
+            Select Venue
+        </span>
+    </div>
+
+    <div class="filter_section">
+        <div class="filter_box_1">
+            <span class="filter_title">
+                Filter By :
+            </span>
+            <mat-form-field class="price_filter">
+                <mat-label>Price</mat-label>
+                <mat-select multiple (selectionChange)="onPriceFilterSearch($event.value)">
+                    <mat-option *ngFor="let option of priceFilterOptions" [value]="option.Option">
+                        {{option.Option}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <span class="filter_seprator"></span>
+
+            <mat-form-field class="price_filter">
+                <mat-label>Rating</mat-label>
+                <mat-select multiple (selectionChange)="onRatingFilterSearch($event.value)">
+                    <mat-option *ngFor="let option of ratingFilterOptions" [value]="option.id">
+                        {{option.Option}} ({{GetVenueRatingCount(option.id)}})
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+        </div>
+
+        <div class="d-1 sort_by">
+            <div class="filter_box_2">
+                <span class="filter_title">
+                    Sort By :
+                </span>
+                <mat-form-field class="price_filter">
+                    <!--<mat-label>Best Reviews</mat-label>-->
+                    <mat-select (selectionChange)="onSort($event.value)" [ngModel]="sortBy">
+                        <mat-option *ngFor="let option of reviewOptions" [value]="option.id">
+                            {{option.Option}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+
+            <div class="filter_box_2 filter_marker_box" *ngIf="false">
+                <img class="sb_img" src="../../assets/images/marker_black.svg">
+            </div>
+
+            <div class="save_quote_btn_box">
+                <button class="btn btn-block buttonCustomPrimary proceed_btn save_quote_btn" [disabled]="selectedVenues != 3" (click)="GoToConfirm()">
+                    Proceed
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row content_body">
+
+        <div class="col-md-2 steppers-2">
+
+            <div [ngClass]="globalService.CurrentIndex >= 1 ? 'stepper-box-1' : 'stepper-box-3'">
+                <div class="d-1" (click)="goToHotel()">
+                    <div class="sb_img_box">
+                        <img class="sb_img_1" src="../../assets/images/sb_1_img.svg">
+                    </div>
+                    <p class="sb_number">1</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Select</span>
+                        <span>Hotel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div [ngClass]="globalService.CurrentIndex >= 2 ? 'stepper-box-1' : 'stepper-box-3'">
+                <div class="d-1">
+                    <div class="sb_img_box">
+                        <img class="sb_img_2" src="../../assets/images/sb_2_img.svg">
+                    </div>
+                    <p class="sb_number">2</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Select</span>
+                        <span>Venue</span>
+                    </div>
+                </div>
+                <img src="../../assets/images/right_arrow.svg">
+            </div>
+
+            <div [ngClass]="globalService.CurrentIndex >= 3 ? 'stepper-box-1' : 'stepper-box-3'">
+                <div class="d-1" (click)="goToConfirm()">
+                    <div class="sb_img_box">
+                        <img class="sb_img_3" src="../../assets/images/sb_3_img.svg">
+                    </div>
+                    <p class="sb_number">3</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Couple</span>
+                        <span>Pricing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div [ngClass]="globalService.CurrentIndex >= 4 ? 'stepper-box-1' : 'stepper-box-3'">
+                <div class="d-1">
+                    <div class="sb_img_box">
+                        <img class="sb_img_4" src="../../assets/images/sb_4_img.svg">
+                    </div>
+                    <p class="sb_number">4</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Proposal</span>
+                        <span>Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <div class="row hotel_lists">
+                <div class="col-md-4 hotel_card" *ngFor="let venue of venues">
+                    <div class="select_hotel">
+                        <div class="hotel_description">
+                            <div class="hotel_name">
+                                <span>
+                                    {{venue.VenueName}}
+                                </span>
+                                <img src="../../assets/images/info.svg" (click)="onVenueDetail(venue)">
+                                <span class="text-success">
+                                    <i class="fa fa-check fa-2x" *ngIf="venue.Selected"></i>
+                                </span>
+                            </div>
+
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < venue.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                <span>
+                                    {{venue.NoOfReviews}} reviews
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="hotel_description hotel_address">
+                            <div class="hotel_address_section">
+                                <span>
+                                    <img class="img_1" src="../../assets/images/marker_filled.svg"> <b>Distance From Hotel</b><br />
+                                    {{venue?.DistanceToHotel}}<br />
+                                    {{venue?.Driving}}<br />
+                                    {{venue?.Walking}}
+                                    <!--<img class="img_2" src="../../assets/images/dollar.svg">Starting from {{venue.PriceRating}}-->
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hotel_description hotel_description_star_2">
+                            <img src="../../assets/images/star_2.svg">
+                            <div class="hotel_description price_section">
+                                <div>
+                                    <span class="price_currency">
+                                        $
+                                    </span>
+                                    <span class="price_tag">
+                                        {{venue.Price}}
+                                    </span>
+                                </div>
+                                <span class="price_couple">
+                                    /couple
+                                </span>
+                            </div>
+                        </div>
+
+                        <img [src]="venue.PrimaryImage" class="hotel_img">
+
+                        <div class="select_hotel_btn">
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn" *ngIf="!venue.Selected" (click)="onSelectVenue(venue, true)">
+                                SELECT VENUE
+                            </button>
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn" *ngIf="venue.Selected" (click)="onSelectVenue(venue, false)">
+                                UNSELECT VENUE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 form_content">
+            <div class="form_container">
+                <form class="example-form" [formGroup]='hotelForm'>
+                    <div class="form_box">
+                        <div class="searchTour homesearch">
+                            <mat-form-field class="destination_drpdwn">
+                                <mat-label>
+                                    <img src="../../assets/images/marker.svg" class="marker_tag">
+                                    Where do you want to go ?
+                                </mat-label>
+                                <mat-select formControlName='cityInput'>
+                                    <mat-option *ngFor="let option of (destinations | async)?.results" [value]="option.id">
+                                        {{option.text}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                        </div>
+                        <div class="searchTour homesearch">
+                            <mat-form-field class="start_date_custom">
+                                <mat-label>Start Date</mat-label>
+                                <input matInput [min]="minDate" [max]="endDate" [matDatepicker]="startDatePicker" formControlName='startDate' #startDate (dateChange)="fromDateChange(startDate)" (click)="startDatePicker.open()" autocomplete="off">
+                                <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+                                <mat-datepicker #startDatePicker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+
+
+                        <div class="searchTour homesearch">
+                            <mat-form-field class="start_date_custom">
+                                <mat-label>End Date</mat-label>
+                                <input matInput [min]="minEndDate" [matDatepicker]="endDatePicker" formControlName='endDate' #endDate (dateChange)="toDateChange(endDate)" (click)="endDatePicker.open()" autocomplete="off">
+                                <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+                                <mat-datepicker #endDatePicker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="searchTour homesearch">
+                            <mat-form-field class="attendies_custom_field">
+                                <mat-label>
+                                    <img src="../../assets/images/attendies.svg" class="attendies_img_2">
+                                    Total Attendees
+                                </mat-label>
+                                <input matInput OnlyNumber="true" formControlName='attendance'>
+                            </mat-form-field>
+                        </div>
+
+                        <button class="btn btn-block buttonCustomPrimary proceed_btn" (click)="changeSearch(hotelForm)" [disabled]="true">
+                            Change Search
+                            <img src="../../assets/images/proceed.svg">
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

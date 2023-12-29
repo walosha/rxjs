@@ -1,0 +1,96 @@
+<section class="bookingTypeSection" style="margin-top: 150px;" *ngIf="false">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="bookingType bg-ash">
+                    <ul class="bookingList">
+                        <li>
+                            Name<br />
+                            <input type="text" class="form-control" placeholder="Name" />
+                        </li>
+                        <li>
+                            Date From<br />
+                            <input matInput [max]="maxStartDate" [matDatepicker]="startDatePicker" placeholder="Start Date" (click)="startDatePicker.open()" class="form-control">
+                            <mat-datepicker #startDatePicker></mat-datepicker>
+                        </li>
+                        <li>
+                            Date To<br />
+                            <input matInput [min]="minEndDate" [matDatepicker]="endDatePicker" placeholder="End Date" (click)="endDatePicker.open()" class="form-control">
+                            <mat-datepicker #endDatePicker></mat-datepicker>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="recentActivitySection" style="margin-top: 150px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 ">
+                <div class="recentActivityContent bg-ash">
+                    <div class="dashboardPageTitle">
+                        <h2>My Events</h2>
+                    </div>
+                    <div class="table-responsive" data-pattern="priority-columns">
+                        <table class="table listingsTable">
+                            <thead>
+                                <tr>
+                                    <th class="event_tbl_head">
+                                        Deal
+                                    </th>
+                                    <th class="event_tbl_head">
+                                        Client
+                                    </th>
+                                    <th class="event_tbl_head">
+                                        Status
+                                    </th>
+                                    <th class="event_tbl_head">
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="rowItem" *ngFor="let event of eventData">
+                                    <td>
+                                        {{event.DealName}}
+                                    </td>
+                                    <td>
+                                        {{event.ClientName}}
+                                    </td>
+                                    <td>
+                                        {{event.Status}}
+                                    </td>
+                                    <td>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="GoToNotifactions(event)" mat-menu-item *ngIf="event.ShowAction">
+                                                <mat-icon>notifications</mat-icon>
+                                                <span>Notifications</span>
+                                            </button>                                            
+                                            <button (click)="GoToEvent(event)" mat-menu-item *ngIf="event.ShowAction && event.ProposalID">
+                                                <mat-icon>book</mat-icon>
+                                                <span>Event Detail</span>
+                                            </button>
+                                        </mat-menu>
+                                    </td>
+                                </tr>
+                                <tr *ngIf="eventData.length == 0">
+                                    <td colspan="4">
+                                        Currently you have no deals.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>  

@@ -1,0 +1,226 @@
+<div class="main-wrapper" *ngIf="hotelDetails">
+    <!-- PAGE TITLE -->
+    <section class="pageTitle" style="background-image: {{hotelDetails?.data?.primaryImage?.url}}; background-color: #3e3e3e">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="titleTable">
+                        <div class="titleTableInner">
+                            <div class="pageTitleInfo">
+                                <h1>{{hotelDetails?.data?.facility?.description}}</h1>
+                                <p>{{hotelDetails?.data?.address?.street1}}, {{hotelDetails?.data?.address?.city}}, {{hotelDetails?.data?.address?.state}}, {{hotelDetails?.data?.address?.country}}, {{hotelDetails?.data?.address?.zipcode}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PAGE CONTENT -->
+    <section class="mainContentSection singleHotel">
+        <div class="container">
+            <div class="row progress-wizard" style="border-bottom:0;">
+                <div class="col-sm-3 col-xs-12 progress-wizard-step complete">
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a [routerLink]="['/']" class="progress-wizard-dot">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Start Building
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-12 progress-wizard-step active">
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a [routerLink]="['/hotels']" class="progress-wizard-dot">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        Select Hotel
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-12 progress-wizard-step disabled">
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="javascript:void(0)" class="progress-wizard-dot">
+                        <i class="fa fa-venus" aria-hidden="true"></i>
+                        Select Venue
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-12 progress-wizard-step disabled">
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="javascript:void(0)" class="progress-wizard-dot">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        Confirm Detail
+                    </a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-8 col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="package-carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li *ngFor="let banner of hotelDetails?.data?.content,let i = index" data-target="#package-carousel" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item" *ngFor="let slider of hotelDetails?.data?.content,let i = index" [ngClass]="[i == 0 ? 'active' : '']">
+                                        <img src="{{slider.url}}" title="{{slider.title}}" alt="{{slider.title}}">
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#package-carousel" data-slide="prev"><span class="glyphicon glyphicon-menu-left"></span></a>
+                                <a class="right carousel-control" href="#package-carousel" data-slide="next"><span class="glyphicon glyphicon-menu-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="description-aria">
+                                <div class="sectionTitle2">
+                                    <h2>Description</h2>
+                                    <p>{{hotelDetails?.data?._description}}</p>
+                                </div>
+                                <!--<div class="sectionTitle2">
+                                    <h2>About</h2>
+                                    <p>{{hotelDetails?.data?.About}}</p>
+                                </div>-->                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="sectionTitle2">
+                                            <h2>What's Included?</h2>
+                                        </div>
+                                        <ul class="descriptionList">
+                                            <li *ngFor="let description of hotelDetails?.data?.included"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>{{description}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="location-aria">
+                                <div class="sectionTitle2">
+                                    <h2>Location</h2>
+                                </div>
+                                <div class="google-maps">
+                                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12097.002861286059!2d-74.01154310416635!3d40.71249695811257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2s!4v1502716241862" width="100%" height="400px" scrolling="no" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                    <!--<iframe src="https://maps.google.com/maps?q=4545%20Magnolia%20Street%2C%20New%20Orleans%20LA%2070115%2C%20US&t=&z=13&ie=UTF8&iwloc=&output=embed"  width="100%" height="400px" scrolling="no" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                                    <div #gmap style="width:100%;height:600px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="review-aria">                                
+                                <div class="reviewContent">
+                                    <h2 class="reviewTitle">
+                                        Reviews ({{hotelDetails?.data?.Reviews?.length}})
+                                        <span>
+                                            <i *ngFor='let in of Arr(5);let i = index' [ngClass]="[i < reviewStar(hotelDetails?.data?.Reviews) ? 'fa fa-star' : 'fa fa-star-o']" aria-hidden="true"></i>
+                                        </span>
+                                    </h2>
+                                    <div class="reviewMedia">
+                                        <ul class="media-list">
+                                            <li class="media" *ngFor="let review of hotelDetails?.data?.Reviews">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img class="media-object" src="{{review.ReviewerImage}}" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">{{review.ReviewerName}}</h5>
+                                                    <span>
+                                                        <i *ngFor='let in of Arr(5);let i = index' [ngClass]="[i < review.ReviewStar ? 'fa fa-star' : 'fa fa-star-o']" aria-hidden="true"></i>
+                                                    </span>
+                                                    <p>{{review.Review}}</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form action="#" method="POST" role="form" class="commentsForm">
+                                        <h3 class="reviewTitle">Leave your review</h3>
+                                        <p>
+                                            Want to Rate it? <span>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn buttonCustomPrimary">submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-sm-4 col-xs-12">
+                    <div class="singleCartSidebar">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Check availability</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12">                                        
+                                        <form class="form-horizontal" [formGroup]='hotelForm'>
+                                            <div class="totalCost">
+                                                <div class="col-xs-5 totalCostLeft">
+                                                    <p>Check in</p>
+                                                </div>
+                                                <div class="col-xs-7 totalCostRight">{{ CheckInDate | date:'MMMM dd, yyyy' }}  </div>
+                                            </div> 
+                                            <div class="totalCost">
+                                                <div class="col-xs-5 totalCostLeft">
+                                                    <p>Check Out</p>
+                                                </div>
+                                                <div class="col-xs-7 totalCostRight">{{ CheckOutDate | date:'MMMM dd, yyyy' }}  </div>
+                                            </div> 
+
+                                            <!--<div class="form-group">
+                                                <label class="control-label col-md-4 col-sm-12 col-xs-4" for="inputSuccess3">Check in:</label>
+                                                <div class="col-md-8 col-sm-12 col-xs-8 datepickerWrap">
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput [min]="minFromDate" [max]="maxFromDate" [matDatepicker]="fromDatePicker" formControlName='startDate' #startDate (dateChange)="fromDateChange(startDate)">
+                                                        <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
+                                                        <mat-datepicker #fromDatePicker></mat-datepicker>
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-4 col-sm-12 col-xs-4" for="inputSuccess3">Check out:</label>
+                                                <div class="col-md-8 col-sm-12 col-xs-8 datepickerWrap">
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput [min]="minToDate" [max]="maxToDate" [matDatepicker]="toDatePicker" formControlName='endDate' #endDate (dateChange)="toDateChange(endDate)">
+                                                        <mat-datepicker-toggle matSuffix [for]="toDatePicker"></mat-datepicker-toggle>
+                                                        <mat-datepicker #toDatePicker></mat-datepicker>
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>-->
+                                            <div class="totalCost">
+                                                <div class="col-xs-5 totalCostLeft">
+                                                    <p>Per Couple</p>
+                                                </div>
+                                                <div class="col-xs-7 totalCostRight">{{hotelDetails?.data?.CostPerCouple}}</div>
+                                            </div>                                            
+                                            <div class="col-sm-12">
+                                                <a (click)="onSelectHotel(hotelDetails?.data)" class="btn btn-block buttonCustomPrimary" style="margin-top:30px;"> Select Hotel<i class="fa fa-angle-right" aria-hidden="true" style="margin-left: 20px;font-size: 18px;"></i></a>
+                                                <!--<a [routerLink]="['/hotels']" class="btn btn-block buttonTransparent"> Add To Watch List</a>-->
+                                                <a [routerLink]="['/hotels']" class="btn btn-block buttonTransparent"> Other Hotels</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+</div>

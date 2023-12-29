@@ -1,0 +1,111 @@
+{
+  "eventName": "Kappa Sigma Omicron-Pi Formal",
+  "id": 1,
+  "hotelName": "LUMIERE HOTEL",
+  "hotelAddress": "601 Loyola Ave, New Orleans, LA 70113, USA",
+  "venueName": "Lumiere Hotel Ballroom",
+  "venueAddress": "601 Loyola Ave, New Orleans, LA 70113, USA",
+  "foodDetails": "Gourmet appetizers",
+  "amount": 2500,
+  "currency": "usd",
+  "eventLogo": "assets/img/events/1158px-Auburn_Tigers_logo.svg.png",
+  "eventLogo2": "assets/img/events/kappasigmacrest.png",
+  "startDate": "2017/07/31",
+  "endDate": "2017/08/02",
+  "dueDate": "2017/07/15",
+  "sliderImages": [
+    "assets/img/events/event-01.jpg",
+    "assets/img/events/event-02.jpg",
+    "assets/img/events/event-03.jpg",
+    "assets/img/events/event-04.jpg",
+    "assets/img/events/event-05.jpg"
+  ],
+  "admins": [
+    "John Smith",
+    "Mike Ross",
+    "Peter Johnson"
+  ],
+  "attendees": {
+    "names": [      
+      {
+        "name": "John Smith",
+        "hasPaid": true,
+        "imageUrl": "assets/img/attendees/john.png",
+        "isAdmin": true
+      },
+      {
+        "name": "Mark Chapman",
+        "hasPaid": true,
+        "imageUrl": "assets/img/attendees/mark.png",
+        "isAdmin": true
+      },
+      {
+        "name": "Nick Myers",
+        "hasPaid": true,
+        "imageUrl": "assets/img/attendees/nick.png",
+        "isAdmin": true
+      },
+      {
+        "name": "Kevin Rollins",
+        "hasPaid": true,
+        "imageUrl": "assets/img/attendees/kevin.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Jason Kirkpatrick",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/jason.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Tom Stone",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/tom.png",
+        "isAdmin": false
+      },
+      {
+        "name": "William Harrison",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/william.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Peter Waterson",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/peter.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Scott Stevens",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/scott.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Michael Rogers",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/michael.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Frank Sanders",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/frank.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Tim Donovan",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/tim.png",
+        "isAdmin": false
+      },
+      {
+        "name": "Chris Allen",
+        "hasPaid": false,
+        "imageUrl": "assets/img/attendees/chris.png",
+        "isAdmin": false
+      }
+    ]
+  },
+  "description": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are."
+}

@@ -1,0 +1,387 @@
+<div class="content_section">
+
+    <div class="header_bg">
+        <span class="header_bg_text_1">
+            PROPOSAL CART
+        </span>
+        <span class="header_bg_text_2">
+            Proposal Cart
+        </span>
+    </div>
+
+    <!-- <div class="filter_section"> -->
+
+    <form class="filter_section" [formGroup]='proposalForm'>
+        <div class="d-1">
+            <div class="filter_box_1">
+                <span class="filter_title" *ngIf="proposalForm.value.Season">
+                    Select Season
+                </span>
+                <mat-form-field class="university_drpdwn">
+                    <mat-label *ngIf="!proposalForm.value.Season">
+                        Select Deal
+                    </mat-label>
+                    <mat-select formControlName='Season'>
+                        <mat-option *ngFor="let option of season_list" [value]="option.id">
+                            {{option.text}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="d-1">
+            <div class="d-1">
+                <input type="checkbox" id="chkRate" (change)="changePrice()">
+                <label for="chkRate" class="tax_text" style="padding-top: 12px;">Show Rates With Taxes & Fees</label>
+            </div>
+            <div class="filter_box_2 save_quote_btn_box">
+                <button class="btn btn-block buttonCustomPrimary proceed_btn save_quote_btn" *ngIf="Hotel_List.length != 3" (click)="buildAnother()">
+                    Build Another
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="text-center pt-5">
+        <h2>Organize by prefference</h2>
+    </div>
+    <div class="row content_body proposal_cart_body">
+        <div *ngFor="let hotel of Hotel_List; let i = index;" class="col-md-12 row flex-container" [ngClass]="hotel.ShowAction ? 'proposal_content' : 'proposal_content_2'">
+            <div class="col-md-3 info_container">
+                <div>
+                    <div class="d-1 proposal_number">
+                        <span [ngClass]="hotel.ShowAction ? 'recommended_proposal' : 'non_recommended_proposal'" class="">
+                            {{(i + 1)}}
+                        </span>
+                        <span class="proposal_id">
+                            #{{hotel.EventName}}
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            {{hotel.Location}}
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Chapter Contribution: {{hotel.ChapterContribution}}
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Number of Attendees: {{hotel.NoOfAttendee}}
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            {{hotel.StartDate | date:'dd/MM/yyyy'}} - {{hotel.EndDate | date:'dd/MM/yyyy'}}
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span *ngIf="!price_checked">
+                            Price Per Couple: ${{hotel.PricePerCouple}}
+                        </span>
+                        <span *ngIf="price_checked">
+                            Price Per Couple: ${{hotel.PricePerCoupleTaxes}}
+                        </span>
+                    </div>
+                </div>
+                <div class="d-1 recommend_tag">
+                    <span>
+                        <i class="fa fa-check-square active_checkbox" aria-hidden="true"></i>
+                    </span>
+                    <span *ngIf="i == 0">
+                        Favourite
+                    </span>
+                    <span *ngIf="i != 0">
+                        Alternate
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-8 row">
+                <div class="col-md-6 info_container hotel_img_box">
+                    <div class="d-1 hotel-title">
+                        <span>
+                            Hotel
+                        </span>
+                        <a class="detail-link">
+                            View Details
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img [src]="hotel.Hotel.PrimaryImage">
+
+                        <span>
+                            {{hotel.Hotel.HotelName}}
+                        </span>
+                    </div>
+
+                </div>
+                <div class="col-md-6 info_container hotel_img_box">
+                    <div class="d-1 hotel-title">
+                        <span>
+                            Venue
+                        </span>
+                        <a class="detail-link">
+                            View Details
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img [src]="hotel.Venue.PrimaryImage">
+
+                        <span>
+                            {{hotel.Venue.VenueName}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 action-box">
+                <span class="previous_arrow" (click)="scrollUp(i)" *ngIf="!isApproved && i > 0">
+                    <img src="../../assets/images/arrow_down.svg">
+                </span>
+                <span class="next_arrow" (click)="scrollDown(i)" *ngIf="!isApproved && i+1 < Hotel_List.length">
+                    <img src="../../assets/images/arrow_down.svg">
+                </span>
+                <span class="col-md-12 delete_btn" *ngIf="!isApproved" (click)="ChangeStatus(hotel, i)">
+                    <img src="../../assets/images/delete.svg">
+                </span>
+                <span class="col-md-12" *ngIf="hotel.ShowAction">
+                    <a target="_blank" href="/iternary/{{hotel.IternaryID}}">View Iternary</a>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 row flex-container proposal_content_2" *ngIf="false">
+            <div class="col-md-3 info_container">
+                <div>
+                    <div class="d-1 proposal_number">
+                        <span class="non_recommended_proposal">
+                            2
+                        </span>
+                        <span class="proposal_id">
+                            #123456789
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            New Orleans, LA
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Chapter Contribution: 0
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Number of Attendees: 100
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            04/28/2023  -  04/30/2023
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Price Per Couple: $264
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 row">
+                <div class="col-md-6 info_container hotel_img_box">
+                    <div class="d-1 hotel-title">
+                        <span>
+                            Hotel
+                        </span>
+                        <a class="detail-link">
+                            View Details
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="../../assets/images/dummy-1.png">
+
+                        <span>
+                            Test - Foxy New Orleans Downtown/French Quarter Area
+                        </span>
+                    </div>
+
+                </div>
+                <div class="col-md-6 info_container hotel_img_box">
+                    <div class="d-1 hotel-title">
+                        <span>
+                            Venue
+                        </span>
+                        <a class="detail-link">
+                            View Details
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="../../assets/images/dummy-1.png">
+
+                        <span>
+                            Test - Foxy New Orleans Downtown/French Quarter Area
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1 action-box">
+                <span class="col-md-12 arrow_btn_box">
+                    <span class="previous_arrow">
+                        <img src="../../assets/images/arrow_down.svg">
+                    </span>
+                    <span class="next_arrow">
+                        <img src="../../assets/images/arrow_down.svg">
+                    </span>
+                </span>
+                <span class="col-md-12 delete_btn">
+                    <img src="../../assets/images/delete.svg">
+                </span>
+            </div>
+        </div>
+
+        <div class="col-md-12 row flex-container proposal_content_2" *ngIf="false">
+            <div class="col-md-3 info_container">
+                <div>
+                    <div class="d-1 proposal_number">
+                        <span class="non_recommended_proposal">
+                            3
+                        </span>
+                        <span class="proposal_id">
+                            #123456789
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            New Orleans, LA
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Chapter Contribution: 0
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Number of Attendees: 100
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            04/28/2023  -  04/30/2023
+                        </span>
+                    </div>
+                    <div class="d-1 info_details">
+                        <span>
+                            Price Per Couple: $264
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 row">
+                <div class="col-md-6 info_container hotel_img_box">
+                    <div class="d-1 hotel-title">
+                        <span>
+                            Hotel
+                        </span>
+                        <a class="detail-link">
+                            View Details
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="../../assets/images/dummy-1.png">
+
+                        <span>
+                            Test - Foxy New Orleans Downtown/French Quarter Area
+                        </span>
+                    </div>
+
+                </div>
+                <div class="col-md-6 info_container hotel_img_box">
+                    <div class="d-1 hotel-title">
+                        <span>
+                            Venue
+                        </span>
+                        <a class="detail-link">
+                            View Details
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="../../assets/images/dummy-1.png">
+
+                        <span>
+                            Test - Foxy New Orleans Downtown/French Quarter Area
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1 action-box">
+                <span class="col-md-12 arrow_btn_box">
+                    <span class="previous_arrow">
+                        <img src="../../assets/images/arrow_down.svg">
+                    </span>
+
+                </span>
+                <span class="col-md-12 delete_btn">
+                    <img src="../../assets/images/delete.svg">
+                </span>
+            </div>
+        </div>
+
+        <div class="col-md-12 p_0" *ngIf="!isApproved">
+            <div class="terms_section">
+                <div>
+                    <div class="send_proposal" *ngIf="false">
+                        <a>Send Proposals via Email/SMS</a>
+                        <span> to notify receiver</span>
+                    </div>
+                    <div class="d-1">
+                        <input type="checkbox" id="chkRate" (change)="agreement_accepted = !agreement_accepted">
+                        <span class="tax_text">By checking this box, you understand and accept our </span>                        
+                        <a class="agreement" data-toggle="modal" data-target="#exampleModalCenter">
+                            Client Planning Agreement
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-block buttonCustomPrimary proceed_btn save_quote_btn" (click)="startPlanning()" [disabled]="(Hotel_List.length != 3 || !agreement_accepted)">
+                        START PLANNING
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="display: flex;justify-content: space-between;width: 100%;">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="width: 50%;">Client Planning Agreement</h5>
+                <span style="width: 50%;text-align: end;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </span>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://formalbuilder.com/cpa/" height="450px" width="100%" style="border: none;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

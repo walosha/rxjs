@@ -1,0 +1,1585 @@
+<div class="mobile_view" *ngIf="eventDetail">
+
+    <div class="event_img">
+        <img src="../../assets/images/lasvegas.png">
+
+        <div class="event_img_detail" *ngIf="IsAdmin">
+            <img src="../../assets/images/dummy-1.png">
+            <div class="event_name_info">
+                <p class="name">
+                    {{eventDetail.Owner.Name}}
+                </p>
+                <p class="email">
+                    {{eventDetail.Owner.Email}}
+                </p>
+            </div>
+        </div>
+
+        <p class="event_detail_name">
+            {{eventDetail.DealName}}
+        </p>
+    </div>
+
+    <mat-accordion multi>
+
+        <mat-expansion-panel expanded="true">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Event Information
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <div>
+                <div class="event_info event_name">
+                    <span class="event_key">
+                        Event Name
+                    </span>
+                    <span class="event_value">
+                        {{eventDetail.ProposalNumber ? eventDetail.ProposalNumber : '--'}}
+                    </span>
+                </div>
+
+                <div class="event_info m-t-24">
+                    <span class="event_key">
+                        Total Attendees
+                    </span>
+                    <span class="event_value">
+                        {{eventDetail.Attendees}}
+                    </span>
+                </div>
+
+                <div class="event_info m-t-24">
+                    <span class="event_key">
+                        Price Per Couple
+                    </span>
+                    <span class="event_value price_couple">
+                        ${{eventDetail.PricePerCouple}}
+                    </span>
+                </div>
+
+                <div class="event_info m-t-24">
+                    <button class="btn proceed_btn_2 event_view_payment" (click)="ViewMobilePayment()">
+                        VIEW PAYMENT
+                    </button>
+                    <button *ngIf="(hideInterest && !hidePayment)" (click)="MakeMobilePayment()" class="btn proceed_btn_3 event_make_payment">
+                        MAKE PAYMENT
+                    </button>
+                </div>
+
+                <div *ngIf="showMobilePayment">
+                    <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                        <div class="event-detail">
+                            Price Per Couple: <label style="float:right">${{eventDetail.PricePerCouple}}</label>
+                        </div>
+                        <div class="event-detail">
+                            Booking Fees (One time): <label style="float:right">$6.99</label>
+                        </div>
+                        <div class="event-detail">
+                            Credit Card Fees : <label style="float:right">$3.75</label>
+                        </div>
+                        <div class="event-detail">
+                            You Paid : <label style="float:right">$({{this.paidAmount}})</label>
+                        </div>
+                        <hr />
+                        <div class="event-detail">
+                            Remaining  : <label style="float:right">${{(eventDetail.PricePerCouple + 6.99 + 3.75 - this.paidAmount).toFixed(2)}}</label>
+                        </div>
+
+                        <div class="event-detail">
+                            Amount
+                        </div>
+                        <div class="event-detail">
+                            <input class="form-control" [(ngModel)]="amount" placeholder="$ 0.00" currencyMask max="{{maxAmount}}" min="3.75">
+                        </div>
+
+                        <div class="event-detail">
+                            Description
+                        </div>
+                        <div class="event-detail">
+                            <textarea class="form-control" [(ngModel)]="description" style="resize: none;" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                        <form (ngSubmit)="createMobileStripeToken()" class="checkout">
+                            <label for="card-info">Payment Details</label>
+                            <div id="form-field">
+                                <div id="card-info" #mobileCardInfo></div>
+                                <button id="submit-button" type="submit" [disabled]="amount == 0 || amount > maxAmount" class="btn btn-primary" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;margin: 20px 0px 10px 0px;width: 100%;">
+                                    Pay Now ($ {{amount ? amount : '0'}})
+                                </button>
+                                <mat-error id="card-errors" role="alert" *ngIf="cardError">
+                                    <mat-icon style="color: #f44336">cancel</mat-icon>
+                                    &nbsp;{{ cardError }}
+                                </mat-error>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div *ngIf="view_payment_history">
+                    <div class="event-detail">
+                        Payment History
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered" cellpadding="3">
+                            <tr>
+                                <th style="padding: 5px;">Name</th>
+                                <th style="padding: 5px;">Amount</th>
+                                <th style="padding: 5px;">Status</th>
+                                <th style="padding: 5px;">Message</th>
+                            </tr>
+                            <tr *ngFor="let pay of payment_history">
+                                <td>
+                                    {{pay.Name}}
+                                </td>
+                                <td>
+                                    $ {{pay.Amount}}
+                                </td>
+                                <td>
+                                    {{pay.Status}}
+                                </td>
+                                <td>
+                                    {{pay.Description}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="invite_attendees">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Attendee Status
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div>
+
+                <div class="invitees_box">
+                    <mat-form-field class="example-chip-list" appearance="outline">
+                        <mat-chip-list #chipList aria-label="Fruit selection">
+                            <mat-chip *ngFor="let attendee of attendees" [selectable]="selectable" [removable]="removable" (removed)="remove(attendee)">
+                                {{attendee}}
+                                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                            </mat-chip>
+                            <input placeholder="Invite Attendees..." #attendeeInput [formControl]="attendeeCtrl" [matAutocomplete]="auto" [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" (matChipInputTokenEnd)="add($event)">
+                        </mat-chip-list>
+                        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                            <mat-option *ngFor="let attendee of filteredAttendee | async" [value]="fruit">
+                                {{attendee}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+
+                    <img src="../../assets/images/send.svg">
+                </div>
+
+                <div class="invitees_stats">
+                    <div class="interested_invitees">
+                        <img src="../../assets/images/interested.svg">
+                        <span class="invitees_count">
+                            {{attendee_status?.Interested ? attendee_status?.Interested : '0'}}
+                        </span>
+                        <span class="invitees_type">
+                            Interested
+                        </span>
+                    </div>
+                    <div class="invited_invitees">
+                        <img src="../../assets/images/invited.svg">
+                        <span class="invitees_count">
+                            {{attendee_status?.Invited ? attendee_status?.Invited : '0'}}
+                        </span>
+                        <span class="invitees_type">
+                            Invited
+                        </span>
+                    </div>
+                    <div class="declined_invitees">
+                        <img src="../../assets/images/declined.svg">
+                        <span class="invitees_count">
+                            {{attendee_status?.Declined ? attendee_status?.Declined : '0'}}
+                        </span>
+                        <span class="invitees_type">
+                            Declined
+                        </span>
+                    </div>
+                </div>
+
+                <div class="paid_couples">
+                    <img src="../../assets/images/paid_couples.svg">
+                    <span class="paid_title">
+                        Paid Couples
+                    </span>
+                    <span class="paid_counts">
+                        {{attendee_status?.Paid ? attendee_status?.Paid : '0'}}
+                    </span>
+                </div>
+
+                <div class="user_images_list">
+                    <img *ngFor="let img of user_images_list" [src]="img">
+                    <span class="user_list_counter">
+                        45+
+                    </span>
+                </div>
+
+            </div>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Payment Status
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div id="mobile_chart" *ngIf="mobile_chartOptions">
+
+                <apx-chart [series]="mobile_chartOptions.series"
+                           [chart]="mobile_chartOptions.chart"
+                           [dataLabels]="mobile_chartOptions.dataLabels"
+                           [plotOptions]="mobile_chartOptions.plotOptions"
+                           [yaxis]="mobile_chartOptions.yaxis"
+                           [xaxis]="mobile_chartOptions.xaxis"
+                           [stroke]="mobile_chartOptions.stroke"
+                           [grid]="mobile_chartOptions.grid"
+                           [fill]="mobile_chartOptions.fill"
+                           [annotations]="mobile_chartOptions.annotations"
+                           [colors]="mobile_chartOptions.colors"
+                           [states]="mobile_chartOptions.states"
+                           [tooltip]="mobile_chartOptions.tooltip"></apx-chart>
+
+            </div>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="hotel_detail">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Hotel Description
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div *ngIf="eventDetail.Hotel">
+                <div class="img_content">
+                    <img src="../../assets/images/dummy-1.png">
+                    <div class="hotel_info">
+                        <span class="hotel_name">
+                            {{eventDetail.Hotel.HotelName ? eventDetail.Hotel.HotelName : 'N/A'}}
+                        </span>
+                        <a class="view_details">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Description
+                    </span>
+
+                    <p>
+                        {{eventDetail.Hotel.Description ? eventDetail.Hotel.Description : 'N/A'}}
+                    </p>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Hotel Chain / Brand
+                    </span>
+                    <p>
+                        {{eventDetail.Hotel.ChainName ? eventDetail.Hotel.ChainName : 'N/A'}}
+                    </p>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        What's Included
+                    </span>
+                    <div *ngFor="let amn of eventDetail.Hotel.Amentities" class="amentities">
+                        <img src="../../assets/images/square_check.svg">
+                        <p>{{amn}}</p>
+                    </div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Notes
+                    </span>
+                    <div *ngFor="let notes of eventDetail.Hotel.Notes" class="amentities">
+                        <img src="../../assets/images/square_check.svg">
+                        <p>{{notes.title}}{{notes.body ? ' : '+notes.body : ''}}</p>
+                    </div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Location
+                    </span>
+                    <div class="address_info">
+                        <span class="address">
+                            {{eventDetail.Hotel.Address ? eventDetail.Hotel.Address : 'N/A'}}
+                        </span>
+                        <a class="location_link">
+                            Get Direction
+                        </a>
+                    </div>
+                    <div #gHotelMap style="width:100%;height:200px"></div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <div class="review_section_header">
+                        <div class="review_title">
+                            <span class="detail_title">Reviews{{eventDetail.Hotel.NoOfReviews > 0 ? '('+eventDetail.Hotel.NoOfReviews+')' : ''}}</span>
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < eventDetail.Hotel.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                            </div>
+                        </div>
+
+                        <span class="user_reviews" *ngIf="eventDetail.Hotel.NoOfReviews > 0">
+                            View All Reviews
+                        </span>
+                    </div>
+
+                    <div class="user_comments" *ngFor="let review of eventDetail.Hotel.Reviews">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object review_user_img" src="{{review.profile_photo_url}}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <span class="review_user_name">User Name</span>
+                                <div class="user_review_star">
+                                    <img *ngFor='let in of counter(5);let i = index' [src]="i < review.rating ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                    <span>
+                                        {{review.relative_time_description}}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="review_text">{{review.text}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="hotel_detail">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Venue Description
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div *ngIf="eventDetail.Venue">
+                <div class="img_content">
+                    <img src="../../assets/images/dummy-1.png">
+                    <div class="hotel_info">
+                        <span class="hotel_name">
+                            {{eventDetail.Venue.VenueName ? eventDetail.Venue.VenueName : 'N/A'}}
+                        </span>
+                        <a class="view_details">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Description
+                    </span>
+
+                    <p>
+                        {{eventDetail.Venue.Description ? eventDetail.Venue.Description : 'N/A'}}
+                    </p>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Venue Chain / Brand
+                    </span>
+                    <p>
+                        {{eventDetail.Venue.ChainName ? eventDetail.Venue.ChainName : 'N/A'}}
+                    </p>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        What's Included
+                    </span>
+                    <div *ngFor="let amn of eventDetail.Venue.Amentities" class="amentities">
+                        <img src="../../assets/images/square_check.svg">
+                        <p>{{amn}}</p>
+                    </div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Notes
+                    </span>
+                    <div *ngFor="let notes of eventDetail.Venue.Notes" class="amentities">
+                        <img src="../../assets/images/square_check.svg">
+                        <p>{{notes.title}}{{notes.body ? ' : '+notes.body : ''}}</p>
+                    </div>
+                </div>
+
+                <div class="event_hotel_description">
+                    <span>
+                        Location
+                    </span>
+                    <div class="address_info">
+                        <span class="address">
+                            {{eventDetail.Venue.Address ? eventDetail.Venue.Address : 'N/A'}}
+                        </span>
+                        <a class="location_link">
+                            Get Direction
+                        </a>
+                    </div>
+
+                    <div #gVenueMap style="width:100%;height:200px"></div>
+
+                </div>
+
+                <div class="event_hotel_description">
+
+                    <div class="review_section_header">
+                        <div class="review_title">
+                            <span class="detail_title">Reviews{{eventDetail.Venue.NoOfReviews > 0 ? '('+eventDetail.Venue.NoOfReviews+')' : ''}}</span>
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < eventDetail.Venue.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                            </div>
+                        </div>
+
+                        <span class="user_reviews" *ngIf="eventDetail.Venue.NoOfReviews > 0">
+                            View All Reviews
+                        </span>
+                    </div>
+
+                    <div class="user_comments" *ngFor="let review of eventDetail.Venue.Reviews">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object review_user_img" src="{{review.profile_photo_url}}" alt="Image">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <span class="review_user_name">User Name</span>
+                                <div class="user_review_star">
+                                    <img *ngFor='let in of counter(5);let i = index' [src]="i < review.rating ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                    <span>
+                                        {{review.relative_time_description}}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="review_text">{{review.text}}</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </mat-expansion-panel>
+
+    </mat-accordion>
+
+    <button class="btn proceed_btn_3 pay_now_btn">
+        MAKE PAYMENT
+    </button>
+
+</div>
+
+<div class="singleCartSidebar topmargin desktop_view" *ngIf="eventDetail">
+
+    <div class="panel panel-default">
+        <div class="panel-body" style="background-color:#ECECEC !important; color:black !important; padding: unset !important">
+            <div class="row">
+                <div class="col-xs-12">
+                    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                        <mdb-carousel-item *ngIf="highlightHotel">
+                            <div class="view w-100" style="padding: 8px;">
+                                <img class="d-block w-100" style="width: 100%;" src="assets/img/holets/hotel.jpg" alt="First slide">
+                                <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                            </div>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item *ngIf="!highlightHotel">
+                            <div class="view w-100" style="padding: 8px;">
+                                <img class="d-block w-100" style="width: 100%;" src="{{venue?.ListImage}}" alt="First slide">
+                                <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                            </div>
+                        </mdb-carousel-item>
+                    </mdb-carousel>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div style="background: white; padding: 8px; margin: 8px 0px 8px 8px;" *ngIf="eventDetail.DealName">
+                        <div>
+                            <h1>{{eventDetail.DealName}}</h1>
+                            <div style="display: flex; flex-direction: row;align-items: center;" *ngIf="eventDetail.Owner">
+                                <mat-icon style="font-size: 54px;width: 54px;height: 54px;">account_box</mat-icon>
+                                <div>
+                                    <p style="margin: 0px;">{{eventDetail.Owner.Name}}</p>
+                                    <p style="margin: 0px;">{{eventDetail.Owner.Email}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <mat-tab-group linear #stepper mat-stretch-tabs="true" style="background: white; padding: 8px; margin: 8px 0px 8px 8px;">
+                        <mat-tab>
+                            <ng-template mat-tab-label>Check Invitees</ng-template>
+                            <mat-form-field class="example-chip-list" appearance="outline" style="margin-top: 10px;">
+                                <mat-chip-list #chipList aria-label="Fruit selection">
+                                    <mat-chip *ngFor="let attendee of attendees" [selectable]="selectable" [removable]="removable" (removed)="remove(attendee)">
+                                        {{attendee}}
+                                        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                                    </mat-chip>
+                                    <input placeholder="Invite Other Attendees..." #attendeeInput [formControl]="attendeeCtrl" [matAutocomplete]="auto" [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" (matChipInputTokenEnd)="add($event)">
+                                </mat-chip-list>
+                                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                                    <mat-option *ngFor="let attendee of filteredAttendee | async" [value]="fruit">
+                                        {{attendee}}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </mat-form-field>
+                            <mat-form-field class="example-chip-list" appearance="outline" style="margin-top: 10px;">
+                                <mat-chip-list #chipList aria-label="Fruit selection">
+                                    <mat-chip *ngFor="let admin of admins" [selectable]="selectable" [removable]="removable" (removed)="removeAdmin(admin)">
+                                        {{admin}}
+                                        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                                    </mat-chip>
+                                    <input placeholder="Invite Other Admin..." #adminInput [formControl]="adminCtrl" [matAutocomplete]="autoAdmin" [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" (matChipInputTokenEnd)="addAdmin($event)">
+                                </mat-chip-list>
+                                <mat-autocomplete #autoAdmin="matAutocomplete" (optionSelected)="selectedAdmin($event)">
+                                    <mat-option *ngFor="let admin of filteredAdmin | async" [value]="fruit">
+                                        {{admin}}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </mat-form-field>
+
+
+                            <div style="padding: 0px 8px 0px 15px; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: blue; opacity: 0.6;">
+                                    <!--13 Attending / 4 Paid--> &nbsp;
+                                </span>
+                                <button class="btn btn-primary" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;" [disabled]="attendees.length == 0 && admins.length == 0" (click)="sendInvites()">Send Invites</button>
+                            </div>
+
+                            <div style="max-height: 400px;overflow: auto;">
+                                <div *ngFor="let att of attendees_list" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;padding: 0px 15px 0px 15px;">
+                                    <div style="display: flex; flex-direction: row;align-items: center;">
+                                        <mat-icon style="font-size: 54px;width: 54px;height: 54px;">account_box</mat-icon>
+                                        <div>
+                                            <p style="margin: 0px;">{{att.ContactName}}</p>
+                                            <p style="margin: 0px;">{{att.Role}}</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        {{att.Status}}
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-tab>
+
+                        <mat-tab>
+                            <ng-template mat-tab-label>Hotel/Venue</ng-template>
+                            <div>
+                                <mat-tab-group mat-stretch-tabs="true">
+                                    <mat-tab>
+                                        <ng-template mat-tab-label>Hotel Detail</ng-template>
+                                        <ng-container *ngIf="eventDetail.Hotel">
+                                            <div class="main-wrapper">
+                                                <!-- PAGE TITLE -->
+                                                <section class="pageTitle">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <div class="titleTable">
+                                                                    <div class="titleTableInner">
+                                                                        <div class="pageTitleInfo">
+                                                                            <h1>{{eventDetail.Hotel?.HotelName}}</h1>
+                                                                            <p>{{eventDetail.Hotel?.Address}}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- PAGE CONTENT -->
+                                                <section class="mainContentSection singleHotel">
+                                                    <div class="container">
+
+                                                        <div class="row ">
+                                                            <div class="col-sm-12 col-xs-12">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div id="package-carousel" class="carousel slide" data-ride="carousel">
+                                                                            <ol class="carousel-indicators">
+                                                                                <li *ngFor="let banner of eventDetail.Hotel?.SliderImages,let i = index" data-target="#package-carousel" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"></li>
+                                                                            </ol>
+                                                                            <div class="carousel-inner">
+                                                                                <div class="item" *ngFor="let slider of eventDetail.Hotel?.SliderImages,let i = index" [ngClass]="[i == 0 ? 'active' : '']">
+                                                                                    <img alt="slide" src="{{slider.url}}" title="{{slider.title}}">
+                                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                                        <h4>{{slider.title}}</h4>
+                                                                                        <p>{{slider.caption}}</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <a class="left carousel-control" href="#package-carousel" data-slide="prev"><span class="glyphicon glyphicon-menu-left"></span></a>
+                                                                            <a class="right carousel-control" href="#package-carousel" data-slide="next"><span class="glyphicon glyphicon-menu-right"></span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="description-aria">
+                                                                            <div class="sectionTitle2">
+                                                                                <h2>Description</h2>
+                                                                                <p>{{eventDetail.Hotel?.Description}}</p>
+                                                                            </div>
+                                                                            <div class="sectionTitle2">
+                                                                                <h2>Hotel Chain / Brand</h2>
+                                                                                <p>{{eventDetail.Hotel?.ChainName}} / {{eventDetail.Hotel?.BrandName}}</p>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12 col-sm-12">
+                                                                                    <div class="sectionTitle2">
+                                                                                        <h2>What's Included?</h2>
+                                                                                    </div>
+                                                                                    <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let description of eventDetail.Hotel?.Amentities">
+                                                                                        <ul class="descriptionList">
+                                                                                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>{{description}}</li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12 col-sm-12">
+                                                                                    <div class="sectionTitle2">
+                                                                                        <h2>Notes</h2>
+                                                                                    </div>
+                                                                                    <ul class="descriptionList">
+                                                                                        <li *ngFor="let note of eventDetail.Hotel?.Notes"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>{{note.title}}:</span>  {{note.body}}</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="location-aria">
+                                                                            <div class="sectionTitle2">
+                                                                                <h2>Location</h2>
+                                                                            </div>
+                                                                            <div class="google-maps">
+                                                                                <div #gHotelMap id="hotelMap" style="width:100%;height:600px"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sectionTitle2">
+                                                                            <p><b>Address: </b>{{eventDetail.Hotel?.Address}}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="review-aria">
+                                                                            <div class="reviewContent">
+                                                                                <h2 class="reviewTitle">
+                                                                                    Reviews ({{eventDetail.Hotel?.NoOfReviews}})
+                                                                                    <span>
+                                                                                        <i *ngFor='let in of Arr(5);let i = index' [ngClass]="[i < eventDetail.Hotel?.ReviewStar ? 'fa fa-circle' : 'fa fa-circle-o']" aria-hidden="true"></i>
+                                                                                    </span>
+                                                                                </h2>
+                                                                                <div class="reviewMedia">
+                                                                                    <ul class="media-list">
+                                                                                        <li class="media" *ngFor="let review of eventDetail.Hotel?.Reviews">
+                                                                                            <div class="media-left">
+                                                                                                <a href="#">
+                                                                                                    <img class="media-object" src="{{review.profile_photo_url}}" alt="Image">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div class="media-body">
+                                                                                                <h5 class="media-heading">{{review.author_name}}</h5>
+                                                                                                <span>
+                                                                                                    <i *ngFor='let in of Arr(5);let i = index' [ngClass]="[i < review.rating ? 'fa fa-circle' : 'fa fa-circle-o']" aria-hidden="true"></i> <b> {{review.relative_time_description}} </b>
+                                                                                                </span>
+                                                                                                <p>{{review.text}}</p>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <form action="#" method="POST" role="form" class="commentsForm" *ngIf="false">
+                                                                                    <h3 class="reviewTitle">Leave your review</h3>
+                                                                                    <p>
+                                                                                        Want to Rate it? <span>
+                                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                                        </span>
+                                                                                    </p>
+                                                                                    <div class="row">
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <button type="submit" class="btn buttonCustomPrimary">submit</button>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </ng-container>
+                                    </mat-tab>
+
+                                    <mat-tab>
+                                        <ng-template mat-tab-label>Venue Detail</ng-template>
+                                        <ng-container *ngIf="eventDetail.Venue">
+                                            <div class="main-wrapper">
+                                                <!-- PAGE TITLE -->
+                                                <section class="pageTitle">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <div class="titleTable">
+                                                                    <div class="titleTableInner">
+                                                                        <div class="pageTitleInfo">
+                                                                            <h1>{{eventDetail.Venue?.VenueName}}</h1>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!-- PAGE CONTENT -->
+                                                <section class="mainContentSection singleHotel">
+                                                    <div class="container">
+
+                                                        <div class="row ">
+                                                            <div class="col-sm-12 col-xs-12">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div id="package-carousel" class="carousel slide" data-ride="carousel">
+                                                                            <ol class="carousel-indicators">
+                                                                                <li *ngFor="let banner of eventDetail.Venue?.SliderImages,let i = index" data-target="#package-carousel" class="{{ (i == 0) ? 'active' : '' }}" attr.data-slide-to="{{i}}"></li>
+                                                                            </ol>
+                                                                            <div class="carousel-inner">
+                                                                                <div class="item" *ngFor="let slider of eventDetail.Venue?.SliderImages,let i = index" [ngClass]="[i == 0 ? 'active' : '']">
+                                                                                    <img alt="slide" src="{{slider.url}}" title="{{slider.title}}">
+                                                                                    <div class="carousel-caption d-none d-md-block">
+                                                                                        <h4>{{slider.title}}</h4>
+                                                                                        <p>{{slider.caption}}</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <a class="left carousel-control" href="#package-carousel" data-slide="prev"><span class="glyphicon glyphicon-menu-left"></span></a>
+                                                                            <a class="right carousel-control" href="#package-carousel" data-slide="next"><span class="glyphicon glyphicon-menu-right"></span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="description-aria">
+                                                                            <div class="sectionTitle2">
+                                                                                <h2>Description</h2>
+                                                                                <p>{{eventDetail.Venue?.Description}}</p>
+                                                                            </div>
+
+                                                                            <div class="sectionTitle2">
+                                                                                <h2>Distance to Hotel</h2>
+                                                                                <p>{{eventDetail.Venue?.DistanceToHotel}}; {{eventDetail.Venue?.Driving}} {{eventDetail.Venue?.Walking}} </p>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12 col-sm-12">
+                                                                                    <div class="sectionTitle2">
+                                                                                        <h2>Food Options</h2>
+                                                                                        <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let foodOption of eventDetail.Venue?.FoodOptions">
+                                                                                            <ul class="descriptionList">
+                                                                                                <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>{{foodOption.Product_Name}}</li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12 col-sm-12">
+                                                                                    <div class="sectionTitle2">
+                                                                                        <h2>What's Included?</h2>
+                                                                                    </div>
+                                                                                    <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let description of eventDetail.Venue?.Amentities">
+                                                                                        <ul class="descriptionList">
+                                                                                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>{{description}}</li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12 col-sm-12">
+                                                                                    <div class="sectionTitle2">
+                                                                                        <h2>Notes</h2>
+                                                                                    </div>
+                                                                                    <div class="col-md-12" *ngFor="let note of eventDetail.Venue?.Notes">
+                                                                                        <ul class="descriptionList">
+                                                                                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>{{note.title}}:</span>  {{note.body}}</li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="location-aria">
+                                                                            <div class="sectionTitle2">
+                                                                                <h2>Location</h2>
+                                                                            </div>
+                                                                            <div class="google-maps">
+                                                                                <div #gVenueMap id="venueMap" style="width:100%;height:600px"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="review-aria">
+                                                                            <div class="reviewContent">
+                                                                                <h2 class="reviewTitle">
+                                                                                    Reviews ({{eventDetail.Venue?.NoOfReviews}})
+                                                                                    <span>
+                                                                                        <i *ngFor='let in of Arr(5);let i = index' [ngClass]="[i < eventDetail.Venue?.ReviewStar ? 'fa fa-circle' : 'fa fa-circle-o']" aria-hidden="true"></i>
+                                                                                    </span>
+                                                                                </h2>
+                                                                                <div class="reviewMedia">
+                                                                                    <ul class="media-list">
+                                                                                        <li class="media" *ngFor="let review of eventDetail.Venue?.Reviews">
+                                                                                            <div class="media-left">
+                                                                                                <a href="#">
+                                                                                                    <img class="media-object" src="{{review.profile_photo_url}}" alt="Image">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div class="media-body">
+                                                                                                <h5 class="media-heading">{{review.author_name}}</h5>
+                                                                                                <span>
+                                                                                                    <i *ngFor='let in of Arr(5);let i = index' [ngClass]="[i < review.rating ? 'fa fa-circle' : 'fa fa-circle-o']" aria-hidden="true"></i> <b> {{review.relative_time_description}} </b>
+                                                                                                </span>
+                                                                                                <p>{{review.text}}</p>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <form *ngIf="false" action="#" method="POST" role="form" class="commentsForm">
+                                                                                    <h3 class="reviewTitle">Leave your review</h3>
+                                                                                    <p>
+                                                                                        Want to Rate it? <span>
+                                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                                        </span>
+                                                                                    </p>
+                                                                                    <div class="row">
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <button type="submit" class="btn buttonCustomPrimary">submit</button>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </ng-container>
+                                    </mat-tab>
+
+                                </mat-tab-group>
+                            </div>
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+                <div class="col-md-4" *ngIf="!showPayment">
+                    <ng-container *ngIf="!view_payment_history && !view_deposit_payment_history">
+                        <div style="background: white;padding: 8px;margin: 8px 8px 8px 0px;">
+                            <div class="event-detail">
+                                Event Name : {{eventDetail.ProposalNumber ? eventDetail.ProposalNumber : '--'}}
+                            </div>
+                            <div class="event-detail">
+                                Total Attendees : {{eventDetail.Attendees}}
+                            </div>
+                            <div class="event-detail">
+                                Price Per Couple: ${{eventDetail.PricePerCouple}}
+                            </div>
+                            <div class="event-detail" *ngIf="false">
+                                Pricing Expiring: {{eventDetail.PriceExpiredIn && eventDetail.PriceExpiredIn > 0 ? eventDetail.PriceExpiredIn+' Days' : 'Plan Expired'}}
+                            </div>
+                            <div class="event-detail" *ngIf="false">
+                                Organization Name : {{eventDetail.OrganizationName ? eventDetail.OrganizationName : '--'}}
+                            </div>
+                            <div class="event-detail" *ngIf="false">
+                                University Name : {{eventDetail.UniversityName ? eventDetail.UniversityName : '--'}}
+                            </div>
+                        </div>
+
+                        <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                            <h3 style="margin: 0px; text-align: center;">Event Attendees Status</h3>
+                        </div>
+
+                        <!--<div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <p style="margin-top: 10px;font-size: 18px; font-weight: 600;">{{attendee_status?.Paid ? attendee_status?.Paid : '0'}} Paid</p>
+                                <p style="margin-top: 10px;font-size: 18px; font-weight: 600;">{{attendee_status?.Interested ? attendee_status?.Interested : '0'}} Interested</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <p style="margin-top: 10px;font-size: 18px; font-weight: 600;">{{attendee_status?.Invited ? attendee_status?.Invited : '0'}} Invited</p>
+                                <p style="margin-top: 10px;font-size: 18px; font-weight: 600;">{{attendee_status?.Declined ? attendee_status?.Declined : '0'}} Declined</p>
+                            </div>
+                        </div>-->
+
+                        <div class="invitees_stats">
+                            <div class="interested_invitees">
+                                <img src="../../assets/images/interested.svg">
+                                <span class="invitees_count">
+                                    {{attendee_status?.Interested ? attendee_status?.Interested : '0'}}
+                                </span>
+                                <span class="invitees_type">
+                                    Interested
+                                </span>
+                            </div>
+                            <div class="invited_invitees">
+                                <img src="../../assets/images/invited.svg">
+                                <span class="invitees_count">
+                                    {{attendee_status?.Invited ? attendee_status?.Invited : '0'}}
+                                </span>
+                                <span class="invitees_type">
+                                    Invited
+                                </span>
+                            </div>
+                            <div class="declined_invitees">
+                                <img src="../../assets/images/declined.svg">
+                                <span class="invitees_count">
+                                    {{attendee_status?.Declined ? attendee_status?.Declined : '0'}}
+                                </span>
+                                <span class="invitees_type">
+                                    Declined
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="paid_couples">
+                            <img src="../../assets/images/paid_couples.svg">
+                            <span class="paid_title">
+                                Paying Couples
+                            </span>
+                            <span class="paid_counts">
+                                {{attendee_status?.Paying ? attendee_status?.Paying : '0'}}
+                            </span>
+                        </div>
+
+                        <div class="paid_couples">
+                            <img src="../../assets/images/paid_couples.svg">
+                            <span class="paid_title">
+                                Paid Couples
+                            </span>
+                            <span class="paid_counts">
+                                {{attendee_status?.Paid ? attendee_status?.Paid : '0'}}
+                            </span>
+                        </div>
+
+                        <div class="user_images_list" *ngIf="false">
+                            <img *ngFor="let img of user_images_list" [src]="img">
+                            <span class="user_list_counter">
+                                45+
+                            </span>
+                        </div>
+
+                        <div *ngIf="show_action_btn">
+                            <div style="display: flex; margin: 8px 8px 8px 0px; justify-content: space-between;">
+                                <button class="btn btn-primary" *ngIf="!IsAdmin && (hideInterest && !hidePayment)" (click)="MakePayment()" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;">Make Payment</button>
+                                <button class="btn btn-primary" *ngIf="IsAdmin && (hideInterest && !hidePayment)" (click)="MakeDepositPayment()" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;">Make Payment</button>
+                                <button class="btn btn-primary" *ngIf="!view_payment_history" (click)="ViewPayment()" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;">View Payment</button>
+                            </div>
+                            <div style="display: flex; margin: 8px 8px 8px 0px; justify-content: space-between;">
+                                <button class="btn btn-primary" *ngIf="IsAdmin && view_payment_history" (click)="view_payment_history = !view_payment_history" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;">View Detail</button>
+                                <button class="btn btn-primary" *ngIf="!hideInterest" (click)="showInterest('Declined')" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;">Declined</button>
+                                <button class="btn btn-primary" *ngIf="!hideInterest" (click)="showInterest('Interested')" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;">Interested</button>
+                            </div>
+                        </div>
+                        <ng-container *ngIf="RoomMateName && !IsAdmin">
+                            <div class="event-detail">
+                                Your Roommate : {{RoomMateName}}
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="ShowRoomOption && roomMates && !IsAdmin">
+
+                            <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                                <h3 style="margin: 0px; text-align: center;">Select Room</h3>
+                            </div>
+                            <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                                <table class="table table-responsive" cellspacing="3" cellpadding="3">
+                                    <tr *ngFor="let room of roomMates.Rooms;let i = index;">
+                                        <td>
+                                            <input type="radio" name="RoomMate" [checked]="i == 0" [value]="room" [(ngModel)]="selectedRoom"/>
+                                        </td>
+                                        <td>
+                                            <b>New Room ({{room.RoomType}})</b>
+                                        </td>
+                                    </tr>
+                                    <tr *ngFor="let roomMate of roomMates.RoomMates;let j = index;">
+                                        <td>
+                                            <input type="radio" name="RoomMate" [value]="roomMate" [(ngModel)]="selectedRoom"/>
+                                        </td>
+                                        <td>
+                                            {{roomMate.RoomMateName}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align:right;">
+                                            <button class="btn btn-primary" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;" (click)="SaveRoom()">Save Room</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </ng-container>
+                        <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                            <h3 style="margin: 0px; text-align: center;">Payment Status</h3>
+                        </div>
+                        <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                            <div id="chart" *ngIf="chartOptions">
+
+                                <apx-chart [series]="chartOptions.series"
+                                           [chart]="chartOptions.chart"
+                                           [dataLabels]="chartOptions.dataLabels"
+                                           [plotOptions]="chartOptions.plotOptions"
+                                           [yaxis]="chartOptions.yaxis"
+                                           [xaxis]="chartOptions.xaxis"
+                                           [stroke]="chartOptions.stroke"
+                                           [grid]="chartOptions.grid"
+                                           [fill]="chartOptions.fill"
+                                           [annotations]="chartOptions.annotations"
+                                           [colors]="chartOptions.colors"
+                                           [states]="chartOptions.states"
+                                           [tooltip]="chartOptions.tooltip"></apx-chart>
+                            </div>
+                        </div>
+                    </ng-container>
+
+                    <ng-container *ngIf="view_payment_history">
+                        <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                            <div class="event-detail">
+                                Payment History
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th style="padding: 5px;">Name</th>
+                                        <th style="padding: 5px;">Amount</th>
+                                        <th style="padding: 5px;">Status</th>
+                                        <th style="padding: 5px;">Message</th>
+                                    </tr>
+                                    <tr *ngFor="let pay of payment_history">
+                                        <td style="padding: 5px;">
+                                            {{pay.Name}}
+                                        </td>
+                                        <td style="padding: 5px;">
+                                            $ {{pay.Amount}}
+                                        </td>
+                                        <td style="padding: 5px;">
+                                            {{pay.Status}}
+                                        </td>
+                                        <td style="padding: 5px;">
+                                            {{pay.Description}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button (click)="view_payment_history = !view_payment_history" class="btn btn-primary" style="padding: 5px 10px;border: none;width: 100%;">
+                                View Detail
+                            </button>
+                        </div>
+                    </ng-container>
+
+                    <ng-container *ngIf="view_deposit_payment_history">
+                        <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                            <div class="event-detail">
+                                Deposit Payment History
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th style="padding: 5px;">Name</th>
+                                        <th style="padding: 5px;">Amount</th>
+                                        <th style="padding: 5px;">Status</th>
+                                        <th style="padding: 5px;">Message</th>
+                                    </tr>
+                                    <tr *ngFor="let pay of deposit_payment_history">
+                                        <td style="padding: 5px;">
+                                            {{pay.Name}}
+                                        </td>
+                                        <td style="padding: 5px;">
+                                            $ {{pay.Amount}}
+                                        </td>
+                                        <td style="padding: 5px;">
+                                            {{pay.Status}}
+                                        </td>
+                                        <td style="padding: 5px;">
+                                            {{pay.Description}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button (click)="view_deposit_payment_history = !view_deposit_payment_history" class="btn btn-primary" style="padding: 5px 10px;border: none;width: 100%;">
+                                View Detail
+                            </button>
+                        </div>
+                    </ng-container>
+                </div>
+                <div class="col-md-4" *ngIf="showPayment">
+                    <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                        <div *ngIf="!IsDeposit">
+                            <div class="event-detail">
+                                Price Per Couple: <label style="float:right">${{eventDetail.PricePerCouple}}</label>
+                            </div>
+                            <div class="event-detail">
+                                Booking Fees (One time): <label style="float:right">${{eventDetail.BookingFeeAmount}}</label>
+                            </div>
+                            <div class="event-detail">
+                                You Paid : <label style="float:right">$({{this.paidAmount}})</label>
+                            </div>
+                        </div>
+                        <div *ngIf="IsDeposit">
+                            <div class="event-detail">
+                                You Paid : <label style="float:right">$({{this.paidDepositAmount}})</label>
+                            </div>
+                        </div>
+                        <div class="event-detail">
+                            Credit Card Fees : <label style="float:right">${{creditCardCharges.toFixed(2)}}</label>
+                        </div>
+                        <div class="event-detail">
+                            Payable Amount  : <label style="float:right">${{(amount + bookingFeeAmount + creditCardCharges).toFixed(2)}}</label>
+                        </div>
+                        <div class="event-detail">
+                            Amount
+                        </div>
+                        <div class="event-detail">
+                            <input class="form-control" [(ngModel)]="amount" placeholder="$ 0.00" currencyMask max="{{maxAmount}}" (ngModelChange)="PaymentValueChange($event)">
+                        </div>
+                        <div class="event-detail">
+                            Description
+                        </div>
+                        <div class="event-detail">
+                            <textarea class="form-control" [(ngModel)]="description" style="resize: none;" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div style="background: white; padding: 8px; margin: 8px 8px 8px 0px;">
+                        <form (ngSubmit)="createStripeToken()" class="checkout">
+                            <label for="card-info">Payment Details</label>
+                            <div id="form-field">
+                                <div id="card-info" #cardInfo></div>
+                                <button id="submit-button" type="submit" [disabled]="amount == 0 || (amount > maxAmount)" class="btn btn-primary" style="padding: 5px 10px;background-color: #ff891e;color: #fff;border: none;margin: 20px 0px 10px 0px;width: 100%;">
+                                    Pay Now ($ {{amount ? amount : '0'}})
+                                </button>
+                                <button (click)="showPayment = !showPayment" class="btn btn-primary" style="padding: 5px 10px;border: none;width: 100%;">
+                                    View Detail
+                                </button>
+                                <mat-error id="card-errors" role="alert" *ngIf="cardError">
+                                    <mat-icon style="color: #f44336">cancel</mat-icon>
+                                    &nbsp;{{ cardError }}
+                                </mat-error>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div mdbModal #inviteAdmins="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="inviteAdmins.hide()">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h2 class="modal-title w-100 text-center" id="myModalLabel">Invite Admins</h2>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Email"></textarea>
+                </div>
+                <div class="form-group" *ngIf="eventStatus == 'Payment Sprint 2'">
+                    <b>Previously Invited</b>: mchapman@gmail.com
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn buttonTransparent" aria-label="Close" (click)="inviteAdmins.hide()" mdbWavesEffect>Close</button>
+                <button type="button" class="btn buttonTransparent forgotPassword" (click)="inviteAdmins.hide()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div mdbModal #inviteAttendee="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="inviteAttendee.hide()">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h2 class="modal-title w-100 text-center" id="myModalLabel">Invite Attendees</h2>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <textarea class="form-control" rows="10" placeholder="Email"></textarea>
+                </div>
+                <div class="form-group" *ngIf="eventStatus == 'Payment Sprint 2'">
+                    <b>Previously Invited</b>: <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    nickmyers@gmail.com
+                                </li>
+                                <li>
+                                    kevinrobbins@gmail.com
+                                </li>
+                                <li>
+                                    jasonkirkpatrick@gmail.com
+                                </li>
+                                <li>
+                                    tomstone@gmail.com
+                                </li>
+                                <li>
+                                    williamharrison@gmail.com
+                                </li>
+                                <li>
+                                    kristenedmunds@gmail.com
+                                </li>
+                                <li>
+                                    scottstevens@gmail.com
+                                </li>
+                                <li>
+                                    scottwals@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    jaonna@gmail.com
+                                </li>
+                                <li>
+                                    param@gmail.com
+                                </li>
+                                <li>
+                                    michaelrogers@gmail.com
+                                </li>
+                                <li>
+                                    franksanders@gmail.com
+                                </li>
+                                <li>
+                                    timdonovan@gmail.com
+                                </li>
+                                <li>
+                                    chrisallen@gmail.com
+                                </li>
+                                <li>
+                                    christopherwhite@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn buttonTransparent" aria-label="Close" (click)="inviteAttendee.hide()" mdbWavesEffect>Close</button>
+                <button type="button" class="btn buttonTransparent forgotPassword" (click)="inviteAttendeeUser()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div mdbModal #paymentModal="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="paymentModal.hide()">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h2 class="modal-title w-100 text-center" id="myModalLabel">Pay Chapter Contribution</h2>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    Credit Card Number
+                    <input type="text" class="form-control" rows="5" placeholder="Credit Card Number" maxlength="16" />
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-8">
+                            Expire Date
+                            <input type="text" class="form-control" rows="5" placeholder="MM/YY" maxlength="5" />
+                        </div>
+                        <div class="col-md-4">
+                            CVV
+                            <input type="text" class="form-control" rows="5" placeholder="CVV" maxlength="4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    Zip Code
+                    <input type="text" class="form-control" rows="5" placeholder="Zip Code" maxlength="5" />
+                </div>
+                <div class="form-group">
+                    Name on Card
+                    <input type="text" class="form-control" rows="5" placeholder="Name on Card" />
+                </div>
+                <div class="form-group">
+                    Amount $1,000
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" [disabled]="submitted" class="btn buttonCustomPrimary buttonTransparent" (click)="PaymentSubmit()"><i *ngIf="submitted" class="fa fa-spinner fa-spin"></i> Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div mdbModal #paymentNowModal="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="paymentNowModal.hide()">
+                    <span aria-hidden="true">x</span>
+                </button>
+                <h2 class="modal-title w-100 text-center" id="myModalLabel">Pay Now</h2>
+            </div>
+            <div class="modal-body">
+                <div class="sd-tabs sd-tab-interaction">
+                    <div class="row">
+                        <ul class="nav nav-tabs custom-bullet">
+                            <li class="active"><a data-toggle="tab" href="#tab-select-room"> Select Room</a></li>
+                            <li><a data-toggle="tab" href="#tab-payment"> Payment</a></li>
+                        </ul>
+                        <div class="tab-content col-md-12">
+                            <form id="tab-select-room" class="tab-pane marginTop-20 active">
+                                <table class="table table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Pick up room
+                                            </th>
+                                            <th>
+                                                Room
+                                            </th>
+                                            <th>
+                                                # of people in rooms
+                                            </th>
+                                            <th>
+                                                Price per package
+                                                (hotel + venue)
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="radPickupRoom" [value]="1" [(ngModel)]="PickupRoomType" [checked]="PickupRoomType === 1" [ngModelOptions]="{standalone: true}" />
+                                            </td>
+                                            <td>
+                                                DBL Standard
+                                            </td>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                $275
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="radPickupRoom" [value]="2" [(ngModel)]="PickupRoomType" [checked]="PickupRoomType === 2" [ngModelOptions]="{standalone: true}" />
+                                            </td>
+                                            <td>
+                                                DBL Superior
+                                            </td>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                $295
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="radPickupRoom" [value]="3" [(ngModel)]="PickupRoomType" [checked]="PickupRoomType === 3" [ngModelOptions]="{standalone: true}" />
+                                            </td>
+                                            <td>
+                                                King Standard
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                $350
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="radPickupRoom" [value]="4" [(ngModel)]="PickupRoomType" [checked]="PickupRoomType === 4" [ngModelOptions]="{standalone: true}" />
+                                            </td>
+                                            <td>
+                                                King Superior
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                $375
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <thead *ngIf="PickupRoomType == 1 || PickupRoomType == 2">
+                                        <tr>
+                                            <th colspan="4">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        Select Room Mate
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
+                                                            <option selected="selected">Anyone</option>
+                                                            <option>Mark Chapman</option>
+                                                            <option>Nick Myers</option>
+                                                            <option>Kevin Rollins</option>
+                                                            <option>Jason Kirkpatrick</option>
+                                                            <option>Tom Stone</option>
+                                                            <option>William Harrison</option>
+                                                            <option>Peter Waterson</option>
+                                                            <option>Scott Stevens</option>
+                                                            <option>Michael Rogers</option>
+                                                            <option>Frank Sanders</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </form>
+
+                            <form id="tab-payment" class="tab-pane marginTop-20">
+                                <div class="form-group">
+                                    Guest 1
+                                    <input type="text" class="form-control" rows="5" placeholder="Guest 1" value="{{UserName}}" />
+                                </div>
+                                <div class="form-group">
+                                    Guest 2
+                                    <input type="text" class="form-control" rows="5" placeholder="Guest 2" />
+                                </div>
+                                <div class="form-group">
+                                    Credit Card Number
+                                    <input type="text" class="form-control" rows="5" placeholder="Credit Card Number" maxlength="16" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            Expire Date
+                                            <input type="text" class="form-control" rows="5" placeholder="MM/YY" maxlength="5" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            CVV
+                                            <input type="text" class="form-control" rows="5" placeholder="CVV" maxlength="4" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    Zip Code
+                                    <input type="text" class="form-control" rows="5" placeholder="Zip Code" maxlength="5" />
+                                </div>
+                                <div class="form-group">
+                                    Name on Card
+                                    <input type="text" class="form-control" rows="5" placeholder="Name on Card" />
+                                </div>
+                                <div class="form-group">
+                                    Amount $275
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" [disabled]="submitted" class="btn buttonCustomPrimary buttonTransparent" (click)="PaymentNowSubmit()"><i *ngIf="submitted" class="fa fa-spinner fa-spin"></i> Proceed with Payment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="black-overlay" *ngIf="!!showAttendeePopup" (click)="showAttendeePopup= false"></div>
+<div class="attendee-popup" *ngIf="!!showAttendeePopup">
+    <a href="javascript:void(0)"><i class="fa fa-close" (click)="showAttendeePopup= false" style="position:absolute; top:20px; right:20px; font-size: 20px"></i></a>
+    <div class="font-blue-lite">
+        <span> {{ eventDetails?.attendees.totalCount }} Attending | {{ eventDetails?.attendees.paidCount }} Paid</span>
+    </div>
+    <hr style="margin: 20px 0 0 0 !important">
+    <div class="flex-column attendee-list">
+        <div *ngFor="let i of eventDetails?.attendees.names" class="flex-row attendee-list-item" style="margin-top:10px">
+            <div>
+                <img class="attendee-profile" src="{{ i.imageUrl }}" alt="">
+            </div>
+            <div class="flex-column" style="justify-content: center; margin-left: 10px">
+                <strong>{{ i.name }} </strong>
+                <span *ngIf="!!i.isAdmin">Admin</span>
+            </div>
+            <div class="flex-center">
+                <span style="position: absolute; right:20px" [ngClass]="{'payment-status' : !i.hasPaid}">{{ !!i.hasPaid ? 'Paid' : 'Unpaid'}}</span>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

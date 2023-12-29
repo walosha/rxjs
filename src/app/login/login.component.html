@@ -1,0 +1,99 @@
+<div class="main-wrapper">
+    <div class="singleCartSidebar topmargin login">
+        <div class="row">
+            <div class="col-xs-12 col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 loginwindow">
+                <div class="panel-heading">Login</div>
+
+                <div class="col-xs-12">
+                    <form [formGroup]='loginForm'>
+                        <div class="form-group" *ngIf="!(enterOpt || selectLoginType)">
+                            <input type="radio" name="InputType" value="1" checked="checked" formControlName='InputType' required> Mobile
+                            <input type="radio" name="InputType" value="2" formControlName='InputType' required> Email
+                            <input type="radio" name="InputType" value="3" formControlName='InputType' required> Username
+                        </div>
+                        <div class="form-group" *ngIf="!(enterOpt || selectLoginType)">
+                            <!--<label>Enter Your Mobile Number or Email Address or Username</label>-->
+                            <input type="text" class="form-control bg-ash" formControlName='phone' [textMask]="{mask: phoneMask}" OnlyNumber="true" required *ngIf="loginForm.value.InputType == 1">
+                            <input type="email" class="form-control bg-ash" formControlName='email' required *ngIf="loginForm.value.InputType == 2">
+                            <input type="text" class="form-control bg-ash" formControlName='username' required *ngIf="loginForm.value.InputType == 3">
+                        </div>
+                        <div class="form-group" *ngIf="enterOpt">
+                            <label>Enter Verification Code</label>
+                            <p>
+                                <input type="radio" name="DeviceType" value="1" formControlName='DeviceType' required checked="checked"> This a Private Device.  Remember me for 30 Days.
+                            </p>
+                            <p>
+                                <input type="radio" name="DeviceType" value="2" formControlName='DeviceType' required> This is a Public Device. Expire after 15 Minutes.
+                            </p>
+                            <input type="text" class="form-control bg-ash" formControlName='code' required>
+                        </div>
+                        <div class="form-group" *ngIf="selectLoginType">
+                            <label>Select Verification Method</label>
+                            <p>
+                                <input type="radio" *ngIf="Phone" name="Logintype" value="sms" formControlName='Logintype' required checked="checked"> Text: {{DisplayPhone}}
+                            </p>
+                            <p>
+                                <input type="radio" *ngIf="Phone" name="Logintype" value="call" formControlName='Logintype' required> Call: {{DisplayPhone}}
+                            </p>
+                            <p>
+                                <input type="radio" *ngIf="Email" name="Logintype" value="email" formControlName='Logintype' required> Email: {{DisplayEmail}}
+                            </p>
+                        </div>
+                        <div class="form-group" *ngIf="false">
+                            <input type="password" class="form-control bg-ash" placeholder="Password" formControlName='password' required>
+                        </div>
+                        <div class="checkbox" *ngIf="false">
+                            <label>
+                                <input type="checkbox" formControlName="rememberMe"> Remember me
+                            </label>
+                            <a class="forgotPass clerfix" (click)="forgotPasswordModal.show()" href="javascript:void(0);">Forgot Password?</a>
+                        </div>
+                        <div *ngIf="loginError" class="text-danger">
+                            {{loginError}}
+                        </div>
+                        <button type="button" *ngIf="!(enterOpt || selectLoginType)" [disabled]="!loginForm.valid" (click)="Login(loginForm)" class="btn btn-default">Login</button>
+                        <button type="button" *ngIf="enterOpt" [disabled]="!loginForm.valid" (click)="Verify(loginForm)" class="btn btn-default">Verify</button>
+                        <button type="button" *ngIf="selectLoginType" [disabled]="!loginForm.valid" (click)="SendOTP(loginForm)" class="btn btn-default">Send Code</button>
+                    </form>
+                    <div class="or">
+                        or
+                    </div>                    
+                    <div class="clearfix uk-margin-bottom">
+                        <p>New User?<a [routerLink]="['/register']"> Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div mdbModal #forgotPasswordModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="forgotPasswordModal.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h2 class="modal-title w-100 text-center" id="myModalLabel">Forgot Your Password?</h2>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="email" class="form-control bg-ash" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn buttonTransparent" aria-label="Close" (click)="forgotPasswordModal.hide()" mdbWavesEffect>Close</button>
+                <button type="button" class="btn buttonTransparent forgotPassword" (click)="forgotPasswordModal.hide()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+    <div class="loader-text">
+        Please Wait. . .
+    </div>
+</div>

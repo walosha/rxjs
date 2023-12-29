@@ -1,0 +1,705 @@
+<div class="content_section">
+    <div class="steppers-1">
+        <span class="step_text">
+            Steps :
+        </span>
+
+        <div [ngClass]="globalService.CurrentIndex >= 1 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1" (click)="goToHotel()">
+                <div class="sb_img_box">
+                    <img class="sb_img_1" src="../../assets/images/sb_1_img.svg">
+                </div>
+                <p class="sb_number">1</p>
+                <div class="text-color-1 sb_text">
+                    <span>Select</span>
+                    <span>Hotel</span>
+                </div>
+            </div>
+        </div>
+
+        <div [ngClass]="globalService.CurrentIndex >= 2 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1" (click)="goToVenue()">
+                <div class="sb_img_box">
+                    <img class="sb_img_2" src="../../assets/images/sb_2_img.svg">
+                </div>
+                <p class="sb_number">2</p>
+                <div class="text-color-1 sb_text">
+                    <span>Select</span>
+                    <span>Venue</span>
+                </div>
+            </div>            
+        </div>
+
+        <div [ngClass]="globalService.CurrentIndex >= 3 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1">
+                <div class="sb_img_box">
+                    <img class="sb_img_3" src="../../assets/images/sb_3_img.svg">
+                </div>
+                <p class="sb_number">3</p>
+                <div class="text-color-1 sb_text">
+                    <span>Couple</span>
+                    <span>Pricing</span>
+                </div>
+                <img src="../../assets/images/right_arrow.svg">
+            </div>
+        </div>
+
+        <div [ngClass]="globalService.CurrentIndex >= 4 ? 'stepper-box-1' : 'stepper-box-3'">
+            <div class="d-1">
+                <div class="sb_img_box">
+                    <img class="sb_img_4" src="../../assets/images/sb_4_img.svg">
+                </div>
+                <p class="sb_number">4</p>
+                <div class="text-color-1 sb_text">
+                    <span>Proposal</span>
+                    <span>Details</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header_bg">
+        <span class="header_bg_text_1">
+            COUPLE PRICING
+        </span>
+        <span class="header_bg_text_2">
+            Couple Pricing
+        </span>
+    </div>
+
+    <form class="filter_section" [formGroup]='eventForm'>
+        <div class="d-1">
+
+        </div>
+
+        <div class="d-1">
+            <div class="filter_box_2 back_search">
+                <a [routerLink]="['/']">
+                    Start Again
+                </a>
+            </div>
+
+            <div class="filter_box_2 save_quote_btn_box">
+                <button class="btn btn-block buttonCustomPrimary proceed_btn save_quote_btn" [disabled]="false" (click)="confirmDetail(eventForm)">
+                    SAVE QUOTE
+                </button>
+            </div>
+
+        </div>
+
+    </form>
+
+    <div class="row content_body">
+
+        <div class="col-md-2 steppers-2">
+
+            <div [ngClass]="globalService.CurrentIndex >= 1 ? 'stepper-box-1' : 'stepper-box-4'">
+                <div class="d-1" (click)="goToHotel()">
+                    <div class="sb_img_box">
+                        <img class="sb_img_1" src="../../assets/images/sb_1_img.svg">
+                    </div>
+                    <p class="sb_number">1</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Select</span>
+                        <span>Hotel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div [ngClass]="globalService.CurrentIndex >= 2 ? 'stepper-box-1' : 'stepper-box-4'">
+                <div class="d-1" (click)="goToVenue()">
+                    <div class="sb_img_box">
+                        <img class="sb_img_2" src="../../assets/images/sb_2_img.svg">
+                    </div>
+                    <p class="sb_number">2</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Select</span>
+                        <span>Venue</span>
+                    </div>
+                </div>
+            </div>
+
+            <div [ngClass]="globalService.CurrentIndex >= 3 ? 'stepper-box-1' : 'stepper-box-4'">
+                <div class="d-1">
+                    <div class="sb_img_box">
+                        <img class="sb_img_3" src="../../assets/images/sb_3_img.svg">
+                    </div>
+                    <p class="sb_number">3</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Couple</span>
+                        <span>Pricing</span>
+                    </div>
+                </div>
+                <img src="../../assets/images/right_arrow.svg">
+            </div>
+
+            <div [ngClass]="globalService.CurrentIndex >= 4 ? 'stepper-box-1' : 'stepper-box-4'">
+                <div class="d-1">
+                    <div class="sb_img_box">
+                        <img class="sb_img_4" src="../../assets/images/sb_4_img.svg">
+                    </div>
+                    <p class="sb_number">4</p>
+                    <div class="text-color-1 sb_text">
+                        <span>Proposal</span>
+                        <span>Details</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-10">
+            <!--<div class="row">
+
+                <div class="col-md-4 hotel_card">
+                    <div class="select_hotel" *ngFor="let hotel of hotels">
+                        <div class="hotel_description">
+                            <div class="hotel_name">
+                                <span>
+                                    {{hotel.HotelName}}
+                                </span>
+                                <img src="../../assets/images/info.svg">
+                            </div>
+
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < hotel.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                <span>
+                                    {{hotel.NoOfReviews}} reviews
+                                </span>
+                            </div>
+
+                            <div class="hotel_star">
+                                <span>
+                                    {{hotel.HotelStar}} Star Hotel
+                                </span>
+                            </div>
+
+                        </div>-->
+
+                        <!--<div class="hotel_description hotel_address">
+                    <div class="hotel_address_section">
+                        <span>
+                            <img class="img_1" src="../../assets/images/marker_filled.svg"> {{hotel.Address}}
+                            <br>
+                            <img class="img_2" src="../../assets/images/dollar.svg">Starting from {{hotel.PriceRating}}
+                        </span>
+                    </div>
+                </div>-->
+
+                        <!--<div class="hotel_description hotel_description_star_2">
+                            <img src="../../assets/images/star_2.svg">
+                            <div class="hotel_description price_section">
+                                <div>
+                                    <span class="price_currency">
+                                        $
+                                    </span>
+                                    <span class="price_tag">
+                                        {{price_quote?.HotelPriceCouple}}
+                                    </span>
+                                </div>
+                                <span class="price_couple">
+                                    /couple
+                                </span>
+                            </div>
+                        </div>
+
+                        <img [src]="hotel.PrimaryImage" class="hotel_img">
+
+                        <div class="select_hotel_btn">
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn">
+                                CHANGE HOTEL
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 hotel_card">
+                    <div class="select_hotel" *ngFor="let venue of venues">
+                        <div class="hotel_description">
+                            <div class="hotel_name">
+                                <span>
+                                    {{venue.VenueName}}
+                                </span>
+                                <img src="../../assets/images/info.svg">
+                            </div>
+
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < venue.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                <span>
+                                    {{venue.NoOfReviews}} reviews
+                                </span>
+                            </div>
+
+                            <div class="hotel_star">
+                                <span>
+                                    {{venue.VenueStar}} Star Hotel
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="hotel_description hotel_address">
+                            <div class="hotel_address_section">
+                                <span>
+                                    <img class="img_1" src="../../assets/images/marker_filled.svg"> <b>Distance From Hotel</b><br />
+                                    {{venue?.DistanceToHotel}}<br />
+                                    {{venue?.Driving}}<br />
+                                    {{venue?.Walking}}-->
+                                    <!--<img class="img_2" src="../../assets/images/dollar.svg">Starting from {{venue.PriceRating}}-->
+                                <!--</span>
+                            </div>
+                        </div>
+
+                        <div class="hotel_description hotel_description_star_2">
+                            <img src="../../assets/images/star_2.svg">
+                            <div class="hotel_description price_section">
+                                <div>
+                                    <span class="price_currency">
+                                        $
+                                    </span>
+                                    <span class="price_tag">
+                                        {{price_quote?.VenuePriceCouple}}
+                                    </span>
+                                </div>
+                                <span class="price_couple">
+                                    /couple
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <img [src]="venue.PrimaryImage" class="hotel_img">
+
+                        <div class="select_hotel_btn">
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn">
+                                CHANGE VENUE
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 hotel_card">
+                    <div class="description_section" *ngFor="let venue of venues">
+                        <div class="event_short_description">
+                            <span>
+                                Destination
+                            </span>
+                            <p>
+                                New Orleans, LA
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Check In
+                            </span>
+                            <p>
+                                {{eventForm.value.CheckIn}}
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Check Out
+                            </span>
+                            <p>
+                                {{eventForm.value.CheckOut}}
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Total Attendees
+                            </span>
+                            <p>
+                                {{eventForm.value.TotalAttendees}}
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Food Option
+                            </span>
+                            <p>
+                                <select class="form-control" (change)='onFoodOptionChange($event)'>
+                                    <option>Select Food Option</option>
+                                    <option *ngFor="let food of foodOptions[venue.ID];" [value]="food.Cost">{{food.Name}}</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="row" *ngFor="let proposal of proposals">
+                <div class="col-md-4 hotel_card">
+                    <div class="select_hotel">
+                        <div class="hotel_description">
+                            <div class="hotel_name">
+                                <span>
+                                    {{proposal.hotel.HotelName}}
+                                </span>
+                                <img src="../../assets/images/info.svg">
+                            </div>
+
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < proposal.hotel.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                <span>
+                                    {{proposal.hotel.NoOfReviews}} reviews
+                                </span>
+                            </div>
+
+                            <div class="hotel_star">
+                                <span>
+                                    {{proposal.hotel.HotelStar}} Star Hotel
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hotel_description hotel_description_star_2">
+                            <img src="../../assets/images/star_2.svg">
+                            <div class="hotel_description price_section">
+                                <div>
+                                    <span class="price_currency">
+                                        $
+                                    </span>
+                                    <span class="price_tag">
+                                        {{proposal.price?.HotelPriceCouple}}
+                                    </span>
+                                </div>
+                                <span class="price_couple">
+                                    /couple
+                                </span>
+                            </div>
+                        </div>
+
+                        <img [src]="proposal.hotel.PrimaryImage" class="hotel_img">
+
+                        <div class="select_hotel_btn" *ngIf="false">
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn">
+                                CHANGE HOTEL
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 hotel_card">
+                    <div class="select_hotel">
+                        <div class="hotel_description">
+                            <div class="hotel_name">
+                                <span>
+                                    {{proposal.venue.VenueName}}
+                                </span>
+                                <img src="../../assets/images/info.svg">
+                            </div>
+
+                            <div class="hotel_location">
+                                <img *ngFor='let in of counter(5);let i = index' [src]="i < proposal.venue.ReviewStar ? '../../assets/images/filled_bullet.svg' : '../../assets/images/bullet.svg'">
+                                <span>
+                                    {{proposal.venue.NoOfReviews}} reviews
+                                </span>
+                            </div>
+
+                            <div class="hotel_star">
+                                <span>
+                                    {{proposal.venue.VenueStar}} Star Hotel
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="hotel_description hotel_address">
+                            <div class="hotel_address_section">
+                                <span>
+                                    <img class="img_1" src="../../assets/images/marker_filled.svg"> <b>Distance From Hotel</b><br />
+                                    {{proposal.venue?.DistanceToHotel}}<br />
+                                    {{proposal.venue?.Driving}}<br />
+                                    {{proposal.venue?.Walking}}
+                                    <!--<img class="img_2" src="../../assets/images/dollar.svg">Starting from {{proposal.venue.PriceRating}}-->
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hotel_description hotel_description_star_2">
+                            <img src="../../assets/images/star_2.svg">
+                            <div class="hotel_description price_section">
+                                <div>
+                                    <span class="price_currency">
+                                        $
+                                    </span>
+                                    <span class="price_tag">
+                                        {{proposal.price?.VenuePriceCouple}}
+                                    </span>
+                                </div>
+                                <span class="price_couple">
+                                    /couple
+                                </span>
+                            </div>
+                        </div>
+
+                        <img [src]="proposal.venue.PrimaryImage" class="hotel_img">
+
+                        <div class="select_hotel_btn" *ngIf="false">
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn">
+                                CHANGE VENUE
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 hotel_card">
+                    <div class="description_section">
+                        <div class="event_short_description">
+                            <span>
+                                Destination
+                            </span>
+                            <p>
+                                New Orleans, LA
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Check In - Check Our
+                            </span>
+                            <p>
+                                {{eventForm.value.CheckIn}} - {{eventForm.value.CheckOut}}
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Total Attendees
+                            </span>
+                            <p>
+                                {{eventForm.value.TotalAttendees}}
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Food Option
+                            </span>
+                            <p>
+                                <select class="form-control" (change)='onFoodOptionChange($event, proposal)'>
+                                    <option>Select Food Option</option>
+                                    <option *ngFor="let food of foodOptions[proposal.venue.ID];" [value]="food.Cost">{{food.Name}}</option>
+                                </select>
+                            </p>
+                        </div>
+                        <hr class="seprate">
+                        <div class="event_short_description">
+                            <span>
+                                Price Per Couple
+                            </span>
+                            <p>
+                                {{proposal.price?.TotalPriceCouple | currency : 'USD' : 'symbol' : '1.0-0'}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12" *ngIf="priceTable">
+        <div class="row text-right">
+            <div class="col-md-12">
+                <input type="checkbox" id="chkRate" (change)="changePrice()">
+                <label for="chkRate" class="tax_text">Show Rates With Taxes & Fees</label>
+            </div>
+        </div>
+        <div class="row dialer-box">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <jqxKnob #myKnob (onChange)="onChange($event)"
+                             [value]="currentValue" [min]="minValue" [max]="maxValue" [startAngle]="120"
+                             [endAngle]="420" [snapToStep]="true" [rotation]="'clockwise'" [style]="style"
+                             [marks]="marks" [labels]="labels" [progressBar]="progressBar" [pointer]="pointer"
+                             [allowValueChangeOnMouseWheel]="false" width="100%">
+                    </jqxKnob>
+                </div>
+                <div class="text-center">
+                    <h3><b>{{(currentValue * 1000).toFixed(0) | currency : 'USD' : 'symbol' : '1.0-0'}}</b></h3>
+                    Amount the chapter is contributing towards formal.
+                </div>
+                <div class="text-center table selector ultimate" *ngIf="false">
+                    <div class="btn" *ngIf="priceTable.length > 0">
+                        <h3>Price Per Couple</h3>                        
+                        <button id="money-down-amount" *ngIf="!price_checked">{{priceTable[0].TotalPriceCouple | currency : 'USD' : 'symbol' : '1.0-0'}}</button>
+                        <button id="money-down-amount" *ngIf="price_checked">{{priceTable[0].TotalPriceCoupleTaxes | currency : 'USD' : 'symbol' : '1.0-0'}}</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3" *ngFor="let price of priceTable; let i = index">
+                <!-- Start of Payment term box 1-->
+                <div class="table selector" [ngClass]="i != 10  ? 'ultimate' : 'premium'" style="min-height:275px;">
+                    <div class="ribbon" *ngIf="(i + 1) == selectedPrice"><span>Selected</span></div>
+                    <div class="package-name">
+                        <h2>{{price.OptionName}}</h2>
+                    </div>
+                    <ul class="features">
+                        <div class="headed-list text-center" style="color: #ff891e;"><strong>{{price.DownPayment | currency : 'USD' : 'symbol' : '1.0-0'}}</strong></div>
+                        <!--<li class="headed-list"><strong>Offer Details</strong></li>-->
+                        <li *ngFor="let OptionDetail of price.OptionDetails">
+                            <span class="icon check"><i class="fa fa-square"></i></span>
+                            <span class="list-name">{{OptionDetail}}</span>
+
+                        </li>
+                        <div class="headed-list text-center" style="color: #ff891e;"><strong>{{price.OtherThanDownPaymentTitle}}</strong></div>
+                        <!--<li class="headed-list"><strong>Security Deposit Down Payment</strong></li>
+    <li>
+        <span class="icon check"><i class="fa fa-square"></i></span>
+        <span class="list-name">{{price.DownPayment | currency : 'USD' : 'symbol' : '1.0-0'}}</span>
+
+    </li>
+
+    <li class="headed-list"><strong>Security Deposit Due Date</strong></li>
+    <li>
+        <span class="icon check"><i class="fa fa-square"></i></span>
+        <span class="list-name">{{price.DepositDueDate}}</span>
+
+    </li>
+
+    <li class="headed-list"><strong>Vendor Contracts Locked</strong></li>
+    <li>
+        <span class="icon check"><i class="fa fa-square"></i></span>
+        <span class="list-name">{{price.VendorContractsLocked}}</span>
+
+    </li>
+
+    <li class="headed-list"><strong>Security Deposit Refundable After Event</strong></li>
+    <li>
+        <span class="icon check"><i class="fa fa-square"></i></span>
+        <span class="list-name">{{price.DepositAmountRefundedAfterEvent | currency : 'USD' : 'symbol' : '1.0-0'}}</span>
+    </li>
+
+    <li class="headed-list"><strong>Chapter Contribution</strong></li>
+    <li>
+        <span class="icon check"><i class="fa fa-square"></i></span>
+        <span class="list-name">{{(currentValue * 1000).toFixed(0) | currency : 'USD' : 'symbol' : '1.0-0'}}</span>
+    </li>-->
+                    </ul>
+
+                    <!--<div class="btn">
+                        <h3>Price Per Couple</h3>
+                        <button id="money-down-amount" *ngIf="!price_checked">{{price.TotalPriceCouple | currency : 'USD' : 'symbol' : '1.0-0'}}</button>
+                        <button id="money-down-amount" *ngIf="price_checked">{{price.TotalPriceCoupleTaxes | currency : 'USD' : 'symbol' : '1.0-0'}}</button>
+                    </div>-->
+                </div>
+                <!-- End of Payment term box 1-->
+            </div>
+        </div>
+    </div>
+    <form [formGroup]='eventForm'>
+        <div style="margin-top: 10px;" *ngIf="price_quote_fetched">
+            <div class="plan_table">
+                <div class="plan_column" *ngFor="let plans of planDetails; let i = index" [ngStyle]="{'border-left': i > 1 ? '1px solid #EDEBEA' : 'none'}">
+                    <div class="plan_details" *ngFor="let columns of plans; let c = index" (mouseenter)="setHover($event, i, c)" (mouseover)="setHover($event, i, c)">
+                        <div [ngClass]="[i == 0 ? c == 0 ? 'plan_header_title' : 'plan_header' : i == 1 ? 'plan_description blank_space' : 'plan_description', priceTable[c-1] ? priceTable[c-1].OptionTag ? 'most_popular' : '' : '']" [ngStyle]="{'align-items': i == 1 && c > 0 ? 'flex-start' : 'center'}">
+                            <ng-container *ngIf="i == 0 && priceTable[c-1]">
+                                <p class="tagged" *ngIf="priceTable[c - 1].OptionTag" (mouseleave)="setHoverOut($event, i, c)" (mouseout)="setHoverOut($event, i, c)">
+                                    {{priceTable[c - 1].OptionTag}}
+                                </p>
+                            </ng-container>
+                            <ng-container *ngIf="i == 0 && c > 0 && priceTable[c-1]">
+                                <ng-container *ngIf="priceTable[c - 1].showHover && offsetHeight > 0">
+                                    <div #box_shadow
+                                         (mouseleave)="setHoverOut($event, i, c)" (mouseout)="setHoverOut($event, i, c)"
+                                         class="planShadow"
+                                         [ngStyle]="{'height': offsetHeight+'px'}"></div>
+                                </ng-container>
+                            </ng-container>
+                            <div class="plan_title_name"
+                                 [ngClass]="[i == 2 && c > 0 ? 'plan_title_name_2' : '', i == 1 && c == 0 ? 'blank_col' : '']"
+                                 [ngStyle]="{'text-align': i == 1 && c > 0 ? 'start' : 'center'}">
+                                <p *ngIf="i == 0 && c == 0">
+                                    {{columns}}
+                                </p>
+                                <div *ngIf="i == 0 && c > 0">
+                                    <p>
+                                        {{columns}}
+                                    </p>
+                                    <p class="down_payment">
+                                        {{priceTable[c - 1].DownPayment}}
+                                    </p>
+                                    <p *ngIf="priceTable[c - 1].OtherThanDownPaymentTitle">
+                                        {{priceTable[c - 1].OtherThanDownPaymentTitle}}
+                                    </p>
+                                    <div *ngIf="priceTable[c - 1].OtherThanDownPaymentTitle">
+                                        <input type="text" class="form-control setZindex" OnlyNumber="true" maxlength="6" (change)="changeContribution($event)" formControlName='chapterContributions' />
+                                    </div>
+
+
+                                </div>
+                                <div *ngIf="i == 0 && c > 0">
+                                    <button class="btn btn-block buttonCustomPrimary proceed_btn select_plan_btn" (click)="selectPlan(c)">
+                                        {{selectedPrice == c ? "SELECTED" : "SELECT"}}
+                                    </button>
+                                </div>
+
+                                <p *ngIf="i > 2">
+                                    {{columns}}
+                                </p>
+                                <p *ngIf="i == 1 && c == 0">
+
+                                </p>
+                                <p *ngIf="i == 2 && c == 0">
+                                    {{columns}}
+                                </p>
+                                <ng-container *ngIf="i == 2 && c > 0">
+                                    <div class="option_details" *ngFor="let opt of columns; let optin_index = index">
+                                        <span>
+                                            {{optin_index + 1}})
+                                        </span> {{opt}}
+                                    </div>
+                                </ng-container>
+
+                            </div>
+
+                        </div>
+
+                        <div *ngIf="c == 2">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tax_section">
+                    <div class="d-1">
+
+                    </div>
+                    <div class="d-1">
+                        <div class="filter_box_2 back_search bg-w">
+                            <a [routerLink]="['/']">
+                                Start Again
+                            </a>
+                        </div>
+
+                        <div class="filter_box_2 save_quote_btn_box bg-w">
+                            <button class="btn btn-block buttonCustomPrimary proceed_btn save_quote_btn" (click)="confirmDetail(eventForm)">
+                                SAVE QUOTE
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+    <div class="loader-text">
+        Please Wait. . .
+    </div>
+</div>

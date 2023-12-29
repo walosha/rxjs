@@ -1,0 +1,248 @@
+[
+  {
+    "ID": 1,
+    "HotelName": "Park Hyatt Hotel",
+    "Description": "601 Loyola Ave, New Orleans, LA 70113, USA",
+    "PricePerNight": "$ (From $130)",
+    "ListImage": "assets/img/holets/hotel-list-01.jpg",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 50,
+    "MaxCapacity": 100,
+    "Latitude": 29.950631,
+    "Longitude": -90.077599,
+    "Distance" : 20,
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "Facilities": [
+      {
+        "FacilityID": 1,
+        "FacilityName": "Accesibility"
+      },
+      {
+        "FacilityID": 2,
+        "FacilityName": "Breakfast"
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "HotelName": "Marriott Hotel",
+    "Description": "555 Canal St, New Orleans, LA 70130, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-02.jpg",
+    "NoOfReviews": 4,
+    "Star": 4,
+    "MinCapacity": 150,
+    "MaxCapacity": 200,
+    "Latitude": 29.953520,
+    "Longitude": -90.068688,
+    "Distance" : 30,
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "Facilities": [     
+      {
+        "FacilityID": 2,
+        "FacilityName": "Breakfast"
+      },
+      {
+        "FacilityID": 3,
+        "FacilityName": "Parking"
+      }
+    ]
+  },
+  {
+    "ID": 3,
+    "HotelName": "Lumiere Hotel",
+    "Description": "4545 Magnolia Street, New Orleans LA 70115, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-03.jpg",
+    "NoOfReviews": 3,
+    "Star": 3,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.938910,
+    "Longitude": -90.098180,
+    "Distance" : 25,
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "Facilities": [
+      {
+        "FacilityID": 1,
+        "FacilityName": "Accesibility"
+      },
+      {
+        "FacilityID": 3,
+        "FacilityName": "Parking"
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "HotelName": "Mercantile Hotel",
+    "Description": "401 Felicity Street, New Orleans, LA 70130, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-04.jpg",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 25,
+    "MaxCapacity": 45,
+    "Latitude": 29.937310,
+    "Longitude": -90.078670,
+    "Distance" : 80,
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/03/31",
+    "Facilities": [      
+      {
+        "FacilityID": 3,
+        "FacilityName": "Parking"
+      },
+      {
+        "FacilityID": 4,
+        "FacilityName": "Free WiFi"
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "HotelName": "Concorde Hotel",
+    "Description": "2425 Louisiana Avenue, New Orleans, LA 70115, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-05.jpg",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 50,
+    "MaxCapacity": 80,
+    "Latitude": 29.936900,
+    "Longitude": -90.096612,
+    "Distance" : 120,
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/03/31",
+    "Facilities": [            
+      {
+        "FacilityID": 4,
+        "FacilityName": "Free WiFi"
+      },
+      {
+        "FacilityID": 5,
+        "FacilityName": "spa"
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "HotelName": "Victoria Hotel",
+    "Description": "7808 Pearl Street, New Orleans, LA 70118, USA",
+    "PricePerNight": "$$$ (From $230)",
+    "ListImage": "assets/img/holets/hotel-list-06.jpg",
+    "NoOfReviews": 4,
+    "Star": 4,
+    "MinCapacity": 50,
+    "MaxCapacity": 100,
+    "Latitude": 29.941400,
+    "Longitude": -90.133880,
+    "Distance" : 10,
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/03/31",
+    "Facilities": [      
+      {
+        "FacilityID": 5,
+        "FacilityName": "spa"
+      },
+      {
+        "FacilityID": 6,
+        "FacilityName": "Plasma TV"
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "HotelName": "Suspendisse Tour",
+    "Description": "2520 Bayou Rd, New Orleans, LA 70119, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-07.jpg",
+    "NoOfReviews": 3,
+    "Star": 3,
+    "MinCapacity": 50,
+    "MaxCapacity": 80,
+    "Latitude": 29.977540,
+    "Longitude": -90.077850,
+    "Distance" : 60,
+    "StartDate": "2019/04/01",
+    "EndDate": "2019/04/30",
+    "Facilities": [
+      {
+        "FacilityID": 1,
+        "FacilityName": "Accesibility"
+      }
+    ]
+  },
+  {
+    "ID": 8,
+    "HotelName": "Bloomsbury",
+    "Description": "4625, Elysian Fields Ave, New Orleans, LA 70119, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-08.jpg",
+    "NoOfReviews": 4,
+    "Star": 4,
+    "MinCapacity": 100,
+    "MaxCapacity": 120,
+    "Latitude": 29.969550,
+    "Longitude": -90.057960,
+    "Distance" : 90,
+    "StartDate": "2019/04/01",
+    "EndDate": "2019/04/30",
+    "Facilities": [
+      {
+        "FacilityID": 1,
+        "FacilityName": "Accesibility"
+      },
+      {
+        "FacilityID": 2,
+        "FacilityName": "Breakfast"
+      },
+      {
+        "FacilityID": 6,
+        "FacilityName": "Plasma TV"
+      }
+    ]
+  },
+  {
+    "ID": 9,
+    "HotelName": "The Rookery Hotel",
+    "Description": "Lee Circle, New Orleans, LA 70130, USA",
+    "PricePerNight": "$$ (From $175)",
+    "ListImage": "assets/img/holets/hotel-list-09.jpg",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 120,
+    "MaxCapacity": 160,
+    "Latitude": 29.943900,
+    "Longitude": -90.073400,
+    "Distance" : 100,
+    "StartDate": "2019/04/01",
+    "EndDate": "2019/04/30",
+    "Facilities": [
+      {
+        "FacilityID": 1,
+        "FacilityName": "Accesibility"
+      },
+      {
+        "FacilityID": 2,
+        "FacilityName": "Breakfast"
+      },
+      {
+        "FacilityID": 3,
+        "FacilityName": "Parking"
+      },
+      {
+        "FacilityID": 4,
+        "FacilityName": "Free WiFi"
+      },
+      {
+        "FacilityID": 6,
+        "FacilityName": "Plasma TV"
+      }
+    ]
+  }
+]

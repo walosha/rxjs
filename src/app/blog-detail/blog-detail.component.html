@@ -1,0 +1,195 @@
+<div class="main-wrapper">
+    <!-- PAGE TITLE -->
+    <section class="pageTitle" style="background-image:url(assets/img/pages/page-title-bg4.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="titleTable">
+                        <div class="titleTableInner">
+                            <div class="pageTitleInfo">
+                                <h1>{{blog?.BlogTitle}}</h1>
+                                <div class="under-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE CONTENT -->
+    <section class="mainContentSection blogSidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-sm-push-9 col-xs-12">
+                    <aside>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Search</div>
+                            <div class="panel-body">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-describedby="basic-addon2">
+                                    <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tabArea">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#recent" aria-controls="recent" role="tab" data-toggle="tab">Recent</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Popular</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#new" aria-controls="new" role="tab" data-toggle="tab">New</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="recent">
+                                    <div class="media" *ngFor="let blogdetail of blogs">
+                                        <a class="media-left" href="#">
+                                            <img class="media-object" src="{{blogdetail.BlogImage}}" alt="Image">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4><a href="#" class="media-heading">{{blogdetail.BlogTitle}}</a></h4>
+                                            <p><i class="fa fa-calendar" aria-hidden="true"></i>{{blogdetail.BlogDate}}</p>
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="popular">
+                                    <div class="media" *ngFor="let blogdetail of blogs">
+                                        <a class="media-left" href="#">
+                                            <img class="media-object" src="{{blogdetail.BlogImage}}" alt="Image">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4><a href="#" class="media-heading">{{blogdetail.BlogTitle}}</a></h4>
+                                            <p><i class="fa fa-calendar" aria-hidden="true"></i>{{blogdetail.BlogDate}}</p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="new">
+                                    <div class="media" *ngFor="let blogdetail of blogs">
+                                        <a class="media-left" href="#">
+                                            <img class="media-object" src="{{blogdetail.BlogImage}}" alt="Image">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4><a href="#" class="media-heading">{{blogdetail.BlogTitle}}</a></h4>
+                                            <p><i class="fa fa-calendar" aria-hidden="true"></i>{{blogdetail.BlogDate}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </aside>
+                </div>
+                <div class="col-sm-9 col-sm-pull-3 col-xs-12">
+                    <div class="thumbnail blogSinglePost">
+                        <img [src]="blog?.BlogImage" alt="blog-single-image">
+                        <div class="caption">
+                            <h2>{{blog?.BlogTitle}}</h2>
+                            <ul class="list-inline blogInfo">
+                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">{{blog?.AuthorName}}</a></li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>{{blog?.BlogDate}}</li>
+                                <li><i class="fa fa-tags" aria-hidden="true"></i>{{blog?.Tags}}</li>
+                            </ul>
+                            <p>{{blog?.Description}}</p>
+                            <!--<div class="imageBg">
+                                <div class="imageBgTable">
+                                    <div class="imageBgTableInner">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                            <footer>by Adam Smith</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>-->                            
+                        </div>
+                        <!--<div class="well">
+                            <span>Share it</span>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>-->
+                        <div class="commentsArea">
+                            <h3>Comments (4)</h3>                            
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                    <img class="media-object" src="assets/img/blog/comments-02.jpg" alt="Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">John</h4>
+                                    <h4><span><i class="fa fa-calendar" aria-hidden="true"></i>Mar 20, 2016</span></h4>
+                                    <p>We love this place!</p>
+                                    <button class="btn btn-link" type="button">Reply</button>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                    <img class="media-object" src="assets/img/blog/comments-01.jpg" alt="Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jessica</h4>
+                                    <h4><span><i class="fa fa-calendar" aria-hidden="true"></i>Mar 20, 2016</span></h4>
+                                    <p>Good view of the city</p>
+                                    <button class="btn btn-link" type="button">Reply</button>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                    <img class="media-object" src="assets/img/blog/comments-03.jpg" alt="Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Joanna</h4>
+                                    <h4><span><i class="fa fa-calendar" aria-hidden="true"></i>Mar 20, 2016</span></h4>
+                                    <p>Staff was unfriendly</p>
+                                    <button class="btn btn-link" type="button">Reply</button>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                    <img class="media-object" src="assets/img/blog/comments-04.jpg" alt="Image">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Michael </h4>
+                                    <h4><span><i class="fa fa-calendar" aria-hidden="true"></i>Mar 20, 2016</span></h4>
+                                    <p>Great bang for the buck</p>
+                                    <button class="btn btn-link" type="button">Reply</button>
+                                </div>
+                            </div>                            
+                        </div>
+                        <form action="" method="POST" role="form" class="commentsForm">
+                            <h3>Leave A Comments</h3>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn buttonCustomPrimary">send now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

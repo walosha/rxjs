@@ -1,0 +1,208 @@
+<section class="bookingTypeSection" style="margin-top: 150px;">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-xs-12">
+                <div class="bookingType bg-ash">
+                    <ul class="bookingList">
+                        <li>
+                            Name<br />
+                            <input type="text" class="form-control" placeholder="Name" (change)="onSearch($event)" />
+                        </li>
+                        <li>
+                            Date From<br />
+                            <input matInput [max]="maxStartDate" [matDatepicker]="startDatePicker" placeholder="Start Date" (click)="startDatePicker.open()" class="form-control" #startDate (dateChange)="startDateChange(startDate)">
+                            <mat-datepicker #startDatePicker></mat-datepicker>
+                        </li>
+                        <li>
+                            Date To<br />
+                            <input matInput [min]="minEndDate" [matDatepicker]="endDatePicker" placeholder="End Date" (click)="endDatePicker.open()" class="form-control" #endDate (dateChange)="endDateChange(endDate)">
+                            <mat-datepicker #endDatePicker></mat-datepicker>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+<section class="recentActivitySection">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 ">
+                <div class="recentActivityContent bg-ash">
+                    <div class="dashboardPageTitle">
+                        <h2>Notifications</h2>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="event-table">
+                            <thead>
+                                <tr>
+                                    <th class="event_tbl_head">
+                                        Title
+                                    </th>
+                                    <th class="event_tbl_head">
+                                        Details
+                                    </th>
+                                    <th class="event_tbl_head">
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="event_tbl_row" *ngFor="let notification of notificationData;">
+                                    
+                                    <td>
+                                        {{notification.Title}}
+                                    </td>
+                                    <td>                                        
+                                        <span [innerHTML]="notification.Details | safe:'html'"></span>
+                                    </td>
+                                    <td>
+                                        <ng-container *ngIf="notification.Link">
+                                            <a style="color: #ff891e;" class="btn btn-primary" target="_blank" href="{{notification.Link}}">
+                                                {{notification.Status}}
+                                            </a>                                            
+                                        </ng-container>
+
+                                        <ng-container *ngIf="!notification.Link">
+                                            <a style="color: #ff891e;" [routerLink]="['/notifications']">
+                                                {{notification.Status}}
+                                            </a>
+                                        </ng-container>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- <div class="table-responsive" data-pattern="priority-columns">
+                        <table class="table listingsTable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Event Name
+                                    </th>
+                                    <th>
+                                        Begin Date
+                                    </th>
+                                    <th>
+                                        End Date
+                                    </th>
+                                    <th>
+                                        Location
+                                    </th>
+                                    <th>
+                                        Attendees
+                                    </th>
+                                    <th>
+                                        Chapter Contribution
+                                    </th>
+                                    <th>
+                                        Price (Per Couple)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="rowItem" *ngFor="let event of eventData">
+                                    <td>
+                                        <a href="javascript:void(0);" (click)="GoToEvent(event)">{{event.EventName}}</a>
+                                    </td>
+                                    <td>
+                                        {{event.Start}}
+                                    </td>
+                                    <td>
+                                        {{event.End}}
+                                    </td>
+                                    <td>
+                                        {{event.Location}}
+                                    </td>
+                                    <td>
+                                        {{event.Attendees}}
+                                    </td>
+                                    <td>
+                                        ${{event.ChapterContribution}}
+                                    </td>
+                                    <td>
+                                        ${{event.PricePerCouple}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-xs-12 ">
+                <div class="recentActivityContent bg-ash">
+                    <div class="dashboardPageTitle">
+                        <h2>Document List</h2>
+                    </div>
+                    <div class="table-responsive" data-pattern="priority-columns">
+                        <table class="table listingsTable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Document Name
+                                    </th>
+                                    <th>
+                                        Document Type
+                                    </th>
+                                    <th>
+                                        Owner
+                                    </th>
+                                    <th>
+                                        Recipients
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                    <th>
+                                        Created On
+                                    </th>
+                                    <th>
+                                        Modified On
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="rowItem" *ngFor="let event of documents.requests">
+                                    <td>
+                                        {{event.request_name}}
+                                    </td>
+                                    <td>
+                                        {{event.request_type_name}}
+                                    </td>
+                                    <td>
+                                        {{event.owner_first_name}}
+                                    </td>
+                                    <td>
+                                        <div *ngFor="let action of event.actions">
+                                            <span title="{{action.action_status}}">
+                                                <i [ngClass]="action.action_type == 'SIGN' ? 'fa fa-edit' : 'fa fa-eye'"></i>
+                                                {{action.recipient_email}}
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{event.request_status}}
+                                    </td>
+                                    <td>
+                                        {{event.CreatedTime}}
+                                    </td>
+                                    <td>
+                                        {{event.ModifiedTime}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

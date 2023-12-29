@@ -1,0 +1,152 @@
+<div class="main-wrapper">
+    <!-- PAGE TITLE -->
+    <section class="pageTitle" style="background-image:url(/assets/img/pages/page-title-bg5.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="titleTable">
+                        <div class="titleTableInner">
+                            <div class="pageTitleInfo">
+                                <h1>contact us</h1>
+                                <div class="under-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE CONTENT -->
+    <section class="mainContentSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xs-12">
+                    <div class="contactInfo">
+                        <h2>get in touch</h2>
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">address</h4>
+                                <p>T.E.A.M.<br />3345 Newport Blvd. Suite #207 <br />Newport Beach, Ca 92661</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Phone number</h4>
+                                <p>(949) 873-8326</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">email us</h4>
+                                <p><a href="mailTo:events@teamexp.com">events@teamexp.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-7 col-xs-12 col-lg-8">
+                    <div class="contactForm">
+                        <form action="" role="form" class="form" [formGroup]='contactForm'>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" placeholder="First Name *" formControlName='FirstName'>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" placeholder="Last Name *" formControlName='LastName'>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="email" placeholder="Email *" formControlName='Email'>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="tel" [textMask]="{mask: phoneMask}" placeholder="Phone *" formControlName='Phone'>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" placeholder="University" formControlName='University'>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput [matDatepicker]="dateOfEventDatePicker" placeholder="Date Of Event" formControlName='DateOfEvent'>
+                                            <mat-datepicker-toggle matSuffix [for]="dateOfEventDatePicker"></mat-datepicker-toggle>
+                                            <mat-datepicker #dateOfEventDatePicker></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="number" placeholder="Number of People in Event" formControlName='NumberofPeople'>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" placeholder="Destination" formControlName='Destination'>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Type of Event" formControlName='TypeofEvent'>
+                                                <mat-option value="-None-">-None-</mat-option>
+                                                <mat-option value="One Night - Banquet (No Hotel Rooms)">One Night - Banquet (No Hotel Rooms)</mat-option>
+                                                <mat-option value="One Night Stay & Banquet">One Night Stay & Banquet</mat-option>
+                                                <mat-option value="Two Night Stay & Banquet">Two Night Stay & Banquet</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" currencyMask formControlName='Budget' placeholder="Budget" />
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <mat-form-field class="example-full-width">
+                                    <textarea matInput formControlName='Message' placeholder="Your Message" rows="4"></textarea>
+                                </mat-form-field>
+                            </div>
+                            <button [disabled]="!contactForm.valid" type="submit" class="btn buttonCustomPrimary" (click)="SaveContact(contactForm)">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

@@ -1,0 +1,1037 @@
+[
+  {
+    "ID": 1,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-01.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.950631,
+    "Longitude": -90.077599,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-02.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 4,
+    "Star": 4,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.953520,
+    "Longitude": -90.068688,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 3,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-03.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 3,
+    "Star": 3,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.938910,
+    "Longitude": -90.098180,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-04.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.937310,
+    "Longitude": -90.078670,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-05.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.936900,
+    "Longitude": -90.095612,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-06.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 4,
+    "Star": 4,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.941400,
+    "Longitude": -90.133880,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-07.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 3,
+    "Star": 3,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.977540,
+    "Longitude": -90.077850,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 8,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-08.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 4,
+    "Star": 4,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.969550,
+    "Longitude": -90.057960,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  },
+  {
+    "ID": 9,
+    "HotelName": "Lumiere Hotel",    
+    "Address": {
+      "AddressLine1": "4545 Magnolia Street",
+      "City": "New Orleans",
+      "State": "LA",
+      "Zip": 70115,
+      "Country": "USA"
+    },
+    "Description": "Lumiere is an executive lifestyle hotel conveniently located in the centre of Magnolia Street, New Orleans LA. Enjoy quality living in our meticulously designed environment and be assured that getting around the city would be easy and hassle-free for you",
+    "About": "Meticulously crafted to fulfil your accommodation needs, our rooms are a dream come true nested right in the heart of the city. Rediscover a homely yet luxurious living experience as you indulge in our high ceiling spacious rooms with floor-to-ceiling windows. An understated elegance and chic, Lumiere offers you an exclusive hideaway that you can always return to at any time, no matter how far away from home you are.",
+    "PricePerNight": "$$",
+    "CostPerCouple": "$$ (From $175)",
+    "Price":  175,
+    "ListImage": "assets/img/holets/hotel-list-09.jpg",
+    "StartDate": "2019/03/01",
+    "EndDate": "2019/04/30",
+    "NoOfReviews": 5,
+    "Star": 5,
+    "MinCapacity": 100,
+    "MaxCapacity": 150,
+    "Latitude": 29.943900,
+    "Longitude": -90.073400,
+    "SliderImages": [
+      "assets/img/holets/hotel-slider-01.jpg",
+      "assets/img/holets/hotel-slider-02.jpg",
+      "assets/img/holets/hotel-slider-03.jpg"
+    ],
+    "DescriptionList": [
+      "Free Parking",
+      "Free Wi-Fi",
+      "Outdoor Pool",
+      "24 Hours Front Desk",
+      "Free Internet Service",
+      "Restaurent",
+      "Pool Umbrellas",
+      "Pet Allowed"
+    ],
+    "RoomTypes": [
+      {
+        "RoomTypeName": "DOUBLE ROOM",
+        "Description": "Double room description",
+        "PricePerNight": 150,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          },
+          {
+            "FacilityID": 3,
+            "FacilityName": "Free WiFi"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-01.jpg",
+          "assets/img/holets/hotel-list-02.jpg",
+          "assets/img/holets/hotel-list-03.jpg",
+          "assets/img/holets/hotel-list-04.jpg",
+          "assets/img/holets/hotel-list-05.jpg"
+        ]
+      },
+      {
+        "RoomTypeName": "SINGLE ROOM",
+        "Description": "Single room description",
+        "PricePerNight": 100,
+        "Facilities": [
+          {
+            "FacilityID": 1,
+            "FacilityName": "Breakfast"
+          },
+          {
+            "FacilityID": 2,
+            "FacilityName": "Plasma TV"
+          }
+        ],
+        "RoomImages": [
+          "assets/img/holets/hotel-list-06.jpg",
+          "assets/img/holets/hotel-list-07.jpg",
+          "assets/img/holets/hotel-list-08.jpg",
+          "assets/img/holets/hotel-list-09.jpg"
+        ]
+      }
+    ],
+    "Reviews": [
+      {
+        "ReviewerName": "John - Kappa Sigma, Florida State University",
+        "ReviewStar": 4,
+        "Review": "We love this place!",
+        "ReviewerImage": "assets/img/blog/comments-02.jpg"
+      },
+      {
+        "ReviewerName": "Jessica  - Delta Gamma, Rutgers University",
+        "ReviewStar": 3,
+        "Review": "Good view of the city",
+        "ReviewerImage": "assets/img/blog/comments-01.jpg"
+      },
+      {
+        "ReviewerName": "Joanna - Chi Omega, University of Michigan",
+        "ReviewStar": 2,
+        "Review": "Staff was unfriendly",
+        "ReviewerImage": "assets/img/blog/comments-03.jpg"
+      },
+      {
+        "ReviewerName": "Michael - Sigma Phi Epsilon, University of Oregon",
+        "ReviewStar": 4,
+        "Review": "Great bang for the buck",
+        "ReviewerImage": "assets/img/blog/comments-04.jpg"
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+	{
+		"ID": 1,
+		"HotelName": "PARK HYATT HOTEL",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 25,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-01.jpg",
+		"NoOfReviews": 5,
+		"Star": 5
+	},
+	{
+		"ID": 2,
+		"HotelName": "MARIOTT HOTEL",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 28,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-02.jpg",
+		"NoOfReviews": 4,
+		"Star": 4
+	},
+	{
+		"ID": 3,
+		"HotelName": "LUMIERE HOTEL",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 32,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-03.jpg",
+		"NoOfReviews": 3,
+		"Star": 3
+	},
+	{
+		"ID": 4,
+		"HotelName": "LUMIERE HOTEL",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 26,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-04.jpg",
+		"NoOfReviews": 3,
+		"Star": 3
+	},
+	{
+		"ID": 5,
+		"HotelName": "CONCORDE HOTEL",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 22,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-05.jpg",
+		"NoOfReviews": 5,
+		"Star": 5
+	},
+	{
+		"ID": 6,
+		"HotelName": "VICTORIA HOTEL",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 28,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-05.jpg",
+		"NoOfReviews": 4,
+		"Star": 4
+	},
+	{
+		"ID": 7,
+		"HotelName": "Suspendisse Tour",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 26,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-05.jpg",
+		"NoOfReviews": 3,
+		"Star": 3
+	},	
+	{
+		"ID": 8,
+		"HotelName": "BLOOMSBURY",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 35,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-05.jpg",
+		"NoOfReviews": 4,
+		"Star": 4
+	},	
+	{
+		"ID": 9,
+		"HotelName": "The Rookery Hotel",
+		"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"PricePerNight": 40,
+		"ListImage": "http://themes.iamabdus.com/star/1.3/img/holets/hotel-list-05.jpg",
+		"NoOfReviews": 5,
+		"Star": 5
+	}
+]

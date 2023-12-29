@@ -1,0 +1,45 @@
+<div class="main-wrapper">
+    <!-- PAGE TITLE -->
+    <section class="pageTitle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="titleTable">
+                        <div class="titleTableInner">
+                            <div class="pageTitleInfo">
+                                <h1>Proposal Contract</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PAGE CONTENT -->
+    <section class="mainContentSection packagesSection">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-xs-12" *ngFor="let terms of contract_terms" style="padding: 5px;">
+                    <div style="display: flex; justify-content: flex-start; align-items: center; color: #333;">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <p style="margin: 0px 0px 0px 10px; color: #333;">{{terms.term}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 10px;">
+                <div class="col-sm-12" style="display: flex;justify-content: center;">
+                    <button (click)="StartPlanning()" class="btn buttonTransparent buttonCustomPrimary">Start</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</div>
+
+
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

@@ -1,0 +1,12 @@
+<div mat-dialog-title>{{title}}</div>
+
+<mat-dialog-content style="height: 100% !important;">
+    <div style="font-size: 16px;
+  margin: 5px 0px 20px 0px;">
+        {{message}}
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: flex-end;">
+    <button mat-raised-button color="warn" (click)="CloseModal()">Close</button>
+</mat-dialog-actions>

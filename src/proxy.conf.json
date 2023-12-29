@@ -1,0 +1,7 @@
+{
+  "/rezp/*": {
+    "target": "https://team.rezometry-stage.net",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

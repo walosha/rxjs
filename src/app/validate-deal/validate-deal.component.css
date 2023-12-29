@@ -1,0 +1,36 @@
+::ng-deep.email-others-field.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{
+    padding-top: 0px !important;
+    color: rgba(0,0,0, 0.8);
+    margin-top: -8px;
+}
+
+::ng-deep.email-others-field.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgba(0,0,0,1) !important;
+}
+
+::ng-deep.email-others-field.mat-chip.mat-standard-chip .mat-chip-remove{
+    opacity: 1 !important;
+}
+
+::ng-deep.email-others-field mat-label{
+    background: #fff !important;
+    padding-right: 5px !important;
+}
+
+::ng-deep.text-others-field.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{
+    padding-top: 0px !important;
+    color: rgba(0,0,0, 0.8);
+    margin-top: -8px;
+}
+
+::ng-deep.text-others-field.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgba(0,0,0,1) !important;
+}
+
+::ng-deep.text-others-field.mat-chip.mat-standard-chip .mat-chip-remove{
+    opacity: 1 !important;
+}
+::ng-deep.text-others-field mat-label{
+    background: #fff !important;
+    padding-right: 5px !important;
+}

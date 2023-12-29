@@ -1,0 +1,473 @@
+<div class="main-wrapper">
+    <div class="singleCartSidebar topmargin login">
+        <div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-offset-2 col-lg-8 col-md-12 col-sm-12 loginwindow">
+                    <div class="panel-heading">Register</div>
+                    <div class="col-xs-12">
+                        <form [formGroup]='registerForm'>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        First Name
+                                        <input type="text" class="form-control bg-ash" placeholder="First Name" formControlName='name'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Last Name
+                                        <input type="text" class="form-control bg-ash" placeholder="Last Name" formControlName='name'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Email
+                                        <input type="email" class="form-control bg-ash" placeholder="Email" formControlName='email'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Phone No
+                                        <input type="tel" [textMask]="{mask: phoneMask}" class="form-control bg-ash" placeholder="Phone No" formControlName='phone'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Password
+                                        <input type="password" class="form-control bg-ash" placeholder="Password" formControlName='password'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Confirm Password
+                                        <input type="password" class="form-control bg-ash" placeholder="Confirm Password" formControlName='confirmPassword'>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        University
+                                        <input placeholder="University" class="form-control bg-ash" [matAutocomplete]="auto" formControlName='university'>
+                                        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                                            <mat-option *ngFor="let university of (filteredUniversities | async)?.results" [value]="university">
+                                                <span>{{ university.name }}</span>
+                                            </mat-option>
+                                        </mat-autocomplete>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Fraternity/Sorority Organization
+                                        <input placeholder="Organization" class="form-control bg-ash" [matAutocomplete]="auto2" formControlName='organization'>
+                                        <mat-autocomplete #auto2="matAutocomplete" [displayWith]="displayFn">
+                                            <mat-option *ngFor="let organization of (filteredOrganizations | async)?.results" [value]="organization">
+                                                <span>{{ organization.name }}</span>
+                                            </mat-option>
+                                        </mat-autocomplete>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Chapter Designation 1
+                                        <input placeholder="Chapter" class="form-control bg-ash" [matAutocomplete]="auto3" formControlName='chapter'>
+                                        <mat-autocomplete #auto3="matAutocomplete" [displayWith]="displayFn">
+                                            <mat-option *ngFor="let chapter of (filteredChapters | async)?.results" [value]="chapter">
+                                                <span>{{ chapter.name }}</span>
+                                            </mat-option>
+                                        </mat-autocomplete>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        Chapter Designation 2
+                                        <input placeholder="Chapter" class="form-control bg-ash" [matAutocomplete]="auto4" formControlName='chapter2'>
+                                        <mat-autocomplete #auto4="matAutocomplete" [displayWith]="displayFn">
+                                            <mat-option *ngFor="let chapter of (filteredChapters2 | async)?.results" [value]="chapter">
+                                                <span>{{ chapter.name }}</span>
+                                            </mat-option>
+                                        </mat-autocomplete>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    Citizenship
+                                    <select class="form-control">
+                                        <option></option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antartica">Antarctica</option>
+                                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermuda">Bermuda</option>
+                                        <option value="Bhutan">Bhutan</option>
+                                        <option value="Bolivia">Bolivia</option>
+                                        <option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+                                        <option value="Botswana">Botswana</option>
+                                        <option value="Bouvet Island">Bouvet Island</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Burkina Faso">Burkina Faso</option>
+                                        <option value="Burundi">Burundi</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Cameroon">Cameroon</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cape Verde">Cape Verde</option>
+                                        <option value="Cayman Islands">Cayman Islands</option>
+                                        <option value="Central African Republic">Central African Republic</option>
+                                        <option value="Chad">Chad</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Christmas Island">Christmas Island</option>
+                                        <option value="Cocos Islands">Cocos (Keeling) Islands</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Comoros">Comoros</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Congo">Congo, the Democratic Republic of the</option>
+                                        <option value="Cook Islands">Cook Islands</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Cota D'Ivoire">Cote d'Ivoire</option>
+                                        <option value="Croatia">Croatia (Hrvatska)</option>
+                                        <option value="Cuba">Cuba</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Djibouti">Djibouti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="Dominican Republic">Dominican Republic</option>
+                                        <option value="East Timor">East Timor</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                        <option value="Eritrea">Eritrea</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Falkland Islands">Falkland Islands (Malvinas)</option>
+                                        <option value="Faroe Islands">Faroe Islands</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="France Metropolitan">France, Metropolitan</option>
+                                        <option value="French Guiana">French Guiana</option>
+                                        <option value="French Polynesia">French Polynesia</option>
+                                        <option value="French Southern Territories">French Southern Territories</option>
+                                        <option value="Gabon">Gabon</option>
+                                        <option value="Gambia">Gambia</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Greenland">Greenland</option>
+                                        <option value="Grenada">Grenada</option>
+                                        <option value="Guadeloupe">Guadeloupe</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guinea">Guinea</option>
+                                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                        <option value="Guyana">Guyana</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Heard and McDonald Islands">Heard and Mc Donald Islands</option>
+                                        <option value="Holy See">Holy See (Vatican City State)</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="India">India</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Iran">Iran (Islamic Republic of)</option>
+                                        <option value="Iraq">Iraq</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Jordan">Jordan</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Kiribati">Kiribati</option>
+                                        <option value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of</option>
+                                        <option value="Korea">Korea, Republic of</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                        <option value="Lao">Lao People's Democratic Republic</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Lebanon">Lebanon</option>
+                                        <option value="Lesotho">Lesotho</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Macau">Macau</option>
+                                        <option value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malawi">Malawi</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Maldives">Maldives</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marshall Islands">Marshall Islands</option>
+                                        <option value="Martinique">Martinique</option>
+                                        <option value="Mauritania">Mauritania</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Mayotte">Mayotte</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Micronesia">Micronesia, Federated States of</option>
+                                        <option value="Moldova">Moldova, Republic of</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Mongolia">Mongolia</option>
+                                        <option value="Montserrat">Montserrat</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="Namibia">Namibia</option>
+                                        <option value="Nauru">Nauru</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                        <option value="New Caledonia">New Caledonia</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nicaragua">Nicaragua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Niue">Niue</option>
+                                        <option value="Norfolk Island">Norfolk Island</option>
+                                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Papua New Guinea">Papua New Guinea</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Philippines">Philippines</option>
+                                        <option value="Pitcairn">Pitcairn</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Puerto Rico">Puerto Rico</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Reunion">Reunion</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Russia">Russian Federation</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                        <option value="Saint LUCIA">Saint LUCIA</option>
+                                        <option value="Saint Vincent">Saint Vincent and the Grenadines</option>
+                                        <option value="Samoa">Samoa</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Sierra">Sierra Leone</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Slovakia">Slovakia (Slovak Republic)</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Solomon Islands">Solomon Islands</option>
+                                        <option value="Somalia">Somalia</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Georgia">South Georgia and the South Sandwich Islands</option>
+                                        <option value="Span">Spain</option>
+                                        <option value="SriLanka">Sri Lanka</option>
+                                        <option value="St. Helena">St. Helena</option>
+                                        <option value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Svalbard">Svalbard and Jan Mayen Islands</option>
+                                        <option value="Swaziland">Swaziland</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Syria">Syrian Arab Republic</option>
+                                        <option value="Taiwan">Taiwan, Province of China</option>
+                                        <option value="Tajikistan">Tajikistan</option>
+                                        <option value="Tanzania">Tanzania, United Republic of</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Tokelau">Tokelau</option>
+                                        <option value="Tonga">Tonga</option>
+                                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Turkmenistan">Turkmenistan</option>
+                                        <option value="Turks and Caicos">Turks and Caicos Islands</option>
+                                        <option value="Tuvalu">Tuvalu</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States" selected>United States</option>
+                                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Uzbekistan">Uzbekistan</option>
+                                        <option value="Vanuatu">Vanuatu</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Vietnam">Viet Nam</option>
+                                        <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                                        <option value="Virgin Islands (U.S)">Virgin Islands (U.S.)</option>
+                                        <option value="Wallis and Futana Islands">Wallis and Futuna Islands</option>
+                                        <option value="Western Sahara">Western Sahara</option>
+                                        <option value="Yemen">Yemen</option>
+                                        <option value="Yugoslavia">Yugoslavia</option>
+                                        <option value="Zambia">Zambia</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    Select Photo
+                                    <ngx-file-drop [showBrowseBtn]="true" accept="png" multiple="false"
+                                                   dropZoneLabel="" (onFileDrop)="dropped($event)"
+                                                   (onFileOver)="fileOver($event)" (onFileLeave)="fileLeave($event)">
+                                        <ng-template let-openFileSelector="openFileSelector">                                            
+                                            <a class="btn btn-default" (click)="openFileSelector()">Drop files here</a>
+                                        </ng-template>
+                                    </ngx-file-drop>
+                                </div>
+                                <div class="col-sm-6" *ngIf="url">
+                                    Preview<br />
+                                    <img [src]="url" height="80"> <br />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" formControlName="isSubscribe"> Subscribe to Newsletter
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" formControlName="isAgree"> I agree to the <a (click)="termsandconditions.show()" href="javascript:void(0);">terms & conditions</a> of this web site
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a (click)="SocialLogin()" class="btn btn-default">Register</a>
+                            <div class="or">
+                                or
+                            </div>                            
+                            <a (click)="SocialLogin()" class="btn btn-social fb_button btn-block btn-lg">
+                                <div style="margin: auto; max-width: 370px; display: block;">
+                                    <i class="fa fa-facebook pull-left" style="margin-left: 55px;display: block;width: 30px;padding: 5px !important;"></i>
+                                    <div class="col-xs-4"></div>
+                                    <div class="col-xs-8 text-left">
+                                        <span style="padding-left:10px; display: inline-block;">Sign in with Facebook</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a (click)="SocialLogin()" class="btn google-btn social-btn g_button btn-block btn-lg">
+                                <div style="margin: auto; max-width: 370px; display: block;">
+                                    <i class="fa fa-google-plus-square pull-left" style="margin-left: 55px;display: block;width: 30px;padding: 5px !important;"></i>
+                                    <div class="col-xs-4"></div>
+                                    <div class="col-xs-8 text-left">
+                                        <span style="padding-left:10px; display: inline-block;">Sign In With Google</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a (click)="SocialLogin()" class="btn btn-social insta_button btn-block btn-lg">
+                                <div style="margin: auto; max-width: 370px; display: block;">
+                                    <i class="fa fa-instagram pull-left" style="margin-left: 55px;display: block;width: 30px;padding: 5px !important;"></i>
+                                    <div class="col-xs-4"></div>
+                                    <div class="col-xs-8 text-left">
+                                        <span style="padding-left:10px; display: inline-block;">Sign In With Instagram</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </form>
+                        <div class="clearfix uk-margin-bottom">
+                            <p>Already have an Account?<a [routerLink]="['/login']"> Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div mdbModal #termsandconditions="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="termsandconditions.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h2 class="modal-title w-100 text-center" id="myModalLabel">Terms & Conditions</h2>
+            </div>
+            <div class="modal-body">
+                <div class="main-wrapper">
+                    <section class="mainContentSection">
+                        <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="term-and-condition">
+                                        <div class="text-bigger term-header">TEAM, LLC TERMS OF USE</div>
+                                        <div class="text-bigger first-bold">This Terms of Use Agreement (the "Agreement") states the terms and conditions that govern the contractual agreement between Travel, Entertainment, and Marketing, LLC, (the "Company") and you (the "User") who agrees to be bound by this Agreement in regard to the User's access to www.teamexp.com (the "Site"), which is owned and operated by the Company.</div>
+                                        <div class="text-bigger first-bold"><strong>TEAM, LLC.</strong> The Company is an event planning organization, part of several associations and registered with the DOJ as a Seller of Travel, TCRCID, IATAN, and BBB.</div>
+                                        <div class="text-bigger first-bold"><strong>THE SERVICE.</strong> The Company will act as the planner of the User's formal (the "Event") and will work with the User's officers during the planning process to ensure it is a great, well-planned, and organized event. Based on availability, the Company will search and negotiate the best rates possible for the Event and package on behalf of the User (the "Service"). If your first choice is not available the company will present another comparable option as soon as possible, due to the nature of the supply and demand of hotel rooms/hospitality pricing is subject to change. T.E.A.M. reserves the right to alter pricing when deposits are given after proposal expiration date due to rate changes. By logging onto the Site and/or using the Service, the User agrees to these Terms of Use and associated Privacy Policy located elsewhere on the Site. Furthermore, the User agrees to adhere to this Agreement, and any agreed for TEAM to enter into agreement and contracts with vendors on user behalf and is responsible for payment dates, minimum attendees, final attendees guarantee, and specified collection of guest lists, contact lists, rooming lists, and final payment deadlines set forth by the Company.</div>
+                                        <div class="text-bigger first-bold"><strong>PROVISION OF EVENT DETAILS.</strong> In order to perform the Service, the User must provide to the Company the following details: Event Date, Venue, Amount of Guaranteed Guests, Rooming Accommodations, a Rooming List, and a Schedule of the Event.</div>
+                                        <div class="text-bigger first-bold">
+                                            <strong>FEES; PAYMENT.</strong> The User agrees to pay any agreed upon fees at the agreed upon times, calculated according to the then-current fee schedule posted elsewhere on the Site.<br />
+                                            <ol>
+                                                <li>
+                                                    All fees are based on packaged prices negotiated with third party vendors on the User's behalf with the assumption of four (4) people per hotel room. Any per-person pricing is based on the full packaged price.
+                                                </li>
+                                                <li>
+                                                    The User must provide to the Company a deposit, the amount of which shall be specified by the Company prior to providing the Service (the "Deposit"). The Deposit must be paid through Secure Online Payment Gateway via credit card or electronic check.
+                                                </li>
+                                                <li>
+                                                    Upon booking the Event with the Company, the User must provide the Company with a non-refundable deposit (the "Deposit"). Deposit amounts serve as a down payment and go towards the cost of the event, deposit amounts may vary depending on the size and total revenue of your event. After providing the Deposit, the expected number of guests and/or rooms may not decrease by more than 10% and any requested increases are subject to the availability of the venue's accommodations. Should the expected number of guests and/or rooms decrease by more than 10%, the User shall still be responsible for paying the difference.
+                                                </li>
+                                                <li>
+                                                    Twenty (20) days prior to the Event, the Company shall charge either the User's bank account or credit card, based on the method selected and information provided upon signing up for the Service, for any remaining amounts due.
+                                                </li>
+                                                <li>
+                                                    A late fee of $250 will be assessed for NSF or payments given after due date.
+                                                </li>
+                                            </ol>
+                                            Upon execution of any agreement with the Company to perform the Service, the User may not cancel for any reason and shall be liable for the agreed upon amount due under any such agreement.
+                                        </div>
+                                        <div class="text-bigger first-bold"><strong>APPOINTMENT AS AGENT.</strong> The User hereby appoints the Company as its exclusive agent for the purpose of entering the User in agreements with third party vendors to facilitate the event. This appointment authorizes the Company to choose, negotiate with, and enter the User into contracts with such third party vendors so long as such agreements meet the stated aims of the User with regard to the Event. The User warrants and represents that it is not currently party to and for so long as this Agreement is in effect will not enter into any agreement that might impede or limit the Company's performance of this Agreement.</div>
+                                        <div class="text-bigger first-bold"><strong>HONORING ALL AGREEMENTS</strong> The User agrees and acknowledges that the Company is signing agreements with third party vendors on its behalf and it shall be responsible for honoring any such agreements and the Company shall bear no liability for the User's inability or other failure in honoring such agreements. Furthermore, the User agrees and acknowledges that the Company's agency is limited solely to the purpose stated above and is terminated upon engaging the User with third party Vendors.</div>
+                                        <div class="text-bigger first-bold"><strong>CODE OF CONDUCT.</strong> The User agrees and acknowledges that the User shall assume responsibility for any consequences of the conduct of any person in attendance at any Event and the Company shall bear no liability for the actions of any such person. The User hereby warrants and represents that it will not, nor will any of its attendees, violate any laws or the rights of any third person in its attendance of the Event and will ensure that no person under the age of 21 consumes alcohol.</div>
+                                        <div class="text-bigger first-bold"><strong>ADDITIONAL CHARGES.</strong> The User agrees and acknowledges that it will be responsible for any additional charges incurred while at the Event, including (but not limited to) damages. The User hereby authorizes the Company, if necessary, to facilitate payment for any such charges with the third party vendor with whom such charges were incurred using the payment information provided to the Company by the User upon signing up for the Service.</div>
+                                        <div class="text-bigger first-bold"><strong>INSURANCE.</strong> By engaging the Company for its Service, the User warrants, agrees, and acknowledges that the Company shall be listed as an "additional insured" under its general liability insurance policy (the "Policy") as may be further specified in the Policy's blanket additional insured endorsement, and must provide evidence of such Policy to the Company upon request.</div>
+                                        <div class="text-bigger first-bold"><strong>USER ACCOUNT.</strong> The User may register to the Site with an account in order to make use of certain functions and/or the Service (the "User Account"). The User is responsible for maintaining the confidentiality of the username and password that the User designates during the registration process, and the User is fully responsible for all activities that occur under the User Account. The User agrees to: (i) immediately notify the Company of any unauthorized use of the User Account or any other breach of security, and (ii) ensure that the User exits from the User Account at the end of each session. The Company will not be liable for any loss or damage arising from the User's failure to comply with this provision. The User should use particular caution when accessing the User Account from a public or shared computer to ensure that others are not able to view or record the User Account's username and password and/or other personal information. The Company reserves the right to terminate or suspend any User's User Account and/or access to the Site and the Service if the Company determines (in its sole discretion) that any such User has violated this Agreement.</div>
+                                        <div class="text-bigger first-bold"><strong>TERM AND TERMINATION.</strong> This Agreement will remain in effect until terminated by either party. If the User is dissatisfied with the Service or any of the terms and conditions contained herein, the sole and exclusive remedy is to terminate the User Account. The User may cancel the User Account and participation in the Service at any time by emailing contact@teamexp.com. Notwithstanding anything contained in this Agreement to the contrary, the Company may, in its sole discretion, terminate the User Account, and discontinue the User's participation in the Service. Reasons for the Company's determination to so terminate or discontinue the User's Account or participation as provided for above, include, but are not limited to, if the Company believes that the User has violated this Agreement or other policies or guidelines of the Service or that of any other party, or if the Company believes that the User's conduct may be harmful to other consumers, advertisers or licensees who participate in or facilitate the Service.</div>
+                                        <div class="text-bigger first-bold"><strong>INTELLECTUAL PROPERTY.</strong> The Site holds certain content, such as text, graphics, logos, button icons, images, audio clips, data compilations, and software, that is the property of the Company or its content suppliers and protected by international copyright laws. The Site may contain or reference trademarks, patents, copyrighted materials, trade secrets, technologies, products, processes or other proprietary rights belonging to Company and/or other parties. No license to or right in any such trademarks, patents, copyrighted materials, trade secrets, technologies, products, processes and other proprietary rights of Company and/or other parties is granted to or conferred upon the User.</div>
+                                        <div class="text-bigger first-bold"><strong>VENUE.</strong> The interpretation of this Agreement shall be governed by the laws of the State of California. Any action arising under this Agreement shall be brought in the applicable State court located in Orange County, California.</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn buttonTransparent" aria-label="Close" (click)="termsandconditions.hide()" mdbWavesEffect>Close</button>                
+            </div>
+        </div>
+    </div>
+</div>

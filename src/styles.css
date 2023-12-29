@@ -1,0 +1,275 @@
+/* You can add global styles to this file, and also import other style files */
+
+#loading {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loading-image {
+    position: initial !important;
+}
+
+.loader-text {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+}
+
+.apexcharts-yaxis {
+    display: none !important;
+}
+
+.apexcharts-xcrosshairs {
+    /* background: red !important; */
+    /* fill: red !important; */
+}
+
+.apexcharts-active {
+    /* background: red !important; */
+    fill: #fff !important;
+}
+
+.d-1 {
+    display: flex;
+}
+
+.p_0 {
+    padding: 0px;
+}
+
+.bg-w {
+    background: #fff !important;
+}
+
+.carousel-inner {
+    height: 100vh;
+    padding-top: 90px;
+}
+
+.start_date_custom input::placeholder {
+    color: #fff !important;
+}
+
+.start_date_custom .mat-form-field.mat-focused .mat-form-field-label {
+    color: #fff !important;
+}
+
+.start_date_custom .mat-input-element {
+    color: #fff !important;
+}
+
+.start_date_custom.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgb(255,255,255) !important;
+    height: 2px !important;
+}
+
+.start_date_custom .mat-form-field-ripple {
+    background-color: #fff !important;
+}
+
+.start_date_custom.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+}
+
+.start_date_custom.mat-form-field-appearance-legacy .mat-form-field-underline, .attendies_custom_field.mat-form-field-appearance-legacy .mat-form-field-underline {
+    bottom: 0px !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: #fff !important;
+}
+
+
+.mat-form-field-infix {
+    padding: 0px 0px 12px 0px !important;
+}
+
+.mat-form-field-label {
+    top: 29px !important;
+    color: #fff !important;
+}
+
+.mat-form-field-label-wrapper {
+    top: -29px !important;
+}
+
+.text-color-1 {
+    color: #666666;
+}
+
+.filter_box_1, .filter_box_2 {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+.price_filter .mat-select-arrow {
+    border: none !important;
+    background: url(./assets/images/arrow_down.svg);
+    height: 12px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
+
+.price_filter {
+    width: 128px;
+    height: 45px;
+    margin-left: 12px;
+}
+
+    .price_filter .mat-form-field-wrapper .mat-form-field-underline {
+        height: 0px !important;
+    }
+
+    .price_filter .mat-form-field-wrapper mat-label {
+        color: #666666 !important;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .price_filter .mat-form-field-ripple {
+        display: none !important;
+    }
+
+.university_drpdwn .mat-select-arrow {
+    border: none !important;
+    background: url(./assets/images/arrow_down.svg);
+    height: 12px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
+
+.university_drpdwn {
+    width: 128px;
+    height: 45px;
+    margin-left: 12px;
+}
+
+    .university_drpdwn .mat-form-field-wrapper .mat-form-field-underline {
+        height: 0px !important;
+    }
+
+    .university_drpdwn .mat-form-field-wrapper mat-label {
+        color: #666666 !important;
+        font-size: 14px;
+    }
+
+    .university_drpdwn .mat-form-field-ripple {
+        display: none !important;
+    }
+
+
+.destination_drpdwn input::placeholder {
+    color: #fff !important;
+}
+
+.destination_drpdwn .mat-form-field.mat-focused .mat-form-field-label, .attendies_custom_field .mat-form-field.mat-focused .mat-form-field-label {
+    color: #fff !important;
+}
+
+.destination_drpdwn .mat-select-value-text, .attendies_custom_field .mat-select-value-text {
+    color: #fff;
+}
+
+.destination_drpdwn.mat-form-field-appearance-legacy .mat-form-field-underline, .attendies_custom_field.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgb(255,255,255) !important;
+    height: 2px !important;
+    bottom: 0px !important;
+    background-image: none;
+}
+
+.destination_drpdwn .mat-form-field-ripple, .attendies_custom_field .mat-form-field-ripple {
+    background-color: #fff !important;
+}
+
+.destination_drpdwn .mat-form-field-infix {
+    min-width: 230px !important;
+}
+
+.destination_drpdwn .mat-select-arrow {
+    opacity: 0 !important;
+}
+
+.destination_drpdwn mat-label, .attendies_custom_field mat-label {
+    display: flex;
+    align-items: center;
+}
+
+.destination_drpdwn.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+}
+/* .attendies_custom_field .mat-form-field-appearance-legacy .mat-form-field-wrapper{
+    padding-bottom: 0px !important;
+}
+.attendies_custom_field .mat-form-field-appearance-legacy .mat-form-field-underline{
+    bottom: 0px !important;
+} */
+.attendies_custom_field.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    overflow: visible !important;
+}
+
+.attendies_custom_field .mat-input-element {
+    color: #fff !important;
+}
+
+.attendies_custom_field.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+}
+
+.attendies_custom_field.mat-form-field-appearance-legacy .mat-form-field-underline, .attendies_custom_field.mat-form-field-appearance-legacy .mat-form-field-underline {
+    bottom: 0px !important;
+}
+
+
+.marker_tag {
+    height: 14px;
+    display: flex;
+    position: relative;
+    margin-right: 7px;
+}
+
+.attendies_img_2 {
+    height: 18px;
+    display: flex;
+    top: 0px;
+    position: relative;
+    margin-right: 7px;
+    width: 18px;
+}
+
+.destination_drpdwn.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    overflow: visible !important;
+}
+
+.planShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px solid;
+    top: 0;
+    box-shadow: 0px 6px 10px 3px rgb(0 0 0 / 30%);
+    z-index: 100;
+}
+
+.setZindex {
+    position: relative;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .filter_box_1, .filter_box_2 {
+        margin: 10px 5px 10px 10px;
+    }
+}
+
+.st-sticky-share-buttons {
+    display:none !important;
+}

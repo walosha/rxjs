@@ -1,0 +1,598 @@
+.topmargin {
+    margin-top: 5%;
+    margin-bottom: 12.7%;
+}
+
+.event {
+    margin: 0 100px 0 100px;
+    color: black;
+    font-weight: 500;
+}
+
+.event-name {
+    height: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.mr20 {
+    margin-right: 20px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.ml20 {
+    margin-left: 20px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.bgwhite {
+    background-color: white !important;
+}
+
+.font-blue {
+    color: #6CA9F0;
+    font-weight: bold;
+}
+
+.font-blue-lite {
+    color: #6CA9F0;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.payment {
+    background: #FB6100;
+    color: #fff;
+    height: 50px;
+}
+
+.bar-orange {
+    border-bottom: 3px solid #FB6100;
+}
+
+.attendee-profile {
+    max-width: 57px;
+    max-height: 57px;
+    padding: 2px;
+}
+
+.attendee-popup {
+    display: block;
+    position: fixed;
+    padding: 20px;
+    background-color: white;
+    z-index: 1002;
+    width: 400px;
+    height: 451px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.black-overlay {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    opacity: .80;
+}
+
+.attendee-popup::-webkit-scrollbar {
+    display: none;
+}
+
+.payment-status {
+    font-weight: bold;
+}
+
+.ofhide {
+    overflow: hidden;
+}
+
+.attendee-list {
+    overflow: scroll;
+    max-height: 100%;
+    padding-bottom: 30px;
+}
+
+    .attendee-list .attendee-list-item {
+        max-height: 57px;
+        min-height: 57px;
+        position: relative;
+    }
+
+    .attendee-list::-webkit-scrollbar {
+        display: none;
+    }
+
+@media screen and (max-width: 1210px) {
+    .evname,
+    .evdetails,
+    .evpayment {
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .event {
+        margin: 0 50px 0 50px;
+    }
+
+    .evname,
+    .evpayment,
+    .evdetails {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .event {
+        margin: 0 50px 0 50px;
+    }
+
+    .evname,
+    .evpayment,
+    .evdetails {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .event {
+        display: block;
+        margin: 0 50px 0 50px;
+    }
+
+    .payment-right {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .evname,
+    .evdetails,
+    .evpayment {
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .evname,
+    .evdetails {
+        font-size: 14px !important;
+    }
+
+    .evpayment {
+        font-size: 24px !important;
+    }
+
+    .evcarousel {
+        height: 200px !important;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.event-detail {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0px 5px 0px;
+}
+
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+    display: none !important;
+}
+
+.mobile_view {
+    margin-top: 84px;
+}
+
+.m-t-24 {
+    margin-top: 24px;
+}
+
+.event_name {
+    display: flex;
+    flex-direction: column !important;
+    background: #FFF9F5;
+    margin: -24px -16px 0px -16px;
+    padding: 16px 16px;
+}
+
+.event_info {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+.event_name .event_value {
+    flex: none !important;
+    text-align: start !important;
+    margin-top: 10px;
+}
+
+.event_key {
+    opacity: 0.6;
+}
+
+.event_value {
+    flex: 1;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.price_couple {
+    color: #FC6602;
+}
+
+.event_view_payment {
+    flex: 1;
+    margin-right: 10px;
+    padding: 12px 10px;
+}
+
+.event_make_payment {
+    flex: 1;
+    margin-left: 10px;
+    padding: 12px 10px;
+}
+
+.invitees_box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+    .invitees_box img {
+        position: absolute;
+        height: 22px;
+        width: 22px;
+        right: 10px;
+    }
+
+.invitees_stats {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+
+.interested_invitees, .invited_invitees, .declined_invitees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 0 6px 15px 4px rgb(69 65 78 / 10%);
+}
+
+.invited_invitees {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+    .interested_invitees img, .invited_invitees img, .declined_invitees img {
+        height: 24px;
+        width: 24px;
+    }
+
+.invitees_count {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.invitees_type {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.paid_couples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px 16px 12px 16px;
+    box-shadow: 0px 6px 10px 3px rgb(0 0 0 / 18%);
+}
+
+    .paid_couples .paid_title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .paid_couples .paid_counts {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+.user_images_list {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .user_images_list img {
+        height: 48px;
+        width: 48px;
+        margin-top: 5px;
+        margin-left: -15px;
+    }
+
+.user_list_counter {
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 53%);
+    margin-left: -16px;
+}
+
+.img_content {
+    width: 100vw;
+    height: 290px;
+    overflow: hidden;
+    margin: -24px 0px 0px -16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+    .img_content img {
+        width: auto;
+        height: auto;
+    }
+
+.hotel_info {
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    color: #fff;
+    padding: 15px 12px 15px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .hotel_info .hotel_name {
+        font-size: 16px;
+    }
+
+    .hotel_info .view_details {
+        white-space: nowrap;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 4px;
+        color: #fff;
+    }
+
+.event_hotel_description {
+    padding-top: 24px;
+}
+
+    .event_hotel_description span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .event_hotel_description p {
+        padding-top: 12px;
+        color: #000;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+.amentities {
+    display: flex;
+    padding-top: 15px;
+}
+
+    .amentities img {
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+        margin-top: 1px;
+    }
+
+    .amentities p {
+        color: #000;
+        margin: 0px;
+        padding: 0px;
+        line-height: initial;
+        font-size: 16px;
+    }
+
+
+.address_info {
+    color: #000;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .address_info .address {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .address_info .location_link {
+        white-space: nowrap;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        border-bottom: 1px solid #FE6700;
+        margin-bottom: 4px;
+        color: #FE6700;
+    }
+
+.event_hotel_description .review_user_img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.event_hotel_description .review_user_name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.event_hotel_description .user_review_star {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.user_comments {
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.pay_now_btn {
+    position: fixed;
+    width: 100vw;
+    top: calc(100vh - 48px);
+    padding: 12px 0px 12px 0px;
+}
+
+.event_img {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.event_img_detail img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.event_img_detail {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: 20;
+    padding: 10px 10px 0px 10px;
+}
+
+    .event_img_detail .event_name_info {
+        margin-left: 10px;
+    }
+
+        .event_img_detail .event_name_info .name {
+            font-size: 16px;
+            margin: 0px;
+            line-height: initial;
+            color: #fff;
+        }
+
+        .event_img_detail .event_name_info .email {
+            font-size: 13px;
+            margin: 0px;
+            line-height: initial;
+            color: #fff;
+        }
+
+.event_img .event_detail_name {
+    position: absolute;
+    margin: 0px;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (min-width: 769px) {
+    .mobile_view {
+        display: none;
+    }
+
+    .desktop_view {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile_view {
+        display: block;
+        margin-top: 84px;
+        height: calc(100vh - 132px);
+        overflow: scroll;
+        /* padding-bottom: 120px; */
+    }
+
+    .desktop_view {
+        display: none;
+    }
+}
+
+#mobile_chart {
+    max-width: 90vw;
+}

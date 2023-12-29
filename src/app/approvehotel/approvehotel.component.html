@@ -1,0 +1,155 @@
+<div class="main-wrapper">
+    <!-- PAGE TITLE -->
+    <section class="pageTitle" style="background-image:url(/assets/img/pages/page-title-bg5.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="titleTable">
+                        <div class="titleTableInner">
+                            <div class="pageTitleInfo">
+                                <h1>Approve Hotel</h1>
+                                <div class="under-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE CONTENT -->
+    <section class="mainContentSection" *ngIf="proposalHotel">
+        <div class="container" *ngIf="!proposalHotel.IsHotelApproved && !proposalHotel.IsHotelRejected">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-lg-12">
+                    <div class="contactForm">
+                        <form action="" role="form" class="form" [formGroup]='hotelAcceptForm'>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            Thank you for taking your time for looking for RFP {{proposalHotel.HotelName}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            Start Date: {{proposalHotel.EndDate | date: 'MM/dd/yyyy'}} - End Date: {{proposalHotel.EndDate | date: 'MM/dd/yyyy'}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            No Of Rooms: {{proposalHotel.NoOfRooms}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            No Of Nights: {{proposalHotel.Nights}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>
+                                            Total Amount: {{proposalHotel.Nights * hotelAcceptForm.controls.RoomRates.value}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput OnlyNumber="true" type="text" placeholder="Room Per Rates" formControlName='RoomRates'>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" placeholder="First Name *" formControlName='FirstName'>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput type="text" placeholder="Last Name *" formControlName='LastName'>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="checkbox" formControlName='Accept'> I Accept term & condition / Privacy policy
+                                    </div>
+                                </div>
+                            </div>
+                            <button [disabled]="!(hotelAcceptForm.valid && hotelAcceptForm.controls.Accept.value)" type="submit" class="btn buttonCustomPrimary" (click)="Accept(hotelAcceptForm, true)">Accept</button>
+                            <button [disabled]="!(hotelAcceptForm.controls.FirstName.value && hotelAcceptForm.controls.LastName.value)" type="submit" class="btn btn-danger" (click)="Accept(hotelAcceptForm, false)">Reject</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" *ngIf="proposalHotel.IsHotelApproved">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-lg-12">
+                    <div class="contactForm">
+                        <form action="" role="form" class="form" [formGroup]='hotelAcceptForm'>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="text-success">
+                                            You have already approved this hotel. Our staff will contact you once admin select your hotel.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" *ngIf="proposalHotel.IsHotelRejected">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-lg-12">
+                    <div class="contactForm">
+                        <form action="" role="form" class="form" [formGroup]='hotelAcceptForm'>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="text-danger">
+                                            You have already rejected this hotel.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="loading" *ngIf="loading">
+    <img id="loading-image" src="assets/img/loading.gif" alt="Loading...">
+</div>

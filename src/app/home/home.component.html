@@ -1,0 +1,97 @@
+<div class="slider_box">
+    <p class="left_text">
+        <span>
+            New Orleans
+        </span>
+    </p>
+    <div class="slider_container">
+        <div class="form_container">
+            <p class="form_title_1">
+                Let's go make some
+            </p>
+            <p class="form_title_2">
+                MEMORIES
+            </p>
+            <form class="example-form" [formGroup]='hotelForm'>
+                <div class="form_box">
+
+                    <div class="searchTour homesearch">
+                        <mat-form-field class="destination_drpdwn">
+                            <mat-label>
+                                <img src="../../assets/images/marker.svg" class="marker_img">
+                                Where do you want to go ?
+                            </mat-label>
+                            <mat-select formControlName='cityInput'>
+                                <mat-option *ngFor="let option of (destinations | async)?.results" [value]="option.id">
+                                    {{option.text}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div class="d-1 dontknow">
+                            <i class="fa fa-check-square active_checkbox" aria-hidden="true" *ngIf="destinationNotSureYet" (click)="destinationNotSureYet = !destinationNotSureYet"></i>
+                            <i class="fa fa-square-o inactive_checkbox" aria-hidden="true" *ngIf="!destinationNotSureYet" (click)="destinationNotSureYet = !destinationNotSureYet"></i>
+                            <span>
+                                City not available in list
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="searchTour homesearch" *ngIf="current_index > 1">
+                        <mat-form-field class="start_date_custom">
+                            <mat-label>Start Date</mat-label>
+                            <input matInput [min]="minDate" [max]="endDate" [matDatepicker]="startDatePicker" formControlName='startDate' #startDate (dateChange)="startDateChange(startDate)" (click)="startDatePicker.open()" autocomplete="off">
+                            <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+                            <mat-datepicker #startDatePicker></mat-datepicker>
+                        </mat-form-field>                        
+                    </div>
+                    <div class="searchTour homesearch" *ngIf="current_index > 1">
+                        <mat-form-field class="start_date_custom">
+                            <mat-label>End Date</mat-label>
+                            <input matInput [min]="minEndDate" [matDatepicker]="endDatePicker" formControlName='endDate' #endDate (dateChange)="endDateChange(endDate)" (click)="endDatePicker.open()" autocomplete="off">
+                            <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+                            <mat-datepicker #endDatePicker></mat-datepicker>
+                        </mat-form-field>                        
+                    </div>
+
+                    <div class="searchTour homesearch" *ngIf="current_index > 2">
+                        <mat-form-field class="attendies_custom_field">
+                            <mat-label>
+                                <img src="../../assets/images/attendies.svg" class="attendies_img">
+                                Total Attendees
+                            </mat-label>
+                            <input matInput OnlyNumber="true" formControlName='attendance' max="500">
+                        </mat-form-field>
+                    </div>
+                    <button class="btn btn-block buttonCustomPrimary proceed_btn" *ngIf="current_index == 1" (click)="validateDestination(2)" [disabled]="!hotelForm.value.cityInput">
+                        PROCEED
+                        <img src="../../assets/images/proceed.svg">
+                    </button>
+                    <button class="btn btn-block buttonCustomPrimary proceed_btn" *ngIf="current_index == 2" (click)="validateStartEndDate(3)" [disabled]="!hotelForm.value.cityInput">
+                        PROCEED
+                        <img src="../../assets/images/proceed.svg">
+                    </button>
+                    <button class="btn btn-block buttonCustomPrimary proceed_btn" *ngIf="current_index == 3" (click)="StartBuilding(hotelForm)" [disabled]="!hotelForm.valid">
+                        PROCEED
+                        <img src="../../assets/images/proceed.svg">
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="slider_img_1_box">
+            <img src="../../assets/images/slider_{{current_index}}_1.png" class="slider_img_1">
+        </div>
+        <span class="overlapped_text">
+            Las Vegas
+        </span>
+        <div class="slider_img_2_box">
+            <img src="../../assets/images/slider_{{current_index}}_2.png" class="slider_img_2">
+        </div>
+    </div>
+    <p class="right_text">
+        <span>
+            Gatlinburg
+        </span>
+    </p>
+</div>

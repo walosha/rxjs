@@ -1,0 +1,188 @@
+{
+  "total":  3,
+  "data": [
+    {
+        "Owner": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$currency_symbol": "$",
+        "Specialties": [],
+        "$field_states": null,
+        "$review_process": {
+            "approve": false,
+            "reject": false,
+            "resubmit": false
+        },
+        "Publish_Website": true,
+        "State_Province": {
+            "name": "Nevada",
+            "id": "4995818000001166237"
+        },
+        "Source": "NetRatesMaster",
+        "Name": "Las Vegas, NV",
+        "description": "Las Vegas, NV",
+        "Last_Activity_Time": "2022-10-19T19:53:44+05:00",
+        "Modified_By": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$review": null,
+        "$state": "save",
+        "Unsubscribed_Mode": null,
+        "$process_flow": false,
+        "id": "4995818000001166137",
+        "key": "4995818000001166137",
+        "$approved": true,
+        "$approval": {
+            "delegate": false,
+            "approve": false,
+            "reject": false,
+            "resubmit": false
+        },
+        "Modified_Time": "2022-10-19T19:53:44+05:00",
+        "Created_Time": "2022-09-23T08:11:52+05:00",
+        "Unsubscribed_Time": null,
+        "$editable": true,
+        "City": "Las Vegas",
+        "$orchestration": false,
+        "$in_merge": false,
+        "Country": {
+            "name": "United States",
+            "id": "4995818000001166349"
+        },
+        "Tag": [],
+        "Created_By": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$approval_state": "approved",
+        "$pathfinder": null
+    },
+    {
+        "Owner": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$currency_symbol": "$",
+        "Specialties": [],
+        "$field_states": null,
+        "$review_process": {
+            "approve": false,
+            "reject": false,
+            "resubmit": false
+        },
+        "Publish_Website": true,
+        "State_Province": {
+            "name": "Tennessee",
+            "id": "4995818000001166254"
+        },
+        "Source": "NetRatesMaster",
+        "Name": "Nashville, TN",
+        "description": "Nashville, TN",
+        "Last_Activity_Time": "2022-10-19T19:53:24+05:00",
+        "Modified_By": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$review": null,
+        "$state": "save",
+        "Unsubscribed_Mode": null,
+        "$process_flow": false,
+        "id": "4995818000001166143",
+        "key": "4995818000001166143",
+        "$approved": true,
+        "$approval": {
+            "delegate": false,
+            "approve": false,
+            "reject": false,
+            "resubmit": false
+        },
+        "Modified_Time": "2022-10-19T19:53:24+05:00",
+        "Created_Time": "2022-09-23T08:11:52+05:00",
+        "Unsubscribed_Time": null,
+        "$editable": true,
+        "City": "Nashville",
+        "$orchestration": false,
+        "$in_merge": false,
+        "Country": {
+            "name": "United States",
+            "id": "4995818000001166349"
+        },
+        "Tag": [],
+        "Created_By": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$approval_state": "approved",
+        "$pathfinder": null
+    },
+    {
+        "Owner": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$currency_symbol": "$",
+        "Specialties": [],
+        "$field_states": null,
+        "$review_process": {
+            "approve": false,
+            "reject": false,
+            "resubmit": false
+        },
+        "Publish_Website": true,
+        "State_Province": {
+            "name": "Louisiana",
+            "id": "4995818000001166226"
+        },
+        "Source": "NetRatesMaster",
+        "Name": "New Orleans, LA",
+        "description": "New Orleans, LA",
+        "Last_Activity_Time": "2022-10-19T19:53:12+05:00",
+        "Modified_By": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$review": null,
+        "$state": "save",
+        "Unsubscribed_Mode": null,
+        "$process_flow": false,
+        "id": "4995818000001166144",
+        "key": "4995818000001166144",
+        "$approved": true,
+        "$approval": {
+            "delegate": false,
+            "approve": false,
+            "reject": false,
+            "resubmit": false
+        },
+        "Modified_Time": "2022-10-19T19:53:12+05:00",
+        "Created_Time": "2022-09-23T08:11:52+05:00",
+        "Unsubscribed_Time": null,
+        "$editable": true,
+        "City": "New Orleans",
+        "$orchestration": false,
+        "$in_merge": false,
+        "Country": {
+            "name": "United States",
+            "id": "4995818000001166349"
+        },
+        "Tag": [],
+        "Created_By": {
+            "name": "Jeff York",
+            "id": "4995818000000374001",
+            "email": "jeff@formalbuilder.com"
+        },
+        "$approval_state": "approved",
+        "$pathfinder": null
+    }
+]
+}

@@ -1,0 +1,25 @@
+<div mat-dialog-title style="color: green;">{{title}}</div>
+
+<mat-dialog-content style="height: 100% !important;">
+  <div style="font-size: 16px;
+  margin: 5px 0px 20px 0px;">
+    Your payment is successfully done.
+
+    <h3 style="margin-top: 20px;" *ngIf="!IsAdmin">
+        Total Couples : {{total_couples}}
+    </h3>
+
+    <h3 [ngStyle]="{'margin-top': IsAdmin ? '20px' : '0px'}">
+        Amount : $ {{amount.toFixed(2)}}
+    </h3>
+
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: flex-end;">
+  <button mat-raised-button color="warn" (click)="CloseModal()" style="width: 100%;
+  margin: 24px 0px 24px 0px;
+  background: green;
+  color: #fff;">Done</button>
+</mat-dialog-actions>
+

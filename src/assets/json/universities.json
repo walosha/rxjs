@@ -1,0 +1,7927 @@
+﻿{
+  "Universities": [
+    {
+      "id": 1,
+      "name": "A.T. Still University"
+    },
+    {
+      "id": 2,
+      "name": "Abilene Christian University"
+    },
+    {
+      "id": 3,
+      "name": "Abraham Baldwin Agricultural College"
+    },
+    {
+      "id": 4,
+      "name": "Academy of Art University"
+    },
+    {
+      "id": 5,
+      "name": "Adams State University"
+    },
+    {
+      "id": 6,
+      "name": "Adelphi University"
+    },
+    {
+      "id": 7,
+      "name": "Adler Graduate School"
+    },
+    {
+      "id": 8,
+      "name": "Adler University"
+    },
+    {
+      "id": 9,
+      "name": "Adrian College"
+    },
+    {
+      "id": 10,
+      "name": "Adventist University of Health Sciences"
+    },
+    {
+      "id": 11,
+      "name": "Agnes Scott College"
+    },
+    {
+      "id": 12,
+      "name": "Air Force Institute of Technology"
+    },
+    {
+      "id": 13,
+      "name": "Alabama A&M University"
+    },
+    {
+      "id": 14,
+      "name": "Alabama State University"
+    },
+    {
+      "id": 15,
+      "name": "Alaska Bible College"
+    },
+    {
+      "id": 16,
+      "name": "Alaska Pacific University"
+    },
+    {
+      "id": 17,
+      "name": "Albany College of Pharmacy and Health Sciences"
+    },
+    {
+      "id": 18,
+      "name": "Albany Law School"
+    },
+    {
+      "id": 19,
+      "name": "Albany Medical College"
+    },
+    {
+      "id": 20,
+      "name": "Albany State University"
+    },
+    {
+      "id": 21,
+      "name": "Albertus Magnus College"
+    },
+    {
+      "id": 22,
+      "name": "Albion College"
+    },
+    {
+      "id": 23,
+      "name": "Albright College"
+    },
+    {
+      "id": 24,
+      "name": "Alcorn State University"
+    },
+    {
+      "id": 25,
+      "name": "Alderson Broaddus University"
+    },
+    {
+      "id": 26,
+      "name": "Alfred State College"
+    },
+    {
+      "id": 27,
+      "name": "Alfred University"
+    },
+    {
+      "id": 28,
+      "name": "Alice Lloyd College"
+    },
+    {
+      "id": 29,
+      "name": "Allegheny College"
+    },
+    {
+      "id": 30,
+      "name": "Allen College"
+    },
+    {
+      "id": 31,
+      "name": "Allen University"
+    },
+    {
+      "id": 32,
+      "name": "Alliant International University"
+    },
+    {
+      "id": 33,
+      "name": "Alma College"
+    },
+    {
+      "id": 34,
+      "name": "Alvernia University"
+    },
+    {
+      "id": 35,
+      "name": "Alverno College"
+    },
+    {
+      "id": 36,
+      "name": "Amberton University"
+    },
+    {
+      "id": 37,
+      "name": "American Baptist College"
+    },
+    {
+      "id": 38,
+      "name": "American Film Institute Conservatory"
+    },
+    {
+      "id": 39,
+      "name": "American International College"
+    },
+    {
+      "id": 40,
+      "name": "American Jewish University"
+    },
+    {
+      "id": 41,
+      "name": "American University"
+    },
+    {
+      "id": 42,
+      "name": "Amherst College"
+    },
+    {
+      "id": 43,
+      "name": "Anderson University"
+    },
+    {
+      "id": 44,
+      "name": "Anderson University, Indiana"
+    },
+    {
+      "id": 45,
+      "name": "Andrews University"
+    },
+    {
+      "id": 46,
+      "name": "Angelo State University"
+    },
+    {
+      "id": 47,
+      "name": "Anna Maria College"
+    },
+    {
+      "id": 48,
+      "name": "Antioch University"
+    },
+    {
+      "id": 49,
+      "name": "Antioch University Los Angeles"
+    },
+    {
+      "id": 50,
+      "name": "Antioch University New England"
+    },
+    {
+      "id": 51,
+      "name": "Antioch University Santa Barbara"
+    },
+    {
+      "id": 52,
+      "name": "Antioch University Seattle"
+    },
+    {
+      "id": 53,
+      "name": "Appalachian Bible College"
+    },
+    {
+      "id": 54,
+      "name": "Appalachian College of Pharmacy"
+    },
+    {
+      "id": 55,
+      "name": "Appalachian State University"
+    },
+    {
+      "id": 56,
+      "name": "Aquinas College"
+    },
+    {
+      "id": 57,
+      "name": "Aquinas College, Tennessee"
+    },
+    {
+      "id": 58,
+      "name": "Arcadia University"
+    },
+    {
+      "id": 59,
+      "name": "Argosy University"
+    },
+    {
+      "id": 60,
+      "name": "Arizona Christian University"
+    },
+    {
+      "id": 61,
+      "name": "Arizona State University"
+    },
+    {
+      "id": 62,
+      "name": "Arkansas Baptist College"
+    },
+    {
+      "id": 63,
+      "name": "Arkansas State University"
+    },
+    {
+      "id": 64,
+      "name": "Arkansas Tech University"
+    },
+    {
+      "id": 65,
+      "name": "Arlington Baptist University"
+    },
+    {
+      "id": 66,
+      "name": "Armstrong State University"
+    },
+    {
+      "id": 67,
+      "name": "Art Academy of Cincinnati"
+    },
+    {
+      "id": 68,
+      "name": "ArtCenter College of Design"
+    },
+    {
+      "id": 69,
+      "name": "Asbury University"
+    },
+    {
+      "id": 70,
+      "name": "Ashland University"
+    },
+    {
+      "id": 71,
+      "name": "Assumption College"
+    },
+    {
+      "id": 72,
+      "name": "Athens State University"
+    },
+    {
+      "id": 73,
+      "name": "Atlanta Metropolitan State College"
+    },
+    {
+      "id": 74,
+      "name": "Auburn University"
+    },
+    {
+      "id": 75,
+      "name": "Auburn University at Montgomery"
+    },
+    {
+      "id": 76,
+      "name": "Augsburg College"
+    },
+    {
+      "id": 77,
+      "name": "Augusta University"
+    },
+    {
+      "id": 78,
+      "name": "Augustana College"
+    },
+    {
+      "id": 79,
+      "name": "Augustana University"
+    },
+    {
+      "id": 80,
+      "name": "Aurora University"
+    },
+    {
+      "id": 81,
+      "name": "Austin College"
+    },
+    {
+      "id": 82,
+      "name": "Austin Peay State University"
+    },
+    {
+      "id": 83,
+      "name": "Ave Maria University"
+    },
+    {
+      "id": 84,
+      "name": "Averett University"
+    },
+    {
+      "id": 85,
+      "name": "Avila University"
+    },
+    {
+      "id": 86,
+      "name": "Azusa Pacific University"
+    },
+    {
+      "id": 87,
+      "name": "Babson College"
+    },
+    {
+      "id": 88,
+      "name": "Bacone College"
+    },
+    {
+      "id": 89,
+      "name": "Baker College"
+    },
+    {
+      "id": 90,
+      "name": "Baker University"
+    },
+    {
+      "id": 91,
+      "name": "Baldwin Wallace University"
+    },
+    {
+      "id": 92,
+      "name": "Ball State University"
+    },
+    {
+      "id": 93,
+      "name": "Bank Street College of Education"
+    },
+    {
+      "id": 94,
+      "name": "Baptist Bible College"
+    },
+    {
+      "id": 95,
+      "name": "Baptist Memorial College of Health Sciences"
+    },
+    {
+      "id": 96,
+      "name": "Baptist University of the Americas"
+    },
+    {
+      "id": 97,
+      "name": "Barclay College"
+    },
+    {
+      "id": 98,
+      "name": "Bard College"
+    },
+    {
+      "id": 99,
+      "name": "Bard College at Simon's Rock"
+    },
+    {
+      "id": 100,
+      "name": "Barnard College"
+    },
+    {
+      "id": 101,
+      "name": "Barnes-Jewish College Goldfarb School of Nursing"
+    },
+    {
+      "id": 102,
+      "name": "Barry University"
+    },
+    {
+      "id": 103,
+      "name": "Barton College"
+    },
+    {
+      "id": 104,
+      "name": "Bastyr University"
+    },
+    {
+      "id": 105,
+      "name": "Bates College"
+    },
+    {
+      "id": 106,
+      "name": "Bay Path University"
+    },
+    {
+      "id": 107,
+      "name": "Bay State College"
+    },
+    {
+      "id": 108,
+      "name": "Baylor College of Medicine"
+    },
+    {
+      "id": 109,
+      "name": "Baylor University"
+    },
+    {
+      "id": 110,
+      "name": "Beacon College"
+    },
+    {
+      "id": 111,
+      "name": "Becker College"
+    },
+    {
+      "id": 112,
+      "name": "Belhaven University"
+    },
+    {
+      "id": 113,
+      "name": "Bellarmine University"
+    },
+    {
+      "id": 114,
+      "name": "Bellevue College"
+    },
+    {
+      "id": 115,
+      "name": "Bellevue University"
+    },
+    {
+      "id": 116,
+      "name": "Bellin College"
+    },
+    {
+      "id": 117,
+      "name": "Belmont Abbey College"
+    },
+    {
+      "id": 118,
+      "name": "Belmont University"
+    },
+    {
+      "id": 119,
+      "name": "Beloit College"
+    },
+    {
+      "id": 120,
+      "name": "Bemidji State University"
+    },
+    {
+      "id": 121,
+      "name": "Benedict College"
+    },
+    {
+      "id": 122,
+      "name": "Benedictine College"
+    },
+    {
+      "id": 123,
+      "name": "Benedictine University"
+    },
+    {
+      "id": 124,
+      "name": "Benjamin Franklin Institute of Technology"
+    },
+    {
+      "id": 125,
+      "name": "Bennett College"
+    },
+    {
+      "id": 126,
+      "name": "Bennington College"
+    },
+    {
+      "id": 127,
+      "name": "Bentley University"
+    },
+    {
+      "id": 128,
+      "name": "Berea College"
+    },
+    {
+      "id": 129,
+      "name": "Berkeley College"
+    },
+    {
+      "id": 130,
+      "name": "Berklee College of Music"
+    },
+    {
+      "id": 131,
+      "name": "Bernard M Baruch College, CUNY"
+    },
+    {
+      "id": 132,
+      "name": "Berry College"
+    },
+    {
+      "id": 133,
+      "name": "Bethany College"
+    },
+    {
+      "id": 134,
+      "name": "Bethany College, Kansas"
+    },
+    {
+      "id": 135,
+      "name": "Bethany Lutheran College"
+    },
+    {
+      "id": 136,
+      "name": "Bethel College"
+    },
+    {
+      "id": 137,
+      "name": "Bethel College-Indiana"
+    },
+    {
+      "id": 138,
+      "name": "Bethel University"
+    },
+    {
+      "id": 139,
+      "name": "Bethel University, Tennessee"
+    },
+    {
+      "id": 140,
+      "name": "Bethesda University"
+    },
+    {
+      "id": 141,
+      "name": "Bethune-Cookman University"
+    },
+    {
+      "id": 142,
+      "name": "Beulah Heights University"
+    },
+    {
+      "id": 143,
+      "name": "Binghamton University, State University of New York"
+    },
+    {
+      "id": 144,
+      "name": "Biola University"
+    },
+    {
+      "id": 145,
+      "name": "Birmingham-Southern College"
+    },
+    {
+      "id": 146,
+      "name": "Bismarck State College"
+    },
+    {
+      "id": 147,
+      "name": "Black Hills State University"
+    },
+    {
+      "id": 148,
+      "name": "Blackburn College"
+    },
+    {
+      "id": 149,
+      "name": "Blessing-Rieman College of Nursing"
+    },
+    {
+      "id": 150,
+      "name": "Bloomfield College"
+    },
+    {
+      "id": 151,
+      "name": "Bloomsburg University of Pennsylvania"
+    },
+    {
+      "id": 152,
+      "name": "Blue Mountain College"
+    },
+    {
+      "id": 153,
+      "name": "Bluefield College"
+    },
+    {
+      "id": 154,
+      "name": "Bluefield State College"
+    },
+    {
+      "id": 155,
+      "name": "Bluffton University"
+    },
+    {
+      "id": 156,
+      "name": "Bob Jones University"
+    },
+    {
+      "id": 157,
+      "name": "Boise Bible College"
+    },
+    {
+      "id": 158,
+      "name": "Boise State University"
+    },
+    {
+      "id": 159,
+      "name": "Boricua College"
+    },
+    {
+      "id": 160,
+      "name": "Boston Architectural College"
+    },
+    {
+      "id": 161,
+      "name": "Boston College"
+    },
+    {
+      "id": 162,
+      "name": "Boston Graduate School of Psychoanalysis"
+    },
+    {
+      "id": 163,
+      "name": "Boston University"
+    },
+    {
+      "id": 164,
+      "name": "Bowdoin College"
+    },
+    {
+      "id": 165,
+      "name": "Bowie State University"
+    },
+    {
+      "id": 166,
+      "name": "Bowling Green State University"
+    },
+    {
+      "id": 167,
+      "name": "Bradley University"
+    },
+    {
+      "id": 168,
+      "name": "Brandeis University"
+    },
+    {
+      "id": 169,
+      "name": "Brandman University"
+    },
+    {
+      "id": 170,
+      "name": "Brazosport College"
+    },
+    {
+      "id": 171,
+      "name": "Brenau University"
+    },
+    {
+      "id": 172,
+      "name": "Brescia University"
+    },
+    {
+      "id": 173,
+      "name": "Brevard College"
+    },
+    {
+      "id": 174,
+      "name": "Brewton-Parker College"
+    },
+    {
+      "id": 175,
+      "name": "Briar Cliff University"
+    },
+    {
+      "id": 176,
+      "name": "Briarcliffe College"
+    },
+    {
+      "id": 177,
+      "name": "Bridgewater College"
+    },
+    {
+      "id": 178,
+      "name": "Bridgewater State University"
+    },
+    {
+      "id": 179,
+      "name": "Brigham Young University"
+    },
+    {
+      "id": 180,
+      "name": "Brigham Young University-Hawaii"
+    },
+    {
+      "id": 181,
+      "name": "Brigham Young University-Idaho"
+    },
+    {
+      "id": 182,
+      "name": "Brooklyn College"
+    },
+    {
+      "id": 183,
+      "name": "Brooklyn Law School"
+    },
+    {
+      "id": 184,
+      "name": "Broward College"
+    },
+    {
+      "id": 185,
+      "name": "Brown Mackie College"
+    },
+    {
+      "id": 186,
+      "name": "Brown University"
+    },
+    {
+      "id": 187,
+      "name": "Bryan College"
+    },
+    {
+      "id": 188,
+      "name": "Bryan College of Health Sciences"
+    },
+    {
+      "id": 189,
+      "name": "Bryant and Stratton College"
+    },
+    {
+      "id": 190,
+      "name": "Bryant University"
+    },
+    {
+      "id": 191,
+      "name": "Bryn Athyn College"
+    },
+    {
+      "id": 192,
+      "name": "Bryn Mawr College"
+    },
+    {
+      "id": 193,
+      "name": "Bucknell University"
+    },
+    {
+      "id": 194,
+      "name": "Buena Vista University"
+    },
+    {
+      "id": 195,
+      "name": "Buffalo State College"
+    },
+    {
+      "id": 196,
+      "name": "Butler University"
+    },
+    {
+      "id": 197,
+      "name": "Cabarrus College of Health Sciences"
+    },
+    {
+      "id": 198,
+      "name": "Cabrini University"
+    },
+    {
+      "id": 199,
+      "name": "Cairn University"
+    },
+    {
+      "id": 200,
+      "name": "Caldwell University"
+    },
+    {
+      "id": 201,
+      "name": "California Baptist University"
+    },
+    {
+      "id": 202,
+      "name": "California College of the Arts"
+    },
+    {
+      "id": 203,
+      "name": "California Institute of Integral Studies"
+    },
+    {
+      "id": 204,
+      "name": "California Institute of Technology"
+    },
+    {
+      "id": 205,
+      "name": "California Institute of the Arts"
+    },
+    {
+      "id": 206,
+      "name": "California Lutheran University"
+    },
+    {
+      "id": 207,
+      "name": "California Polytechnic State University, San Luis Obispo"
+    },
+    {
+      "id": 208,
+      "name": "California State Polytechnic University, Pomona"
+    },
+    {
+      "id": 209,
+      "name": "California State University Channel Islands"
+    },
+    {
+      "id": 210,
+      "name": "California State University Maritime Academy"
+    },
+    {
+      "id": 211,
+      "name": "California State University San Marcos"
+    },
+    {
+      "id": 212,
+      "name": "California State University Stanislaus"
+    },
+    {
+      "id": 213,
+      "name": "California State University, Bakersfield"
+    },
+    {
+      "id": 214,
+      "name": "California State University, Chico"
+    },
+    {
+      "id": 215,
+      "name": "California State University, Dominguez Hills"
+    },
+    {
+      "id": 216,
+      "name": "California State University, East Bay"
+    },
+    {
+      "id": 217,
+      "name": "California State University, Fresno"
+    },
+    {
+      "id": 218,
+      "name": "California State University, Fullerton"
+    },
+    {
+      "id": 219,
+      "name": "California State University, Long Beach"
+    },
+    {
+      "id": 220,
+      "name": "California State University, Los Angeles"
+    },
+    {
+      "id": 221,
+      "name": "California State University, Monterey Bay"
+    },
+    {
+      "id": 222,
+      "name": "California State University, Northridge"
+    },
+    {
+      "id": 223,
+      "name": "California State University, Sacramento"
+    },
+    {
+      "id": 224,
+      "name": "California State University, San Bernardino"
+    },
+    {
+      "id": 225,
+      "name": "California University of Pennsylvania"
+    },
+    {
+      "id": 226,
+      "name": "California Western School of Law"
+    },
+    {
+      "id": 227,
+      "name": "Calumet College of St. Joseph"
+    },
+    {
+      "id": 228,
+      "name": "Calvary University"
+    },
+    {
+      "id": 229,
+      "name": "Calvin College"
+    },
+    {
+      "id": 230,
+      "name": "Cambridge College"
+    },
+    {
+      "id": 231,
+      "name": "Cameron University"
+    },
+    {
+      "id": 232,
+      "name": "Campbell University"
+    },
+    {
+      "id": 233,
+      "name": "Campbellsville University"
+    },
+    {
+      "id": 234,
+      "name": "Canisius College"
+    },
+    {
+      "id": 235,
+      "name": "Capital University"
+    },
+    {
+      "id": 236,
+      "name": "Capitol Technology University"
+    },
+    {
+      "id": 237,
+      "name": "Cardinal Stritch University"
+    },
+    {
+      "id": 238,
+      "name": "Carleton College"
+    },
+    {
+      "id": 239,
+      "name": "Carlow University"
+    },
+    {
+      "id": 240,
+      "name": "Carnegie Mellon University"
+    },
+    {
+      "id": 241,
+      "name": "Carroll College"
+    },
+    {
+      "id": 242,
+      "name": "Carroll University"
+    },
+    {
+      "id": 243,
+      "name": "Carson-Newman University"
+    },
+    {
+      "id": 244,
+      "name": "Carthage College"
+    },
+    {
+      "id": 245,
+      "name": "Case Western Reserve University"
+    },
+    {
+      "id": 246,
+      "name": "Castleton University"
+    },
+    {
+      "id": 247,
+      "name": "Catawba College"
+    },
+    {
+      "id": 248,
+      "name": "Catholic Theological Union"
+    },
+    {
+      "id": 249,
+      "name": "Cazenovia College"
+    },
+    {
+      "id": 250,
+      "name": "Cedar Crest College"
+    },
+    {
+      "id": 251,
+      "name": "Cedarville University"
+    },
+    {
+      "id": 252,
+      "name": "Centenary College of Louisiana"
+    },
+    {
+      "id": 253,
+      "name": "Centenary University"
+    },
+    {
+      "id": 254,
+      "name": "Central Baptist College"
+    },
+    {
+      "id": 255,
+      "name": "Central Christian College of Kansas"
+    },
+    {
+      "id": 256,
+      "name": "Central Christian College of the Bible"
+    },
+    {
+      "id": 257,
+      "name": "Central College"
+    },
+    {
+      "id": 258,
+      "name": "Central Connecticut State University"
+    },
+    {
+      "id": 259,
+      "name": "Central Methodist University"
+    },
+    {
+      "id": 260,
+      "name": "Central Michigan University"
+    },
+    {
+      "id": 261,
+      "name": "Central Penn College"
+    },
+    {
+      "id": 262,
+      "name": "Central State University"
+    },
+    {
+      "id": 263,
+      "name": "Central Washington University"
+    },
+    {
+      "id": 264,
+      "name": "Centralia College"
+    },
+    {
+      "id": 265,
+      "name": "Centre College"
+    },
+    {
+      "id": 266,
+      "name": "Chadron State College"
+    },
+    {
+      "id": 267,
+      "name": "Chamberlain College of Nursing"
+    },
+    {
+      "id": 268,
+      "name": "Chaminade University of Honolulu"
+    },
+    {
+      "id": 269,
+      "name": "Champlain College"
+    },
+    {
+      "id": 270,
+      "name": "Chapman University"
+    },
+    {
+      "id": 271,
+      "name": "Charles R. Drew University of Medicine and Science"
+    },
+    {
+      "id": 272,
+      "name": "Charleston Southern University"
+    },
+    {
+      "id": 273,
+      "name": "Chatham University"
+    },
+    {
+      "id": 274,
+      "name": "Chestnut Hill College"
+    },
+    {
+      "id": 275,
+      "name": "Cheyney University of Pennsylvania"
+    },
+    {
+      "id": 276,
+      "name": "Chicago State University"
+    },
+    {
+      "id": 277,
+      "name": "Chipola College"
+    },
+    {
+      "id": 278,
+      "name": "Chowan University"
+    },
+    {
+      "id": 279,
+      "name": "Christian Brothers University"
+    },
+    {
+      "id": 280,
+      "name": "Christopher Newport University"
+    },
+    {
+      "id": 281,
+      "name": "Cincinnati Christian University"
+    },
+    {
+      "id": 282,
+      "name": "City University of Seattle"
+    },
+    {
+      "id": 283,
+      "name": "Claflin University"
+    },
+    {
+      "id": 284,
+      "name": "Claremont Graduate University"
+    },
+    {
+      "id": 285,
+      "name": "Claremont McKenna College"
+    },
+    {
+      "id": 286,
+      "name": "Clarion University of Pennsylvania"
+    },
+    {
+      "id": 287,
+      "name": "Clark Atlanta University"
+    },
+    {
+      "id": 288,
+      "name": "Clark University"
+    },
+    {
+      "id": 289,
+      "name": "Clarke University"
+    },
+    {
+      "id": 290,
+      "name": "Clarks Summit University"
+    },
+    {
+      "id": 291,
+      "name": "Clarkson College"
+    },
+    {
+      "id": 292,
+      "name": "Clarkson University"
+    },
+    {
+      "id": 293,
+      "name": "Clayton State University"
+    },
+    {
+      "id": 294,
+      "name": "Clear Creek Baptist Bible College"
+    },
+    {
+      "id": 295,
+      "name": "Cleary University"
+    },
+    {
+      "id": 296,
+      "name": "Clemson University"
+    },
+    {
+      "id": 297,
+      "name": "Cleveland Institute of Art"
+    },
+    {
+      "id": 298,
+      "name": "Cleveland Institute of Music"
+    },
+    {
+      "id": 299,
+      "name": "Cleveland State University"
+    },
+    {
+      "id": 300,
+      "name": "Cleveland University-Kansas City"
+    },
+    {
+      "id": 301,
+      "name": "Coastal Carolina University"
+    },
+    {
+      "id": 302,
+      "name": "Coe College"
+    },
+    {
+      "id": 303,
+      "name": "Cogswell Polytechnical College"
+    },
+    {
+      "id": 304,
+      "name": "Coker College"
+    },
+    {
+      "id": 305,
+      "name": "Colby College"
+    },
+    {
+      "id": 306,
+      "name": "Colby-Sawyer College"
+    },
+    {
+      "id": 307,
+      "name": "Colgate University"
+    },
+    {
+      "id": 308,
+      "name": "College for Creative Studies"
+    },
+    {
+      "id": 309,
+      "name": "College of Biblical Studies"
+    },
+    {
+      "id": 310,
+      "name": "College of Central Florida"
+    },
+    {
+      "id": 311,
+      "name": "College of Charleston"
+    },
+    {
+      "id": 312,
+      "name": "College of Coastal Georgia"
+    },
+    {
+      "id": 313,
+      "name": "College of Mount Saint Vincent"
+    },
+    {
+      "id": 314,
+      "name": "College of Our Lady of the Elms"
+    },
+    {
+      "id": 315,
+      "name": "College of Saint Benedict Saint John's University"
+    },
+    {
+      "id": 316,
+      "name": "College of Saint Elizabeth"
+    },
+    {
+      "id": 317,
+      "name": "College of Saint Mary"
+    },
+    {
+      "id": 318,
+      "name": "College of Southern Nevada"
+    },
+    {
+      "id": 319,
+      "name": "College of St. Joseph"
+    },
+    {
+      "id": 320,
+      "name": "College of Staten Island"
+    },
+    {
+      "id": 321,
+      "name": "College of the Atlantic"
+    },
+    {
+      "id": 322,
+      "name": "College of the Holy Cross"
+    },
+    {
+      "id": 323,
+      "name": "College of the Ozarks"
+    },
+    {
+      "id": 324,
+      "name": "College of William & Mary"
+    },
+    {
+      "id": 325,
+      "name": "Colorado Christian University"
+    },
+    {
+      "id": 326,
+      "name": "Colorado College"
+    },
+    {
+      "id": 327,
+      "name": "Colorado Mesa University"
+    },
+    {
+      "id": 328,
+      "name": "Colorado School of Mines"
+    },
+    {
+      "id": 329,
+      "name": "Colorado State University"
+    },
+    {
+      "id": 330,
+      "name": "Colorado State University-Pueblo"
+    },
+    {
+      "id": 331,
+      "name": "Colorado Technical University"
+    },
+    {
+      "id": 332,
+      "name": "Columbia Basin College"
+    },
+    {
+      "id": 333,
+      "name": "Columbia College"
+    },
+    {
+      "id": 334,
+      "name": "Columbia College Chicago"
+    },
+    {
+      "id": 335,
+      "name": "Columbia College of Nursing"
+    },
+    {
+      "id": 336,
+      "name": "Columbia College, South Carolina"
+    },
+    {
+      "id": 337,
+      "name": "Columbia College-Hollywood"
+    },
+    {
+      "id": 338,
+      "name": "Columbia International University"
+    },
+    {
+      "id": 339,
+      "name": "Columbia University in the City of New York"
+    },
+    {
+      "id": 340,
+      "name": "Columbus College of Art and Design"
+    },
+    {
+      "id": 341,
+      "name": "Columbus State University"
+    },
+    {
+      "id": 342,
+      "name": "Concord University"
+    },
+    {
+      "id": 343,
+      "name": "Concordia College"
+    },
+    {
+      "id": 344,
+      "name": "Concordia College Alabama"
+    },
+    {
+      "id": 345,
+      "name": "Concordia College-New York"
+    },
+    {
+      "id": 346,
+      "name": "Concordia University Ann Arbor"
+    },
+    {
+      "id": 347,
+      "name": "Concordia University Chicago"
+    },
+    {
+      "id": 348,
+      "name": "Concordia University Irvine"
+    },
+    {
+      "id": 349,
+      "name": "Concordia University Texas"
+    },
+    {
+      "id": 350,
+      "name": "Concordia University Wisconsin"
+    },
+    {
+      "id": 351,
+      "name": "Concordia University, Nebraska"
+    },
+    {
+      "id": 352,
+      "name": "Concordia University, Oregon"
+    },
+    {
+      "id": 353,
+      "name": "Concordia University, St. Paul"
+    },
+    {
+      "id": 354,
+      "name": "Connecticut College"
+    },
+    {
+      "id": 355,
+      "name": "Converse College"
+    },
+    {
+      "id": 356,
+      "name": "Conway School of Landscape Design"
+    },
+    {
+      "id": 357,
+      "name": "Coppin State University"
+    },
+    {
+      "id": 358,
+      "name": "Corban University"
+    },
+    {
+      "id": 359,
+      "name": "Cornell College"
+    },
+    {
+      "id": 360,
+      "name": "Cornell University"
+    },
+    {
+      "id": 361,
+      "name": "Cornerstone University"
+    },
+    {
+      "id": 362,
+      "name": "Cornish College of the Arts"
+    },
+    {
+      "id": 363,
+      "name": "Cottey College"
+    },
+    {
+      "id": 364,
+      "name": "Covenant College"
+    },
+    {
+      "id": 365,
+      "name": "Cox College"
+    },
+    {
+      "id": 366,
+      "name": "Cranbrook Academy of Art"
+    },
+    {
+      "id": 367,
+      "name": "Creighton University"
+    },
+    {
+      "id": 368,
+      "name": "Criswell College"
+    },
+    {
+      "id": 369,
+      "name": "Crossroads Bible College"
+    },
+    {
+      "id": 370,
+      "name": "Crossroads College"
+    },
+    {
+      "id": 371,
+      "name": "Crowley's Ridge College"
+    },
+    {
+      "id": 372,
+      "name": "Crown College"
+    },
+    {
+      "id": 373,
+      "name": "Culver-Stockton College"
+    },
+    {
+      "id": 374,
+      "name": "Cumberland University"
+    },
+    {
+      "id": 375,
+      "name": "CUNY School of Law"
+    },
+    {
+      "id": 376,
+      "name": "Curry College"
+    },
+    {
+      "id": 377,
+      "name": "Curtis Institute of Music"
+    },
+    {
+      "id": 378,
+      "name": "Daemen College"
+    },
+    {
+      "id": 379,
+      "name": "Dakota State University"
+    },
+    {
+      "id": 380,
+      "name": "Dakota Wesleyan University"
+    },
+    {
+      "id": 381,
+      "name": "Dallas Baptist University"
+    },
+    {
+      "id": 382,
+      "name": "Dallas Christian College"
+    },
+    {
+      "id": 383,
+      "name": "Dalton State College"
+    },
+    {
+      "id": 384,
+      "name": "Dartmouth College"
+    },
+    {
+      "id": 385,
+      "name": "Davenport University"
+    },
+    {
+      "id": 386,
+      "name": "Davidson College"
+    },
+    {
+      "id": 387,
+      "name": "Davis & Elkins College"
+    },
+    {
+      "id": 388,
+      "name": "Davis College"
+    },
+    {
+      "id": 389,
+      "name": "Daytona State College"
+    },
+    {
+      "id": 390,
+      "name": "Dean College"
+    },
+    {
+      "id": 391,
+      "name": "Defiance College"
+    },
+    {
+      "id": 392,
+      "name": "Delaware State University"
+    },
+    {
+      "id": 393,
+      "name": "Delaware Valley University"
+    },
+    {
+      "id": 394,
+      "name": "Delta State University"
+    },
+    {
+      "id": 395,
+      "name": "Denison University"
+    },
+    {
+      "id": 396,
+      "name": "Denver College of Nursing"
+    },
+    {
+      "id": 397,
+      "name": "DePaul University"
+    },
+    {
+      "id": 398,
+      "name": "DePauw University"
+    },
+    {
+      "id": 399,
+      "name": "Des Moines University"
+    },
+    {
+      "id": 400,
+      "name": "DeSales University"
+    },
+    {
+      "id": 401,
+      "name": "DeVry University"
+    },
+    {
+      "id": 402,
+      "name": "Dickinson College"
+    },
+    {
+      "id": 403,
+      "name": "Dickinson State University"
+    },
+    {
+      "id": 404,
+      "name": "Dillard University"
+    },
+    {
+      "id": 405,
+      "name": "Dixie State University"
+    },
+    {
+      "id": 406,
+      "name": "Doane University"
+    },
+    {
+      "id": 407,
+      "name": "Dominican College"
+    },
+    {
+      "id": 408,
+      "name": "Dominican School of Philosophy & Theology"
+    },
+    {
+      "id": 409,
+      "name": "Dominican University"
+    },
+    {
+      "id": 410,
+      "name": "Dominican University of California"
+    },
+    {
+      "id": 411,
+      "name": "Donnelly College"
+    },
+    {
+      "id": 412,
+      "name": "Dordt College"
+    },
+    {
+      "id": 413,
+      "name": "Dowling College"
+    },
+    {
+      "id": 414,
+      "name": "Drake University"
+    },
+    {
+      "id": 415,
+      "name": "Drew University"
+    },
+    {
+      "id": 416,
+      "name": "Drexel University"
+    },
+    {
+      "id": 417,
+      "name": "Drury University"
+    },
+    {
+      "id": 418,
+      "name": "Duke University"
+    },
+    {
+      "id": 419,
+      "name": "Dunwoody College of Technology"
+    },
+    {
+      "id": 420,
+      "name": "Duquesne University"
+    },
+    {
+      "id": 421,
+      "name": "D'Youville College"
+    },
+    {
+      "id": 422,
+      "name": "Earlham College"
+    },
+    {
+      "id": 423,
+      "name": "East Carolina University"
+    },
+    {
+      "id": 424,
+      "name": "East Central University"
+    },
+    {
+      "id": 425,
+      "name": "East Georgia State College"
+    },
+    {
+      "id": 426,
+      "name": "East Stroudsburg University"
+    },
+    {
+      "id": 427,
+      "name": "East Tennessee State University"
+    },
+    {
+      "id": 428,
+      "name": "East Texas Baptist University"
+    },
+    {
+      "id": 429,
+      "name": "Eastern Connecticut State University"
+    },
+    {
+      "id": 430,
+      "name": "Eastern Illinois University"
+    },
+    {
+      "id": 431,
+      "name": "Eastern Kentucky University"
+    },
+    {
+      "id": 432,
+      "name": "Eastern Mennonite University"
+    },
+    {
+      "id": 433,
+      "name": "Eastern Michigan University"
+    },
+    {
+      "id": 434,
+      "name": "Eastern Nazarene College"
+    },
+    {
+      "id": 435,
+      "name": "Eastern New Mexico University"
+    },
+    {
+      "id": 436,
+      "name": "Eastern Oregon University"
+    },
+    {
+      "id": 437,
+      "name": "Eastern University"
+    },
+    {
+      "id": 438,
+      "name": "Eastern Virginia Medical School"
+    },
+    {
+      "id": 439,
+      "name": "Eastern Washington University"
+    },
+    {
+      "id": 440,
+      "name": "East-West University"
+    },
+    {
+      "id": 441,
+      "name": "Ecclesia College"
+    },
+    {
+      "id": 442,
+      "name": "Eckerd College"
+    },
+    {
+      "id": 443,
+      "name": "ECPI University"
+    },
+    {
+      "id": 444,
+      "name": "Edgewood College"
+    },
+    {
+      "id": 445,
+      "name": "Edinboro University of Pennsylvania"
+    },
+    {
+      "id": 446,
+      "name": "Edward Waters College"
+    },
+    {
+      "id": 447,
+      "name": "Elizabeth City State University"
+    },
+    {
+      "id": 448,
+      "name": "Elizabethtown College"
+    },
+    {
+      "id": 449,
+      "name": "Elmhurst College"
+    },
+    {
+      "id": 450,
+      "name": "Elmira College"
+    },
+    {
+      "id": 451,
+      "name": "Elon University"
+    },
+    {
+      "id": 452,
+      "name": "Embry-Riddle Aeronautical University"
+    },
+    {
+      "id": 453,
+      "name": "Emerson College"
+    },
+    {
+      "id": 454,
+      "name": "Emmanuel College"
+    },
+    {
+      "id": 455,
+      "name": "Emmanuel College, Georgia"
+    },
+    {
+      "id": 456,
+      "name": "Emmaus Bible College"
+    },
+    {
+      "id": 457,
+      "name": "Emory & Henry College"
+    },
+    {
+      "id": 458,
+      "name": "Emory University"
+    },
+    {
+      "id": 459,
+      "name": "Emporia State University"
+    },
+    {
+      "id": 460,
+      "name": "Endicott College"
+    },
+    {
+      "id": 461,
+      "name": "Erskine College"
+    },
+    {
+      "id": 462,
+      "name": "Eureka College"
+    },
+    {
+      "id": 463,
+      "name": "Evangel University"
+    },
+    {
+      "id": 464,
+      "name": "Everglades University"
+    },
+    {
+      "id": 465,
+      "name": "Fairfield University"
+    },
+    {
+      "id": 466,
+      "name": "Fairleigh Dickinson University"
+    },
+    {
+      "id": 467,
+      "name": "Fairmont State University"
+    },
+    {
+      "id": 468,
+      "name": "Faith Baptist Bible College and Theological Seminary"
+    },
+    {
+      "id": 469,
+      "name": "Farmingdale State College"
+    },
+    {
+      "id": 470,
+      "name": "Fashion Institute of Technology"
+    },
+    {
+      "id": 471,
+      "name": "Faulkner University"
+    },
+    {
+      "id": 472,
+      "name": "Fayetteville State University"
+    },
+    {
+      "id": 473,
+      "name": "Felician University"
+    },
+    {
+      "id": 474,
+      "name": "Ferris State University"
+    },
+    {
+      "id": 475,
+      "name": "Ferrum College"
+    },
+    {
+      "id": 476,
+      "name": "Fielding Graduate University"
+    },
+    {
+      "id": 477,
+      "name": "Finlandia University"
+    },
+    {
+      "id": 478,
+      "name": "Fisher College"
+    },
+    {
+      "id": 479,
+      "name": "Fisk University"
+    },
+    {
+      "id": 480,
+      "name": "Fitchburg State University"
+    },
+    {
+      "id": 481,
+      "name": "Five Towns College"
+    },
+    {
+      "id": 482,
+      "name": "Flagler College"
+    },
+    {
+      "id": 483,
+      "name": "Florida Agricultural and Mechanical University"
+    },
+    {
+      "id": 484,
+      "name": "Florida Atlantic University"
+    },
+    {
+      "id": 485,
+      "name": "Florida College"
+    },
+    {
+      "id": 486,
+      "name": "Florida Gateway College"
+    },
+    {
+      "id": 487,
+      "name": "Florida Gulf Coast University"
+    },
+    {
+      "id": 488,
+      "name": "Florida Institute of Technology"
+    },
+    {
+      "id": 489,
+      "name": "Florida International University"
+    },
+    {
+      "id": 490,
+      "name": "Florida Memorial University"
+    },
+    {
+      "id": 491,
+      "name": "Florida National University"
+    },
+    {
+      "id": 492,
+      "name": "Florida Southern College"
+    },
+    {
+      "id": 493,
+      "name": "Florida SouthWestern State College"
+    },
+    {
+      "id": 494,
+      "name": "Florida State College at Jacksonville"
+    },
+    {
+      "id": 495,
+      "name": "Florida State University"
+    },
+    {
+      "id": 496,
+      "name": "Fontbonne University"
+    },
+    {
+      "id": 497,
+      "name": "Fordham University"
+    },
+    {
+      "id": 498,
+      "name": "Fort Hays State University"
+    },
+    {
+      "id": 499,
+      "name": "Fort Lewis College"
+    },
+    {
+      "id": 500,
+      "name": "Fort Valley State University"
+    },
+    {
+      "id": 501,
+      "name": "Framingham State University"
+    },
+    {
+      "id": 502,
+      "name": "Francis Marion University"
+    },
+    {
+      "id": 503,
+      "name": "Franciscan Missionaries of Our Lady University"
+    },
+    {
+      "id": 504,
+      "name": "Franciscan University of Steubenville"
+    },
+    {
+      "id": 505,
+      "name": "Franklin and Marshall College"
+    },
+    {
+      "id": 506,
+      "name": "Franklin College"
+    },
+    {
+      "id": 507,
+      "name": "Franklin Pierce University"
+    },
+    {
+      "id": 508,
+      "name": "Franklin University"
+    },
+    {
+      "id": 509,
+      "name": "Franklin W. Olin College of Engineering"
+    },
+    {
+      "id": 510,
+      "name": "Freed-Hardeman University"
+    },
+    {
+      "id": 511,
+      "name": "Fresno Pacific University"
+    },
+    {
+      "id": 512,
+      "name": "Friends University"
+    },
+    {
+      "id": 513,
+      "name": "Frostburg State University"
+    },
+    {
+      "id": 514,
+      "name": "Furman University"
+    },
+    {
+      "id": 515,
+      "name": "Gallaudet University"
+    },
+    {
+      "id": 516,
+      "name": "Gannon University"
+    },
+    {
+      "id": 517,
+      "name": "Gardner-Webb University"
+    },
+    {
+      "id": 518,
+      "name": "Geisinger Commonwealth School of Medicine"
+    },
+    {
+      "id": 519,
+      "name": "Geneva College"
+    },
+    {
+      "id": 520,
+      "name": "George Fox University"
+    },
+    {
+      "id": 521,
+      "name": "George Mason University"
+    },
+    {
+      "id": 522,
+      "name": "George Washington University"
+    },
+    {
+      "id": 523,
+      "name": "Georgetown College"
+    },
+    {
+      "id": 524,
+      "name": "Georgetown University"
+    },
+    {
+      "id": 525,
+      "name": "Georgia College and State University"
+    },
+    {
+      "id": 526,
+      "name": "Georgia Gwinnett College"
+    },
+    {
+      "id": 527,
+      "name": "Georgia Institute of Technology"
+    },
+    {
+      "id": 528,
+      "name": "Georgia Southern University"
+    },
+    {
+      "id": 529,
+      "name": "Georgia Southwestern State University"
+    },
+    {
+      "id": 530,
+      "name": "Georgia State University"
+    },
+    {
+      "id": 531,
+      "name": "Georgian Court University"
+    },
+    {
+      "id": 532,
+      "name": "Gettysburg College"
+    },
+    {
+      "id": 533,
+      "name": "Glenville State College"
+    },
+    {
+      "id": 534,
+      "name": "Goddard College"
+    },
+    {
+      "id": 535,
+      "name": "God's Bible School and College"
+    },
+    {
+      "id": 536,
+      "name": "Golden Gate University"
+    },
+    {
+      "id": 537,
+      "name": "Goldey-Beacom College"
+    },
+    {
+      "id": 538,
+      "name": "Gonzaga University"
+    },
+    {
+      "id": 539,
+      "name": "Good Samaritan College of Nursing and Health Science"
+    },
+    {
+      "id": 540,
+      "name": "Goodwin College"
+    },
+    {
+      "id": 541,
+      "name": "Gordon College"
+    },
+    {
+      "id": 542,
+      "name": "Gordon State College"
+    },
+    {
+      "id": 543,
+      "name": "Goshen College"
+    },
+    {
+      "id": 544,
+      "name": "Goucher College"
+    },
+    {
+      "id": 545,
+      "name": "Governors State University"
+    },
+    {
+      "id": 546,
+      "name": "Grace Bible College"
+    },
+    {
+      "id": 547,
+      "name": "Grace College"
+    },
+    {
+      "id": 548,
+      "name": "Grace University"
+    },
+    {
+      "id": 549,
+      "name": "Graceland University"
+    },
+    {
+      "id": 550,
+      "name": "Grambling State University"
+    },
+    {
+      "id": 551,
+      "name": "Grand Canyon University"
+    },
+    {
+      "id": 552,
+      "name": "Grand Valley State University"
+    },
+    {
+      "id": 553,
+      "name": "Grand View University"
+    },
+    {
+      "id": 554,
+      "name": "Granite State College"
+    },
+    {
+      "id": 555,
+      "name": "Gratz College"
+    },
+    {
+      "id": 556,
+      "name": "Great Basin College"
+    },
+    {
+      "id": 557,
+      "name": "Great Lakes Christian College"
+    },
+    {
+      "id": 558,
+      "name": "Green Mountain College"
+    },
+    {
+      "id": 559,
+      "name": "Greensboro College"
+    },
+    {
+      "id": 560,
+      "name": "Greenville College"
+    },
+    {
+      "id": 561,
+      "name": "Grinnell College"
+    },
+    {
+      "id": 562,
+      "name": "Grove City College"
+    },
+    {
+      "id": 563,
+      "name": "Guilford College"
+    },
+    {
+      "id": 564,
+      "name": "Gulf Coast State College"
+    },
+    {
+      "id": 565,
+      "name": "Gustavus Adolphus College"
+    },
+    {
+      "id": 566,
+      "name": "Gwynedd Mercy University"
+    },
+    {
+      "id": 567,
+      "name": "Hamilton College"
+    },
+    {
+      "id": 568,
+      "name": "Hamline University"
+    },
+    {
+      "id": 569,
+      "name": "Hampden-Sydney College"
+    },
+    {
+      "id": 570,
+      "name": "Hampshire College"
+    },
+    {
+      "id": 571,
+      "name": "Hampton University"
+    },
+    {
+      "id": 572,
+      "name": "Hannibal-LaGrange University"
+    },
+    {
+      "id": 573,
+      "name": "Hanover College"
+    },
+    {
+      "id": 574,
+      "name": "Harding University"
+    },
+    {
+      "id": 575,
+      "name": "Hardin-Simmons University"
+    },
+    {
+      "id": 576,
+      "name": "Harrisburg University of Science and Technology"
+    },
+    {
+      "id": 577,
+      "name": "Harris-Stowe State University"
+    },
+    {
+      "id": 578,
+      "name": "Hartwick College"
+    },
+    {
+      "id": 579,
+      "name": "Harvard University"
+    },
+    {
+      "id": 580,
+      "name": "Harvey Mudd College"
+    },
+    {
+      "id": 581,
+      "name": "Hastings College"
+    },
+    {
+      "id": 582,
+      "name": "Haverford College"
+    },
+    {
+      "id": 583,
+      "name": "Hawaii Pacific University"
+    },
+    {
+      "id": 584,
+      "name": "Hebrew College"
+    },
+    {
+      "id": 585,
+      "name": "Heidelberg University"
+    },
+    {
+      "id": 586,
+      "name": "Helene Fuld College of Nursing"
+    },
+    {
+      "id": 587,
+      "name": "Henderson State University"
+    },
+    {
+      "id": 588,
+      "name": "Hendrix College"
+    },
+    {
+      "id": 589,
+      "name": "Heritage Christian University"
+    },
+    {
+      "id": 590,
+      "name": "Heritage University"
+    },
+    {
+      "id": 591,
+      "name": "Herzing University"
+    },
+    {
+      "id": 592,
+      "name": "High Point University"
+    },
+    {
+      "id": 593,
+      "name": "Hilbert College"
+    },
+    {
+      "id": 594,
+      "name": "Hillsdale College"
+    },
+    {
+      "id": 595,
+      "name": "Hiram College"
+    },
+    {
+      "id": 596,
+      "name": "Hobart and William Smith Colleges"
+    },
+    {
+      "id": 597,
+      "name": "Hodges University"
+    },
+    {
+      "id": 598,
+      "name": "Hofstra University"
+    },
+    {
+      "id": 599,
+      "name": "Hollins University"
+    },
+    {
+      "id": 600,
+      "name": "Holy Apostles College and Seminary"
+    },
+    {
+      "id": 601,
+      "name": "Holy Cross College"
+    },
+    {
+      "id": 602,
+      "name": "Holy Family University"
+    },
+    {
+      "id": 603,
+      "name": "Holy Names University"
+    },
+    {
+      "id": 604,
+      "name": "Hood College"
+    },
+    {
+      "id": 605,
+      "name": "Hope College"
+    },
+    {
+      "id": 606,
+      "name": "Hope International University"
+    },
+    {
+      "id": 607,
+      "name": "Houghton College"
+    },
+    {
+      "id": 608,
+      "name": "Houston Baptist University"
+    },
+    {
+      "id": 609,
+      "name": "Howard Payne University"
+    },
+    {
+      "id": 610,
+      "name": "Howard University"
+    },
+    {
+      "id": 611,
+      "name": "Hult International Business School"
+    },
+    {
+      "id": 612,
+      "name": "Humboldt State University"
+    },
+    {
+      "id": 613,
+      "name": "Humphreys University"
+    },
+    {
+      "id": 614,
+      "name": "Hunter College, CUNY"
+    },
+    {
+      "id": 615,
+      "name": "Huntingdon College"
+    },
+    {
+      "id": 616,
+      "name": "Huntington University"
+    },
+    {
+      "id": 617,
+      "name": "Husson University"
+    },
+    {
+      "id": 618,
+      "name": "Huston-Tillotson University"
+    },
+    {
+      "id": 619,
+      "name": "Icahn School of Medicine at Mount Sinai"
+    },
+    {
+      "id": 620,
+      "name": "Idaho State University"
+    },
+    {
+      "id": 621,
+      "name": "Illinois College"
+    },
+    {
+      "id": 622,
+      "name": "Illinois College of Optometry"
+    },
+    {
+      "id": 623,
+      "name": "Illinois Institute of Technology"
+    },
+    {
+      "id": 624,
+      "name": "Illinois State University"
+    },
+    {
+      "id": 625,
+      "name": "Illinois Wesleyan University"
+    },
+    {
+      "id": 626,
+      "name": "Immaculata University"
+    },
+    {
+      "id": 627,
+      "name": "Indian River State College"
+    },
+    {
+      "id": 628,
+      "name": "Indiana Institute of Technology"
+    },
+    {
+      "id": 629,
+      "name": "Indiana State University"
+    },
+    {
+      "id": 630,
+      "name": "Indiana University - Purdue University Fort Wayne"
+    },
+    {
+      "id": 631,
+      "name": "Indiana University - Purdue University Indianapolis"
+    },
+    {
+      "id": 632,
+      "name": "Indiana University Bloomington"
+    },
+    {
+      "id": 633,
+      "name": "Indiana University East"
+    },
+    {
+      "id": 634,
+      "name": "Indiana University Kokomo"
+    },
+    {
+      "id": 635,
+      "name": "Indiana University Northwest"
+    },
+    {
+      "id": 636,
+      "name": "Indiana University of Pennsylvania"
+    },
+    {
+      "id": 637,
+      "name": "Indiana University South Bend"
+    },
+    {
+      "id": 638,
+      "name": "Indiana University Southeast"
+    },
+    {
+      "id": 639,
+      "name": "Indiana Wesleyan University"
+    },
+    {
+      "id": 640,
+      "name": "Iona College"
+    },
+    {
+      "id": 641,
+      "name": "Iowa State University of Science and Technology"
+    },
+    {
+      "id": 642,
+      "name": "Iowa Wesleyan University"
+    },
+    {
+      "id": 643,
+      "name": "Irell and Manella Graduate School of Biological Sciences"
+    },
+    {
+      "id": 644,
+      "name": "Ithaca College"
+    },
+    {
+      "id": 645,
+      "name": "Jackson State University"
+    },
+    {
+      "id": 646,
+      "name": "Jacksonville State University"
+    },
+    {
+      "id": 647,
+      "name": "Jacksonville University"
+    },
+    {
+      "id": 648,
+      "name": "James Madison University"
+    },
+    {
+      "id": 649,
+      "name": "Jamestown Business College"
+    },
+    {
+      "id": 650,
+      "name": "Jarvis Christian College"
+    },
+    {
+      "id": 651,
+      "name": "Jefferson College of Health Sciences"
+    },
+    {
+      "id": 652,
+      "name": "John Brown University"
+    },
+    {
+      "id": 653,
+      "name": "John Carroll University"
+    },
+    {
+      "id": 654,
+      "name": "John F. Kennedy University"
+    },
+    {
+      "id": 655,
+      "name": "John Jay College of Criminal Justice"
+    },
+    {
+      "id": 656,
+      "name": "John Paul the Great Catholic University"
+    },
+    {
+      "id": 657,
+      "name": "John Wesley University"
+    },
+    {
+      "id": 658,
+      "name": "Johns Hopkins University"
+    },
+    {
+      "id": 659,
+      "name": "Johnson and Wales University"
+    },
+    {
+      "id": 660,
+      "name": "Johnson C. Smith University"
+    },
+    {
+      "id": 661,
+      "name": "Johnson State College"
+    },
+    {
+      "id": 662,
+      "name": "Johnson University"
+    },
+    {
+      "id": 663,
+      "name": "Judson College"
+    },
+    {
+      "id": 664,
+      "name": "Judson University"
+    },
+    {
+      "id": 665,
+      "name": "Juniata College"
+    },
+    {
+      "id": 666,
+      "name": "Kalamazoo College"
+    },
+    {
+      "id": 667,
+      "name": "Kansas City Art Institute"
+    },
+    {
+      "id": 668,
+      "name": "Kansas City University of Medicine and Biosciences"
+    },
+    {
+      "id": 669,
+      "name": "Kansas State University"
+    },
+    {
+      "id": 670,
+      "name": "Kansas Wesleyan University"
+    },
+    {
+      "id": 671,
+      "name": "Kaplan University"
+    },
+    {
+      "id": 672,
+      "name": "Kean University"
+    },
+    {
+      "id": 673,
+      "name": "Keck Graduate Institute"
+    },
+    {
+      "id": 674,
+      "name": "Keene State College"
+    },
+    {
+      "id": 675,
+      "name": "Keiser University"
+    },
+    {
+      "id": 676,
+      "name": "Kendall College"
+    },
+    {
+      "id": 677,
+      "name": "Kennesaw State University"
+    },
+    {
+      "id": 678,
+      "name": "Kent State University"
+    },
+    {
+      "id": 679,
+      "name": "Kentucky Christian University"
+    },
+    {
+      "id": 680,
+      "name": "Kentucky State University"
+    },
+    {
+      "id": 681,
+      "name": "Kentucky Wesleyan College"
+    },
+    {
+      "id": 682,
+      "name": "Kenyon College"
+    },
+    {
+      "id": 683,
+      "name": "Kettering College"
+    },
+    {
+      "id": 684,
+      "name": "Kettering University"
+    },
+    {
+      "id": 685,
+      "name": "Keuka College"
+    },
+    {
+      "id": 686,
+      "name": "Keystone College"
+    },
+    {
+      "id": 687,
+      "name": "King University"
+    },
+    {
+      "id": 688,
+      "name": "King's College"
+    },
+    {
+      "id": 689,
+      "name": "Knox College"
+    },
+    {
+      "id": 690,
+      "name": "Kutztown University of Pennsylvania"
+    },
+    {
+      "id": 691,
+      "name": "Kuyper College"
+    },
+    {
+      "id": 692,
+      "name": "La Roche College"
+    },
+    {
+      "id": 693,
+      "name": "La Salle University"
+    },
+    {
+      "id": 694,
+      "name": "La Sierra University"
+    },
+    {
+      "id": 695,
+      "name": "Labouré College"
+    },
+    {
+      "id": 696,
+      "name": "Lafayette College"
+    },
+    {
+      "id": 697,
+      "name": "LaGrange College"
+    },
+    {
+      "id": 698,
+      "name": "Laguna College of Art and Design"
+    },
+    {
+      "id": 699,
+      "name": "Lake Erie College"
+    },
+    {
+      "id": 700,
+      "name": "Lake Forest College"
+    },
+    {
+      "id": 701,
+      "name": "Lake Forest Graduate School of Management"
+    },
+    {
+      "id": 702,
+      "name": "Lake Superior State University"
+    },
+    {
+      "id": 703,
+      "name": "Lake Washington Institute of Technology"
+    },
+    {
+      "id": 704,
+      "name": "Lakeland College"
+    },
+    {
+      "id": 705,
+      "name": "Lakeview College of Nursing"
+    },
+    {
+      "id": 706,
+      "name": "Lamar University"
+    },
+    {
+      "id": 707,
+      "name": "Lancaster Bible College"
+    },
+    {
+      "id": 708,
+      "name": "Lander University"
+    },
+    {
+      "id": 709,
+      "name": "Landmark College"
+    },
+    {
+      "id": 710,
+      "name": "Lane College"
+    },
+    {
+      "id": 711,
+      "name": "Langston University"
+    },
+    {
+      "id": 712,
+      "name": "Lasell College"
+    },
+    {
+      "id": 713,
+      "name": "Lawrence Technological University"
+    },
+    {
+      "id": 714,
+      "name": "Lawrence University"
+    },
+    {
+      "id": 715,
+      "name": "Le Moyne College"
+    },
+    {
+      "id": 716,
+      "name": "Lebanon Valley College"
+    },
+    {
+      "id": 717,
+      "name": "Lee University"
+    },
+    {
+      "id": 718,
+      "name": "Lees-McRae College"
+    },
+    {
+      "id": 719,
+      "name": "Lehigh University"
+    },
+    {
+      "id": 720,
+      "name": "Lehman College, CUNY"
+    },
+    {
+      "id": 721,
+      "name": "LeMoyne-Owen College"
+    },
+    {
+      "id": 722,
+      "name": "Lenoir-Rhyne University"
+    },
+    {
+      "id": 723,
+      "name": "Lesley University"
+    },
+    {
+      "id": 724,
+      "name": "LeTourneau University"
+    },
+    {
+      "id": 725,
+      "name": "Lewis & Clark College"
+    },
+    {
+      "id": 726,
+      "name": "Lewis University"
+    },
+    {
+      "id": 727,
+      "name": "Lewis-Clark State College"
+    },
+    {
+      "id": 728,
+      "name": "Liberty University"
+    },
+    {
+      "id": 729,
+      "name": "Life Pacific College"
+    },
+    {
+      "id": 730,
+      "name": "Life University"
+    },
+    {
+      "id": 731,
+      "name": "LIM College"
+    },
+    {
+      "id": 732,
+      "name": "Limestone College"
+    },
+    {
+      "id": 733,
+      "name": "Lincoln Christian University"
+    },
+    {
+      "id": 734,
+      "name": "Lincoln College"
+    },
+    {
+      "id": 735,
+      "name": "Lincoln College of New England"
+    },
+    {
+      "id": 736,
+      "name": "Lincoln Memorial University"
+    },
+    {
+      "id": 737,
+      "name": "Lincoln University"
+    },
+    {
+      "id": 738,
+      "name": "Lincoln University, California"
+    },
+    {
+      "id": 739,
+      "name": "Lincoln University, Missouri"
+    },
+    {
+      "id": 740,
+      "name": "Lindenwood University"
+    },
+    {
+      "id": 741,
+      "name": "Lindsey Wilson College"
+    },
+    {
+      "id": 742,
+      "name": "Linfield College"
+    },
+    {
+      "id": 743,
+      "name": "Lipscomb University"
+    },
+    {
+      "id": 744,
+      "name": "Livingstone College"
+    },
+    {
+      "id": 745,
+      "name": "Lock Haven University"
+    },
+    {
+      "id": 746,
+      "name": "Logan University"
+    },
+    {
+      "id": 747,
+      "name": "Loma Linda University"
+    },
+    {
+      "id": 748,
+      "name": "Long Island University"
+    },
+    {
+      "id": 749,
+      "name": "Longwood University"
+    },
+    {
+      "id": 750,
+      "name": "Loras College"
+    },
+    {
+      "id": 751,
+      "name": "Louisiana College"
+    },
+    {
+      "id": 752,
+      "name": "Louisiana State University"
+    },
+    {
+      "id": 753,
+      "name": "Louisiana State University Health Sciences Center"
+    },
+    {
+      "id": 754,
+      "name": "Louisiana State University Health Sciences Center-Shreveport"
+    },
+    {
+      "id": 755,
+      "name": "Louisiana State University in Shreveport"
+    },
+    {
+      "id": 756,
+      "name": "Louisiana State University of Alexandria"
+    },
+    {
+      "id": 757,
+      "name": "Louisiana Tech University"
+    },
+    {
+      "id": 758,
+      "name": "Lourdes University"
+    },
+    {
+      "id": 759,
+      "name": "Loyola Marymount University"
+    },
+    {
+      "id": 760,
+      "name": "Loyola University Chicago"
+    },
+    {
+      "id": 761,
+      "name": "Loyola University Maryland"
+    },
+    {
+      "id": 762,
+      "name": "Loyola University New Orleans"
+    },
+    {
+      "id": 763,
+      "name": "Lubbock Christian University"
+    },
+    {
+      "id": 764,
+      "name": "Luther College"
+    },
+    {
+      "id": 765,
+      "name": "Lycoming College"
+    },
+    {
+      "id": 766,
+      "name": "Lynchburg College"
+    },
+    {
+      "id": 767,
+      "name": "Lyndon State College"
+    },
+    {
+      "id": 768,
+      "name": "Lynn University"
+    },
+    {
+      "id": 769,
+      "name": "Lyon College"
+    },
+    {
+      "id": 770,
+      "name": "Macalester College"
+    },
+    {
+      "id": 771,
+      "name": "MacMurray College"
+    },
+    {
+      "id": 772,
+      "name": "Madonna University"
+    },
+    {
+      "id": 773,
+      "name": "Maharishi University of Management"
+    },
+    {
+      "id": 774,
+      "name": "Maine College of Art"
+    },
+    {
+      "id": 775,
+      "name": "Maine Maritime Academy"
+    },
+    {
+      "id": 776,
+      "name": "Malone University"
+    },
+    {
+      "id": 777,
+      "name": "Manchester University"
+    },
+    {
+      "id": 778,
+      "name": "Manhattan Christian College"
+    },
+    {
+      "id": 779,
+      "name": "Manhattan College"
+    },
+    {
+      "id": 780,
+      "name": "Manhattan School of Music"
+    },
+    {
+      "id": 781,
+      "name": "Manhattanville College"
+    },
+    {
+      "id": 782,
+      "name": "Mansfield University of Pennsylvania"
+    },
+    {
+      "id": 783,
+      "name": "Maranatha Baptist University"
+    },
+    {
+      "id": 784,
+      "name": "Maria College"
+    },
+    {
+      "id": 785,
+      "name": "Marian University"
+    },
+    {
+      "id": 786,
+      "name": "Marian University, Wisconsin"
+    },
+    {
+      "id": 787,
+      "name": "Marietta College"
+    },
+    {
+      "id": 788,
+      "name": "Marist College"
+    },
+    {
+      "id": 789,
+      "name": "Marlboro College"
+    },
+    {
+      "id": 790,
+      "name": "Marquette University"
+    },
+    {
+      "id": 791,
+      "name": "Mars Hill University"
+    },
+    {
+      "id": 792,
+      "name": "Marshall B. Ketchum University"
+    },
+    {
+      "id": 793,
+      "name": "Marshall University"
+    },
+    {
+      "id": 794,
+      "name": "Martin Luther College"
+    },
+    {
+      "id": 795,
+      "name": "Martin Methodist College"
+    },
+    {
+      "id": 796,
+      "name": "Martin University"
+    },
+    {
+      "id": 797,
+      "name": "Mary Baldwin University"
+    },
+    {
+      "id": 798,
+      "name": "Marygrove College"
+    },
+    {
+      "id": 799,
+      "name": "Maryland Institute College of Art"
+    },
+    {
+      "id": 800,
+      "name": "Maryland University of Integrative Health"
+    },
+    {
+      "id": 801,
+      "name": "Marylhurst University"
+    },
+    {
+      "id": 802,
+      "name": "Marymount California University"
+    },
+    {
+      "id": 803,
+      "name": "Marymount Manhattan College"
+    },
+    {
+      "id": 804,
+      "name": "Marymount University"
+    },
+    {
+      "id": 805,
+      "name": "Maryville College"
+    },
+    {
+      "id": 806,
+      "name": "Maryville University"
+    },
+    {
+      "id": 807,
+      "name": "Marywood University"
+    },
+    {
+      "id": 808,
+      "name": "Massachusetts College of Art and Design"
+    },
+    {
+      "id": 809,
+      "name": "Massachusetts College of Liberal Arts"
+    },
+    {
+      "id": 810,
+      "name": "Massachusetts Institute of Technology"
+    },
+    {
+      "id": 811,
+      "name": "Massachusetts Maritime Academy"
+    },
+    {
+      "id": 812,
+      "name": "Massachusetts School of Law"
+    },
+    {
+      "id": 813,
+      "name": "Mayo Medical School"
+    },
+    {
+      "id": 814,
+      "name": "Mayville State University"
+    },
+    {
+      "id": 815,
+      "name": "McDaniel College"
+    },
+    {
+      "id": 816,
+      "name": "McKendree University"
+    },
+    {
+      "id": 817,
+      "name": "McMurry University"
+    },
+    {
+      "id": 818,
+      "name": "McNeese State University"
+    },
+    {
+      "id": 819,
+      "name": "McPherson College"
+    },
+    {
+      "id": 820,
+      "name": "MCPHS University"
+    },
+    {
+      "id": 821,
+      "name": "Medaille College"
+    },
+    {
+      "id": 822,
+      "name": "Medgar Evers College"
+    },
+    {
+      "id": 823,
+      "name": "Medical College of Wisconsin"
+    },
+    {
+      "id": 824,
+      "name": "Medical University of South Carolina"
+    },
+    {
+      "id": 825,
+      "name": "Meharry Medical College"
+    },
+    {
+      "id": 826,
+      "name": "Memphis College of Art"
+    },
+    {
+      "id": 827,
+      "name": "Menlo College"
+    },
+    {
+      "id": 828,
+      "name": "Mercer University"
+    },
+    {
+      "id": 829,
+      "name": "Mercy College"
+    },
+    {
+      "id": 830,
+      "name": "Mercy College of Health Sciences"
+    },
+    {
+      "id": 831,
+      "name": "Mercy College of Ohio"
+    },
+    {
+      "id": 832,
+      "name": "Mercyhurst University"
+    },
+    {
+      "id": 833,
+      "name": "Meredith College"
+    },
+    {
+      "id": 834,
+      "name": "Merrimack College"
+    },
+    {
+      "id": 835,
+      "name": "Messiah College"
+    },
+    {
+      "id": 836,
+      "name": "Methodist College"
+    },
+    {
+      "id": 837,
+      "name": "Methodist University"
+    },
+    {
+      "id": 838,
+      "name": "Metropolitan College of New York"
+    },
+    {
+      "id": 839,
+      "name": "Metropolitan State University"
+    },
+    {
+      "id": 840,
+      "name": "Metropolitan State University of Denver"
+    },
+    {
+      "id": 841,
+      "name": "MGH Institute of Health Professions"
+    },
+    {
+      "id": 842,
+      "name": "Miami Dade College"
+    },
+    {
+      "id": 843,
+      "name": "Miami University"
+    },
+    {
+      "id": 844,
+      "name": "Michigan School of Professional Psychology"
+    },
+    {
+      "id": 845,
+      "name": "Michigan State University"
+    },
+    {
+      "id": 846,
+      "name": "Michigan Technological University"
+    },
+    {
+      "id": 847,
+      "name": "Mid-America Christian University"
+    },
+    {
+      "id": 848,
+      "name": "MidAmerica Nazarene University"
+    },
+    {
+      "id": 849,
+      "name": "Mid-Atlantic Christian University"
+    },
+    {
+      "id": 850,
+      "name": "Middle Georgia State University"
+    },
+    {
+      "id": 851,
+      "name": "Middle Tennessee School of Anesthesia"
+    },
+    {
+      "id": 852,
+      "name": "Middle Tennessee State University"
+    },
+    {
+      "id": 853,
+      "name": "Middlebury College"
+    },
+    {
+      "id": 854,
+      "name": "Midland College"
+    },
+    {
+      "id": 855,
+      "name": "Midland University"
+    },
+    {
+      "id": 856,
+      "name": "Midstate College"
+    },
+    {
+      "id": 857,
+      "name": "Midway University"
+    },
+    {
+      "id": 858,
+      "name": "Midwestern State University"
+    },
+    {
+      "id": 859,
+      "name": "Midwestern University"
+    },
+    {
+      "id": 860,
+      "name": "Miles College"
+    },
+    {
+      "id": 861,
+      "name": "Millersville University of Pennsylvania"
+    },
+    {
+      "id": 862,
+      "name": "Milligan College"
+    },
+    {
+      "id": 863,
+      "name": "Millikin University"
+    },
+    {
+      "id": 864,
+      "name": "Mills College"
+    },
+    {
+      "id": 865,
+      "name": "Millsaps College"
+    },
+    {
+      "id": 866,
+      "name": "Milwaukee Institute of Art & Design"
+    },
+    {
+      "id": 867,
+      "name": "Milwaukee School of Engineering"
+    },
+    {
+      "id": 868,
+      "name": "Minneapolis College of Art and Design"
+    },
+    {
+      "id": 869,
+      "name": "Minnesota State University Moorhead"
+    },
+    {
+      "id": 870,
+      "name": "Minnesota State University, Mankato"
+    },
+    {
+      "id": 871,
+      "name": "Minot State University"
+    },
+    {
+      "id": 872,
+      "name": "Misericordia University"
+    },
+    {
+      "id": 873,
+      "name": "Mississippi College"
+    },
+    {
+      "id": 874,
+      "name": "Mississippi State University"
+    },
+    {
+      "id": 875,
+      "name": "Mississippi University for Women"
+    },
+    {
+      "id": 876,
+      "name": "Mississippi Valley State University"
+    },
+    {
+      "id": 877,
+      "name": "Missouri Baptist University"
+    },
+    {
+      "id": 878,
+      "name": "Missouri Southern State University"
+    },
+    {
+      "id": 879,
+      "name": "Missouri State University"
+    },
+    {
+      "id": 880,
+      "name": "Missouri University of Science and Technology"
+    },
+    {
+      "id": 881,
+      "name": "Missouri Valley College"
+    },
+    {
+      "id": 882,
+      "name": "Missouri Western State University"
+    },
+    {
+      "id": 883,
+      "name": "Mitchell College"
+    },
+    {
+      "id": 884,
+      "name": "Mitchell Hamline School of Law"
+    },
+    {
+      "id": 885,
+      "name": "Molloy College"
+    },
+    {
+      "id": 886,
+      "name": "Monmouth College"
+    },
+    {
+      "id": 887,
+      "name": "Monmouth University"
+    },
+    {
+      "id": 888,
+      "name": "Monroe College"
+    },
+    {
+      "id": 889,
+      "name": "Montana State University"
+    },
+    {
+      "id": 890,
+      "name": "Montana State University Billings"
+    },
+    {
+      "id": 891,
+      "name": "Montana State University-Northern"
+    },
+    {
+      "id": 892,
+      "name": "Montana Tech"
+    },
+    {
+      "id": 893,
+      "name": "Montclair State University"
+    },
+    {
+      "id": 894,
+      "name": "Montreat College"
+    },
+    {
+      "id": 895,
+      "name": "Montserrat College of Art"
+    },
+    {
+      "id": 896,
+      "name": "Moody Bible Institute"
+    },
+    {
+      "id": 897,
+      "name": "Moore College of Art and Design"
+    },
+    {
+      "id": 898,
+      "name": "Moravian College"
+    },
+    {
+      "id": 899,
+      "name": "Morehead State University"
+    },
+    {
+      "id": 900,
+      "name": "Morehouse College"
+    },
+    {
+      "id": 901,
+      "name": "Morehouse School of Medicine"
+    },
+    {
+      "id": 902,
+      "name": "Morgan State University"
+    },
+    {
+      "id": 903,
+      "name": "Morningside College"
+    },
+    {
+      "id": 904,
+      "name": "Morris College"
+    },
+    {
+      "id": 905,
+      "name": "Morrisville State College"
+    },
+    {
+      "id": 906,
+      "name": "Mount Aloysius College"
+    },
+    {
+      "id": 907,
+      "name": "Mount Carmel College of Nursing"
+    },
+    {
+      "id": 908,
+      "name": "Mount Holyoke College"
+    },
+    {
+      "id": 909,
+      "name": "Mount Ida College"
+    },
+    {
+      "id": 910,
+      "name": "Mount Marty College"
+    },
+    {
+      "id": 911,
+      "name": "Mount Mary University"
+    },
+    {
+      "id": 912,
+      "name": "Mount Mercy University"
+    },
+    {
+      "id": 913,
+      "name": "Mount Saint Mary College"
+    },
+    {
+      "id": 914,
+      "name": "Mount Saint Mary's University"
+    },
+    {
+      "id": 915,
+      "name": "Mount St. Joseph University"
+    },
+    {
+      "id": 916,
+      "name": "Mount St. Mary's University"
+    },
+    {
+      "id": 917,
+      "name": "Mount Vernon Nazarene University"
+    },
+    {
+      "id": 918,
+      "name": "Muhlenberg College"
+    },
+    {
+      "id": 919,
+      "name": "Multnomah University"
+    },
+    {
+      "id": 920,
+      "name": "Murray State University"
+    },
+    {
+      "id": 921,
+      "name": "Muskingum University"
+    },
+    {
+      "id": 922,
+      "name": "Naropa University"
+    },
+    {
+      "id": 923,
+      "name": "National American University"
+    },
+    {
+      "id": 924,
+      "name": "National Defense University"
+    },
+    {
+      "id": 925,
+      "name": "National Labor College"
+    },
+    {
+      "id": 926,
+      "name": "National University"
+    },
+    {
+      "id": 927,
+      "name": "National University of Health Sciences"
+    },
+    {
+      "id": 928,
+      "name": "National-Louis University"
+    },
+    {
+      "id": 929,
+      "name": "Naval Postgraduate School"
+    },
+    {
+      "id": 930,
+      "name": "Nazarene Bible College"
+    },
+    {
+      "id": 931,
+      "name": "Nazareth College"
+    },
+    {
+      "id": 932,
+      "name": "Nebraska Christian College"
+    },
+    {
+      "id": 933,
+      "name": "Nebraska Methodist College"
+    },
+    {
+      "id": 934,
+      "name": "Nebraska Wesleyan University"
+    },
+    {
+      "id": 935,
+      "name": "Neumann University"
+    },
+    {
+      "id": 936,
+      "name": "Neumont University"
+    },
+    {
+      "id": 937,
+      "name": "Nevada State College"
+    },
+    {
+      "id": 938,
+      "name": "New College of Florida"
+    },
+    {
+      "id": 939,
+      "name": "New England College"
+    },
+    {
+      "id": 940,
+      "name": "New England College of Optometry"
+    },
+    {
+      "id": 941,
+      "name": "New England Conservatory"
+    },
+    {
+      "id": 942,
+      "name": "New England Institute of Technology"
+    },
+    {
+      "id": 943,
+      "name": "New England Law | Boston"
+    },
+    {
+      "id": 944,
+      "name": "New Hope Christian College"
+    },
+    {
+      "id": 945,
+      "name": "New Jersey City University"
+    },
+    {
+      "id": 946,
+      "name": "New Jersey Institute of Technology"
+    },
+    {
+      "id": 947,
+      "name": "New Mexico Highlands University"
+    },
+    {
+      "id": 948,
+      "name": "New Mexico Institute of Mining and Technology"
+    },
+    {
+      "id": 949,
+      "name": "New Mexico State University"
+    },
+    {
+      "id": 950,
+      "name": "New York Academy of Art"
+    },
+    {
+      "id": 951,
+      "name": "New York City College of Technology, CUNY"
+    },
+    {
+      "id": 952,
+      "name": "New York College of Podiatric Medicine"
+    },
+    {
+      "id": 953,
+      "name": "New York Institute of Technology"
+    },
+    {
+      "id": 954,
+      "name": "New York Law School"
+    },
+    {
+      "id": 955,
+      "name": "New York Medical College"
+    },
+    {
+      "id": 956,
+      "name": "New York School of Interior Design"
+    },
+    {
+      "id": 957,
+      "name": "New York University"
+    },
+    {
+      "id": 958,
+      "name": "Newberry College"
+    },
+    {
+      "id": 959,
+      "name": "Newbury College"
+    },
+    {
+      "id": 960,
+      "name": "Newman University"
+    },
+    {
+      "id": 961,
+      "name": "NewSchool of Architecture and Design"
+    },
+    {
+      "id": 962,
+      "name": "Niagara University"
+    },
+    {
+      "id": 963,
+      "name": "Nicholls State University"
+    },
+    {
+      "id": 964,
+      "name": "Nichols College"
+    },
+    {
+      "id": 965,
+      "name": "Norfolk State University"
+    },
+    {
+      "id": 966,
+      "name": "North Carolina Agricultural and Technical State University"
+    },
+    {
+      "id": 967,
+      "name": "North Carolina Central University"
+    },
+    {
+      "id": 968,
+      "name": "North Carolina State University"
+    },
+    {
+      "id": 969,
+      "name": "North Carolina Wesleyan College"
+    },
+    {
+      "id": 970,
+      "name": "North Central College"
+    },
+    {
+      "id": 971,
+      "name": "North Central University"
+    },
+    {
+      "id": 972,
+      "name": "North Dakota State University"
+    },
+    {
+      "id": 973,
+      "name": "North Greenville University"
+    },
+    {
+      "id": 974,
+      "name": "North Park University"
+    },
+    {
+      "id": 975,
+      "name": "Northeast Catholic College"
+    },
+    {
+      "id": 976,
+      "name": "Northeast Ohio Medical University"
+    },
+    {
+      "id": 977,
+      "name": "Northeastern Illinois University"
+    },
+    {
+      "id": 978,
+      "name": "Northeastern State University"
+    },
+    {
+      "id": 979,
+      "name": "Northeastern University"
+    },
+    {
+      "id": 980,
+      "name": "Northern Arizona University"
+    },
+    {
+      "id": 981,
+      "name": "Northern Illinois University"
+    },
+    {
+      "id": 982,
+      "name": "Northern Kentucky University"
+    },
+    {
+      "id": 983,
+      "name": "Northern Michigan University"
+    },
+    {
+      "id": 984,
+      "name": "Northern New Mexico College"
+    },
+    {
+      "id": 985,
+      "name": "Northern State University"
+    },
+    {
+      "id": 986,
+      "name": "Northland College"
+    },
+    {
+      "id": 987,
+      "name": "Northpoint Bible College"
+    },
+    {
+      "id": 988,
+      "name": "Northwest Christian University"
+    },
+    {
+      "id": 989,
+      "name": "Northwest Florida State College"
+    },
+    {
+      "id": 990,
+      "name": "Northwest Missouri State University"
+    },
+    {
+      "id": 991,
+      "name": "Northwest Nazarene University"
+    },
+    {
+      "id": 992,
+      "name": "Northwest University"
+    },
+    {
+      "id": 993,
+      "name": "Northwestern College"
+    },
+    {
+      "id": 994,
+      "name": "Northwestern Health Sciences University"
+    },
+    {
+      "id": 995,
+      "name": "Northwestern Oklahoma State University"
+    },
+    {
+      "id": 996,
+      "name": "Northwestern State University of Louisiana"
+    },
+    {
+      "id": 997,
+      "name": "Northwestern University"
+    },
+    {
+      "id": 998,
+      "name": "Northwood University"
+    },
+    {
+      "id": 999,
+      "name": "Norwich University"
+    },
+    {
+      "id": 1000,
+      "name": "Notre Dame College"
+    },
+    {
+      "id": 1001,
+      "name": "Notre Dame de Namur University"
+    },
+    {
+      "id": 1002,
+      "name": "Notre Dame of Maryland University"
+    },
+    {
+      "id": 1003,
+      "name": "Nova Southeastern University"
+    },
+    {
+      "id": 1004,
+      "name": "Nyack College"
+    },
+    {
+      "id": 1005,
+      "name": "Oak Hills Christian College"
+    },
+    {
+      "id": 1006,
+      "name": "Oakland City University"
+    },
+    {
+      "id": 1007,
+      "name": "Oakland University"
+    },
+    {
+      "id": 1008,
+      "name": "Oakwood University"
+    },
+    {
+      "id": 1009,
+      "name": "Oberlin College"
+    },
+    {
+      "id": 1010,
+      "name": "Occidental College"
+    },
+    {
+      "id": 1011,
+      "name": "Oglethorpe University"
+    },
+    {
+      "id": 1012,
+      "name": "Ohio Christian University"
+    },
+    {
+      "id": 1013,
+      "name": "Ohio Dominican University"
+    },
+    {
+      "id": 1014,
+      "name": "Ohio Northern University"
+    },
+    {
+      "id": 1015,
+      "name": "Ohio University"
+    },
+    {
+      "id": 1016,
+      "name": "Ohio University Southern"
+    },
+    {
+      "id": 1017,
+      "name": "Ohio University-Chillicothe"
+    },
+    {
+      "id": 1018,
+      "name": "Ohio Valley University"
+    },
+    {
+      "id": 1019,
+      "name": "Ohio Wesleyan University"
+    },
+    {
+      "id": 1020,
+      "name": "Oklahoma Baptist University"
+    },
+    {
+      "id": 1021,
+      "name": "Oklahoma Christian University"
+    },
+    {
+      "id": 1022,
+      "name": "Oklahoma City University"
+    },
+    {
+      "id": 1023,
+      "name": "Oklahoma Panhandle State University"
+    },
+    {
+      "id": 1024,
+      "name": "Oklahoma State University"
+    },
+    {
+      "id": 1025,
+      "name": "Oklahoma Wesleyan University"
+    },
+    {
+      "id": 1026,
+      "name": "Old Dominion University"
+    },
+    {
+      "id": 1027,
+      "name": "Olivet College"
+    },
+    {
+      "id": 1028,
+      "name": "Olivet Nazarene University"
+    },
+    {
+      "id": 1029,
+      "name": "Oral Roberts University"
+    },
+    {
+      "id": 1030,
+      "name": "Oregon College of Art and Craft"
+    },
+    {
+      "id": 1031,
+      "name": "Oregon Health & Science University"
+    },
+    {
+      "id": 1032,
+      "name": "Oregon Institute of Technology"
+    },
+    {
+      "id": 1033,
+      "name": "Oregon State University"
+    },
+    {
+      "id": 1034,
+      "name": "Otis College of Art and Design"
+    },
+    {
+      "id": 1035,
+      "name": "Ottawa University"
+    },
+    {
+      "id": 1036,
+      "name": "Otterbein University"
+    },
+    {
+      "id": 1037,
+      "name": "Ouachita Baptist University"
+    },
+    {
+      "id": 1038,
+      "name": "Our Lady of the Lake University"
+    },
+    {
+      "id": 1039,
+      "name": "Ozark Christian College"
+    },
+    {
+      "id": 1040,
+      "name": "Pace University"
+    },
+    {
+      "id": 1041,
+      "name": "Pacific Lutheran University"
+    },
+    {
+      "id": 1042,
+      "name": "Pacific Northwest College of Art"
+    },
+    {
+      "id": 1043,
+      "name": "Pacific Oaks College"
+    },
+    {
+      "id": 1044,
+      "name": "Pacific Union College"
+    },
+    {
+      "id": 1045,
+      "name": "Pacific University"
+    },
+    {
+      "id": 1046,
+      "name": "Pacifica Graduate Institute"
+    },
+    {
+      "id": 1047,
+      "name": "Paine College"
+    },
+    {
+      "id": 1048,
+      "name": "Palm Beach Atlantic University"
+    },
+    {
+      "id": 1049,
+      "name": "Palm Beach State College"
+    },
+    {
+      "id": 1050,
+      "name": "Palo Alto University"
+    },
+    {
+      "id": 1051,
+      "name": "Pardee RAND Graduate School"
+    },
+    {
+      "id": 1052,
+      "name": "Park University"
+    },
+    {
+      "id": 1053,
+      "name": "Parker University"
+    },
+    {
+      "id": 1054,
+      "name": "Patten University"
+    },
+    {
+      "id": 1055,
+      "name": "Paul Quinn College"
+    },
+    {
+      "id": 1056,
+      "name": "Paul Smith's College"
+    },
+    {
+      "id": 1057,
+      "name": "Peirce College"
+    },
+    {
+      "id": 1058,
+      "name": "Penn State College of Medicine"
+    },
+    {
+      "id": 1059,
+      "name": "Penn State University"
+    },
+    {
+      "id": 1060,
+      "name": "Pennsylvania Academy of the Fine Arts"
+    },
+    {
+      "id": 1061,
+      "name": "Pennsylvania College of Art and Design"
+    },
+    {
+      "id": 1062,
+      "name": "Pennsylvania College of Health Sciences"
+    },
+    {
+      "id": 1063,
+      "name": "Pennsylvania College of Technology"
+    },
+    {
+      "id": 1064,
+      "name": "Pensacola State College"
+    },
+    {
+      "id": 1065,
+      "name": "Pepperdine University"
+    },
+    {
+      "id": 1066,
+      "name": "Peru State College"
+    },
+    {
+      "id": 1067,
+      "name": "Pfeiffer University"
+    },
+    {
+      "id": 1068,
+      "name": "Philander Smith College"
+    },
+    {
+      "id": 1069,
+      "name": "Phillips Graduate University"
+    },
+    {
+      "id": 1070,
+      "name": "Piedmont College"
+    },
+    {
+      "id": 1071,
+      "name": "Piedmont International University"
+    },
+    {
+      "id": 1072,
+      "name": "Pillar College"
+    },
+    {
+      "id": 1073,
+      "name": "Pine Manor College"
+    },
+    {
+      "id": 1074,
+      "name": "Pittsburg State University"
+    },
+    {
+      "id": 1075,
+      "name": "Pitzer College"
+    },
+    {
+      "id": 1076,
+      "name": "Plaza College"
+    },
+    {
+      "id": 1077,
+      "name": "Plymouth State University"
+    },
+    {
+      "id": 1078,
+      "name": "Point Loma Nazarene University"
+    },
+    {
+      "id": 1079,
+      "name": "Point Park University"
+    },
+    {
+      "id": 1080,
+      "name": "Point University"
+    },
+    {
+      "id": 1081,
+      "name": "Polk State College"
+    },
+    {
+      "id": 1082,
+      "name": "Pomona College"
+    },
+    {
+      "id": 1083,
+      "name": "Pontifical Faculty of the Immaculate Conception"
+    },
+    {
+      "id": 1084,
+      "name": "Portland State University"
+    },
+    {
+      "id": 1085,
+      "name": "Post University"
+    },
+    {
+      "id": 1086,
+      "name": "Prairie View A&M University"
+    },
+    {
+      "id": 1087,
+      "name": "Pratt Institute"
+    },
+    {
+      "id": 1088,
+      "name": "Presbyterian College"
+    },
+    {
+      "id": 1089,
+      "name": "Prescott College"
+    },
+    {
+      "id": 1090,
+      "name": "Presentation College"
+    },
+    {
+      "id": 1091,
+      "name": "Princeton University"
+    },
+    {
+      "id": 1092,
+      "name": "Principia College"
+    },
+    {
+      "id": 1093,
+      "name": "Providence Christian College"
+    },
+    {
+      "id": 1094,
+      "name": "Providence College"
+    },
+    {
+      "id": 1095,
+      "name": "Purchase College, State University of New York"
+    },
+    {
+      "id": 1096,
+      "name": "Purdue University"
+    },
+    {
+      "id": 1097,
+      "name": "Purdue University Northwest"
+    },
+    {
+      "id": 1098,
+      "name": "Queens College, City University of New York"
+    },
+    {
+      "id": 1099,
+      "name": "Queens University of Charlotte"
+    },
+    {
+      "id": 1100,
+      "name": "Quincy University"
+    },
+    {
+      "id": 1101,
+      "name": "Quinnipiac University"
+    },
+    {
+      "id": 1102,
+      "name": "Radford University"
+    },
+    {
+      "id": 1103,
+      "name": "Ramapo College of New Jersey"
+    },
+    {
+      "id": 1104,
+      "name": "Randolph College"
+    },
+    {
+      "id": 1105,
+      "name": "Randolph-Macon College"
+    },
+    {
+      "id": 1106,
+      "name": "Rasmussen College"
+    },
+    {
+      "id": 1107,
+      "name": "Reed College"
+    },
+    {
+      "id": 1108,
+      "name": "Regent University"
+    },
+    {
+      "id": 1109,
+      "name": "Regis College"
+    },
+    {
+      "id": 1110,
+      "name": "Regis University"
+    },
+    {
+      "id": 1111,
+      "name": "Reinhardt University"
+    },
+    {
+      "id": 1112,
+      "name": "Relay Graduate School of Education"
+    },
+    {
+      "id": 1113,
+      "name": "Rensselaer Polytechnic Institute"
+    },
+    {
+      "id": 1114,
+      "name": "Research College of Nursing"
+    },
+    {
+      "id": 1115,
+      "name": "Resurrection University"
+    },
+    {
+      "id": 1116,
+      "name": "Rhode Island College"
+    },
+    {
+      "id": 1117,
+      "name": "Rhode Island School of Design"
+    },
+    {
+      "id": 1118,
+      "name": "Rhodes College"
+    },
+    {
+      "id": 1119,
+      "name": "Rice University"
+    },
+    {
+      "id": 1120,
+      "name": "Richmont Graduate University"
+    },
+    {
+      "id": 1121,
+      "name": "Rider University"
+    },
+    {
+      "id": 1122,
+      "name": "Ringling College of Art and Design"
+    },
+    {
+      "id": 1123,
+      "name": "Ripon College"
+    },
+    {
+      "id": 1124,
+      "name": "Rivier University"
+    },
+    {
+      "id": 1125,
+      "name": "Roanoke College"
+    },
+    {
+      "id": 1126,
+      "name": "Robert Morris University"
+    },
+    {
+      "id": 1127,
+      "name": "Robert Morris University Illinois"
+    },
+    {
+      "id": 1128,
+      "name": "Roberts Wesleyan College"
+    },
+    {
+      "id": 1129,
+      "name": "Rochester College"
+    },
+    {
+      "id": 1130,
+      "name": "Rochester Institute of Technology"
+    },
+    {
+      "id": 1131,
+      "name": "Rockford University"
+    },
+    {
+      "id": 1132,
+      "name": "Rockhurst University"
+    },
+    {
+      "id": 1133,
+      "name": "Rocky Mountain College"
+    },
+    {
+      "id": 1134,
+      "name": "Rocky Mountain College of Art and Design"
+    },
+    {
+      "id": 1135,
+      "name": "Rocky Mountain University of Health Professions"
+    },
+    {
+      "id": 1136,
+      "name": "Rocky Vista University"
+    },
+    {
+      "id": 1137,
+      "name": "Roger Williams University"
+    },
+    {
+      "id": 1138,
+      "name": "Rogers State University"
+    },
+    {
+      "id": 1139,
+      "name": "Rollins College"
+    },
+    {
+      "id": 1140,
+      "name": "Roosevelt University"
+    },
+    {
+      "id": 1141,
+      "name": "Rosalind Franklin University of Medicine and Science"
+    },
+    {
+      "id": 1142,
+      "name": "Rose-Hulman Institute of Technology"
+    },
+    {
+      "id": 1143,
+      "name": "Roseman University of Health Sciences"
+    },
+    {
+      "id": 1144,
+      "name": "Rosemont College"
+    },
+    {
+      "id": 1145,
+      "name": "Rowan University"
+    },
+    {
+      "id": 1146,
+      "name": "Rush University"
+    },
+    {
+      "id": 1147,
+      "name": "Rust College"
+    },
+    {
+      "id": 1148,
+      "name": "Rutgers, The State University of New Jersey"
+    },
+    {
+      "id": 1149,
+      "name": "Sacred Heart University"
+    },
+    {
+      "id": 1150,
+      "name": "Saginaw Valley State University"
+    },
+    {
+      "id": 1151,
+      "name": "Saint Ambrose University"
+    },
+    {
+      "id": 1152,
+      "name": "Saint Anselm College"
+    },
+    {
+      "id": 1153,
+      "name": "Saint Anthony College of Nursing"
+    },
+    {
+      "id": 1154,
+      "name": "Saint Augustine College"
+    },
+    {
+      "id": 1155,
+      "name": "Saint Francis Medical Center College of Nursing"
+    },
+    {
+      "id": 1156,
+      "name": "Saint Francis University"
+    },
+    {
+      "id": 1157,
+      "name": "Saint Johns River State College"
+    },
+    {
+      "id": 1158,
+      "name": "Saint Joseph's College"
+    },
+    {
+      "id": 1159,
+      "name": "Saint Joseph's College of Maine"
+    },
+    {
+      "id": 1160,
+      "name": "Saint Joseph's University"
+    },
+    {
+      "id": 1161,
+      "name": "Saint Leo University"
+    },
+    {
+      "id": 1162,
+      "name": "Saint Louis University"
+    },
+    {
+      "id": 1163,
+      "name": "Saint Luke's College of Health Sciences"
+    },
+    {
+      "id": 1164,
+      "name": "Saint Martin's University"
+    },
+    {
+      "id": 1165,
+      "name": "Saint Mary-of-the-Woods College"
+    },
+    {
+      "id": 1166,
+      "name": "Saint Mary's College"
+    },
+    {
+      "id": 1167,
+      "name": "Saint Mary's College of California"
+    },
+    {
+      "id": 1168,
+      "name": "Saint Mary's University of Minnesota"
+    },
+    {
+      "id": 1169,
+      "name": "Saint Michael's College"
+    },
+    {
+      "id": 1170,
+      "name": "Saint Peter's University"
+    },
+    {
+      "id": 1171,
+      "name": "Saint Vincent College"
+    },
+    {
+      "id": 1172,
+      "name": "Saint Xavier University"
+    },
+    {
+      "id": 1173,
+      "name": "Salem College"
+    },
+    {
+      "id": 1174,
+      "name": "Salem International University"
+    },
+    {
+      "id": 1175,
+      "name": "Salem State University"
+    },
+    {
+      "id": 1176,
+      "name": "Salisbury University"
+    },
+    {
+      "id": 1177,
+      "name": "Salus University"
+    },
+    {
+      "id": 1178,
+      "name": "Salve Regina University"
+    },
+    {
+      "id": 1179,
+      "name": "Sam Houston State University"
+    },
+    {
+      "id": 1180,
+      "name": "Samford University"
+    },
+    {
+      "id": 1181,
+      "name": "Samuel Merritt University"
+    },
+    {
+      "id": 1182,
+      "name": "San Diego Christian College"
+    },
+    {
+      "id": 1183,
+      "name": "San Diego State University"
+    },
+    {
+      "id": 1184,
+      "name": "San Francisco Art Institute"
+    },
+    {
+      "id": 1185,
+      "name": "San Francisco Conservatory of Music"
+    },
+    {
+      "id": 1186,
+      "name": "San Francisco State University"
+    },
+    {
+      "id": 1187,
+      "name": "San Joaquin College of Law"
+    },
+    {
+      "id": 1188,
+      "name": "San José State University"
+    },
+    {
+      "id": 1189,
+      "name": "Santa Clara University"
+    },
+    {
+      "id": 1190,
+      "name": "Santa Fe College"
+    },
+    {
+      "id": 1191,
+      "name": "Santa Fe University of Art and Design"
+    },
+    {
+      "id": 1192,
+      "name": "Sarah Lawrence College"
+    },
+    {
+      "id": 1193,
+      "name": "Savannah College of Art and Design"
+    },
+    {
+      "id": 1194,
+      "name": "Savannah State University"
+    },
+    {
+      "id": 1195,
+      "name": "Saybrook University"
+    },
+    {
+      "id": 1196,
+      "name": "Schiller International University"
+    },
+    {
+      "id": 1197,
+      "name": "School of the Art Institute of Chicago"
+    },
+    {
+      "id": 1198,
+      "name": "School of Visual Arts"
+    },
+    {
+      "id": 1199,
+      "name": "Schreiner University"
+    },
+    {
+      "id": 1200,
+      "name": "Scripps College"
+    },
+    {
+      "id": 1201,
+      "name": "Seattle Central College"
+    },
+    {
+      "id": 1202,
+      "name": "Seattle Pacific University"
+    },
+    {
+      "id": 1203,
+      "name": "Seattle University"
+    },
+    {
+      "id": 1204,
+      "name": "Seminole State College of Florida"
+    },
+    {
+      "id": 1205,
+      "name": "Seton Hall University"
+    },
+    {
+      "id": 1206,
+      "name": "Seton Hill University"
+    },
+    {
+      "id": 1207,
+      "name": "Sewanee: The University of the South"
+    },
+    {
+      "id": 1208,
+      "name": "Shaw University"
+    },
+    {
+      "id": 1209,
+      "name": "Shawnee State University"
+    },
+    {
+      "id": 1210,
+      "name": "Shenandoah University"
+    },
+    {
+      "id": 1211,
+      "name": "Shepherd University"
+    },
+    {
+      "id": 1212,
+      "name": "Shimer College"
+    },
+    {
+      "id": 1213,
+      "name": "Shippensburg University of Pennsylvania"
+    },
+    {
+      "id": 1214,
+      "name": "Shorter University"
+    },
+    {
+      "id": 1215,
+      "name": "Siena College"
+    },
+    {
+      "id": 1216,
+      "name": "Siena Heights University"
+    },
+    {
+      "id": 1217,
+      "name": "Sierra Nevada College"
+    },
+    {
+      "id": 1218,
+      "name": "Silver Lake College of the Holy Family"
+    },
+    {
+      "id": 1219,
+      "name": "Simmons College"
+    },
+    {
+      "id": 1220,
+      "name": "Simpson College"
+    },
+    {
+      "id": 1221,
+      "name": "Simpson University"
+    },
+    {
+      "id": 1222,
+      "name": "SIT Graduate Institute"
+    },
+    {
+      "id": 1223,
+      "name": "Skidmore College"
+    },
+    {
+      "id": 1224,
+      "name": "Slippery Rock University of Pennsylvania"
+    },
+    {
+      "id": 1225,
+      "name": "Smith College"
+    },
+    {
+      "id": 1226,
+      "name": "Snow College"
+    },
+    {
+      "id": 1227,
+      "name": "Sofia University"
+    },
+    {
+      "id": 1228,
+      "name": "Soka University of America"
+    },
+    {
+      "id": 1229,
+      "name": "Sonoma State University"
+    },
+    {
+      "id": 1230,
+      "name": "South Carolina State University"
+    },
+    {
+      "id": 1231,
+      "name": "South College"
+    },
+    {
+      "id": 1232,
+      "name": "South Dakota School of Mines and Technology"
+    },
+    {
+      "id": 1233,
+      "name": "South Dakota State University"
+    },
+    {
+      "id": 1234,
+      "name": "South Georgia State College"
+    },
+    {
+      "id": 1235,
+      "name": "South Texas College"
+    },
+    {
+      "id": 1236,
+      "name": "South Texas College of Law"
+    },
+    {
+      "id": 1237,
+      "name": "South University"
+    },
+    {
+      "id": 1238,
+      "name": "Southeast Missouri State University"
+    },
+    {
+      "id": 1239,
+      "name": "Southeastern Baptist College"
+    },
+    {
+      "id": 1240,
+      "name": "Southeastern Louisiana University"
+    },
+    {
+      "id": 1241,
+      "name": "Southeastern Oklahoma State University"
+    },
+    {
+      "id": 1242,
+      "name": "Southeastern University"
+    },
+    {
+      "id": 1243,
+      "name": "Southern Adventist University"
+    },
+    {
+      "id": 1244,
+      "name": "Southern Arkansas University"
+    },
+    {
+      "id": 1245,
+      "name": "Southern California Institute of Architecture"
+    },
+    {
+      "id": 1246,
+      "name": "Southern College of Optometry"
+    },
+    {
+      "id": 1247,
+      "name": "Southern Connecticut State University"
+    },
+    {
+      "id": 1248,
+      "name": "Southern Illinois University Carbondale"
+    },
+    {
+      "id": 1249,
+      "name": "Southern Illinois University Edwardsville"
+    },
+    {
+      "id": 1250,
+      "name": "Southern Methodist University"
+    },
+    {
+      "id": 1251,
+      "name": "Southern Nazarene University"
+    },
+    {
+      "id": 1252,
+      "name": "Southern New Hampshire University"
+    },
+    {
+      "id": 1253,
+      "name": "Southern Oregon University"
+    },
+    {
+      "id": 1254,
+      "name": "Southern University and A&M College"
+    },
+    {
+      "id": 1255,
+      "name": "Southern University at New Orleans"
+    },
+    {
+      "id": 1256,
+      "name": "Southern University Law Center"
+    },
+    {
+      "id": 1257,
+      "name": "Southern Utah University"
+    },
+    {
+      "id": 1258,
+      "name": "Southern Vermont College"
+    },
+    {
+      "id": 1259,
+      "name": "Southern Virginia University"
+    },
+    {
+      "id": 1260,
+      "name": "Southern Wesleyan University"
+    },
+    {
+      "id": 1261,
+      "name": "Southwest Baptist University"
+    },
+    {
+      "id": 1262,
+      "name": "Southwest Minnesota State University"
+    },
+    {
+      "id": 1263,
+      "name": "Southwest University of Visual Arts"
+    },
+    {
+      "id": 1264,
+      "name": "Southwestern Adventist University"
+    },
+    {
+      "id": 1265,
+      "name": "Southwestern Assemblies of God University"
+    },
+    {
+      "id": 1266,
+      "name": "Southwestern Christian University"
+    },
+    {
+      "id": 1267,
+      "name": "Southwestern College"
+    },
+    {
+      "id": 1268,
+      "name": "Southwestern College, Santa Fe"
+    },
+    {
+      "id": 1269,
+      "name": "Southwestern Law School"
+    },
+    {
+      "id": 1270,
+      "name": "Southwestern Oklahoma State University"
+    },
+    {
+      "id": 1271,
+      "name": "Southwestern University"
+    },
+    {
+      "id": 1272,
+      "name": "Spalding University"
+    },
+    {
+      "id": 1273,
+      "name": "Spelman College"
+    },
+    {
+      "id": 1274,
+      "name": "Spring Arbor University"
+    },
+    {
+      "id": 1275,
+      "name": "Spring Hill College"
+    },
+    {
+      "id": 1276,
+      "name": "Springfield College"
+    },
+    {
+      "id": 1277,
+      "name": "St Andrews University"
+    },
+    {
+      "id": 1278,
+      "name": "St John's College"
+    },
+    {
+      "id": 1279,
+      "name": "St Petersburg College"
+    },
+    {
+      "id": 1280,
+      "name": "St Thomas University"
+    },
+    {
+      "id": 1281,
+      "name": "St. Augustine's University"
+    },
+    {
+      "id": 1282,
+      "name": "St. Bonaventure University"
+    },
+    {
+      "id": 1283,
+      "name": "St. Catherine University"
+    },
+    {
+      "id": 1284,
+      "name": "St. Cloud State University"
+    },
+    {
+      "id": 1285,
+      "name": "St. Edward's University"
+    },
+    {
+      "id": 1286,
+      "name": "St. Francis College"
+    },
+    {
+      "id": 1287,
+      "name": "St. Gregory's University"
+    },
+    {
+      "id": 1288,
+      "name": "St. John Fisher College"
+    },
+    {
+      "id": 1289,
+      "name": "St. John's University"
+    },
+    {
+      "id": 1290,
+      "name": "St. Joseph's College"
+    },
+    {
+      "id": 1291,
+      "name": "St. Lawrence University"
+    },
+    {
+      "id": 1292,
+      "name": "St. Louis Christian College"
+    },
+    {
+      "id": 1293,
+      "name": "St. Louis College of Pharmacy"
+    },
+    {
+      "id": 1294,
+      "name": "St. Mary's College of Maryland"
+    },
+    {
+      "id": 1295,
+      "name": "St. Mary's University"
+    },
+    {
+      "id": 1296,
+      "name": "St. Norbert College"
+    },
+    {
+      "id": 1297,
+      "name": "St. Olaf College"
+    },
+    {
+      "id": 1298,
+      "name": "St. Thomas Aquinas College"
+    },
+    {
+      "id": 1299,
+      "name": "St. Vincent's College"
+    },
+    {
+      "id": 1300,
+      "name": "Stanford University"
+    },
+    {
+      "id": 1301,
+      "name": "State College of Florida-Manatee-Sarasota"
+    },
+    {
+      "id": 1302,
+      "name": "State University of New York at Fredonia"
+    },
+    {
+      "id": 1303,
+      "name": "State University of New York at New Paltz"
+    },
+    {
+      "id": 1304,
+      "name": "State University of New York at Oswego"
+    },
+    {
+      "id": 1305,
+      "name": "State University of New York College at Plattsburgh"
+    },
+    {
+      "id": 1306,
+      "name": "Stephen F. Austin State University"
+    },
+    {
+      "id": 1307,
+      "name": "Stephens College"
+    },
+    {
+      "id": 1308,
+      "name": "Sterling College"
+    },
+    {
+      "id": 1309,
+      "name": "Sterling College, Vermont"
+    },
+    {
+      "id": 1310,
+      "name": "Stetson University"
+    },
+    {
+      "id": 1311,
+      "name": "Stevens Institute of Technology"
+    },
+    {
+      "id": 1312,
+      "name": "Stevenson University"
+    },
+    {
+      "id": 1313,
+      "name": "Stillman College"
+    },
+    {
+      "id": 1314,
+      "name": "Stockton University"
+    },
+    {
+      "id": 1315,
+      "name": "Stonehill College"
+    },
+    {
+      "id": 1316,
+      "name": "Stony Brook University"
+    },
+    {
+      "id": 1317,
+      "name": "Strayer University"
+    },
+    {
+      "id": 1318,
+      "name": "Suffolk University"
+    },
+    {
+      "id": 1319,
+      "name": "Sul Ross State University"
+    },
+    {
+      "id": 1320,
+      "name": "Sullivan University"
+    },
+    {
+      "id": 1321,
+      "name": "SUNY Canton"
+    },
+    {
+      "id": 1322,
+      "name": "SUNY Cobleskill"
+    },
+    {
+      "id": 1323,
+      "name": "SUNY College at Old Westbury"
+    },
+    {
+      "id": 1324,
+      "name": "SUNY College at Oneonta"
+    },
+    {
+      "id": 1325,
+      "name": "SUNY College of Environmental Science and Forestry"
+    },
+    {
+      "id": 1326,
+      "name": "SUNY College of Optometry"
+    },
+    {
+      "id": 1327,
+      "name": "SUNY Cortland"
+    },
+    {
+      "id": 1328,
+      "name": "SUNY Delhi"
+    },
+    {
+      "id": 1329,
+      "name": "SUNY Downstate Medical Center"
+    },
+    {
+      "id": 1330,
+      "name": "SUNY Empire State College"
+    },
+    {
+      "id": 1331,
+      "name": "SUNY Geneseo"
+    },
+    {
+      "id": 1332,
+      "name": "SUNY Maritime College"
+    },
+    {
+      "id": 1333,
+      "name": "SUNY Polytechnic Institute"
+    },
+    {
+      "id": 1334,
+      "name": "SUNY Upstate Medical University"
+    },
+    {
+      "id": 1335,
+      "name": "Susquehanna University"
+    },
+    {
+      "id": 1336,
+      "name": "Swarthmore College"
+    },
+    {
+      "id": 1337,
+      "name": "Sweet Briar College"
+    },
+    {
+      "id": 1338,
+      "name": "Syracuse University"
+    },
+    {
+      "id": 1339,
+      "name": "Tabor College"
+    },
+    {
+      "id": 1340,
+      "name": "Talladega College"
+    },
+    {
+      "id": 1341,
+      "name": "Tarleton State University"
+    },
+    {
+      "id": 1342,
+      "name": "Taylor University"
+    },
+    {
+      "id": 1343,
+      "name": "Temple University"
+    },
+    {
+      "id": 1344,
+      "name": "Tennessee State University"
+    },
+    {
+      "id": 1345,
+      "name": "Tennessee Technological University"
+    },
+    {
+      "id": 1346,
+      "name": "Tennessee Wesleyan University"
+    },
+    {
+      "id": 1347,
+      "name": "Texas A&M International University"
+    },
+    {
+      "id": 1348,
+      "name": "Texas A&M University"
+    },
+    {
+      "id": 1349,
+      "name": "Texas A&M University at Galveston"
+    },
+    {
+      "id": 1350,
+      "name": "Texas A&M University-Commerce"
+    },
+    {
+      "id": 1351,
+      "name": "Texas A&M University-Corpus Christi"
+    },
+    {
+      "id": 1352,
+      "name": "Texas A&M University-Kingsville"
+    },
+    {
+      "id": 1353,
+      "name": "Texas A&M University-Texarkana"
+    },
+    {
+      "id": 1354,
+      "name": "Texas Christian University"
+    },
+    {
+      "id": 1355,
+      "name": "Texas College"
+    },
+    {
+      "id": 1356,
+      "name": "Texas Lutheran University"
+    },
+    {
+      "id": 1357,
+      "name": "Texas Southern University"
+    },
+    {
+      "id": 1358,
+      "name": "Texas State University"
+    },
+    {
+      "id": 1359,
+      "name": "Texas Tech University"
+    },
+    {
+      "id": 1360,
+      "name": "Texas Tech University Health Sciences Center"
+    },
+    {
+      "id": 1361,
+      "name": "Texas Wesleyan University"
+    },
+    {
+      "id": 1362,
+      "name": "Texas Woman's University"
+    },
+    {
+      "id": 1363,
+      "name": "The American College of Financial Services"
+    },
+    {
+      "id": 1364,
+      "name": "The Art Institute of Pittsburgh"
+    },
+    {
+      "id": 1365,
+      "name": "The Baptist College of Florida"
+    },
+    {
+      "id": 1366,
+      "name": "The Catholic University of America"
+    },
+    {
+      "id": 1367,
+      "name": "The Chicago School of Professional Psychology"
+    },
+    {
+      "id": 1368,
+      "name": "The Citadel, The Military College of South Carolina"
+    },
+    {
+      "id": 1369,
+      "name": "The City College of New York"
+    },
+    {
+      "id": 1370,
+      "name": "The College at Brockport"
+    },
+    {
+      "id": 1371,
+      "name": "The College of Idaho"
+    },
+    {
+      "id": 1372,
+      "name": "The College of New Jersey"
+    },
+    {
+      "id": 1373,
+      "name": "The College of New Rochelle"
+    },
+    {
+      "id": 1374,
+      "name": "The College of Saint Rose"
+    },
+    {
+      "id": 1375,
+      "name": "The College of St. Scholastica"
+    },
+    {
+      "id": 1376,
+      "name": "The College of Westchester"
+    },
+    {
+      "id": 1377,
+      "name": "The College of Wooster"
+    },
+    {
+      "id": 1378,
+      "name": "The Cooper Union for the Advancement of Science and Art"
+    },
+    {
+      "id": 1379,
+      "name": "The Culinary Institute of America"
+    },
+    {
+      "id": 1380,
+      "name": "The Evergreen State College"
+    },
+    {
+      "id": 1381,
+      "name": "The Graduate Center, CUNY"
+    },
+    {
+      "id": 1382,
+      "name": "The Institute of World Politics"
+    },
+    {
+      "id": 1383,
+      "name": "The John Marshall Law School"
+    },
+    {
+      "id": 1384,
+      "name": "The Juilliard School"
+    },
+    {
+      "id": 1385,
+      "name": "The King's College"
+    },
+    {
+      "id": 1386,
+      "name": "The King's University"
+    },
+    {
+      "id": 1387,
+      "name": "The Master's University"
+    },
+    {
+      "id": 1388,
+      "name": "The National Graduate School of Quality Management"
+    },
+    {
+      "id": 1389,
+      "name": "The New School"
+    },
+    {
+      "id": 1390,
+      "name": "The Ohio State University"
+    },
+    {
+      "id": 1391,
+      "name": "The Rockefeller University"
+    },
+    {
+      "id": 1392,
+      "name": "The Sage Colleges"
+    },
+    {
+      "id": 1393,
+      "name": "The School of Architecture at Taliesin"
+    },
+    {
+      "id": 1394,
+      "name": "The State University of New York at Potsdam"
+    },
+    {
+      "id": 1395,
+      "name": "The University of Alabama"
+    },
+    {
+      "id": 1396,
+      "name": "The University of Alabama in Huntsville"
+    },
+    {
+      "id": 1397,
+      "name": "The University of Arizona"
+    },
+    {
+      "id": 1398,
+      "name": "The University of Findlay"
+    },
+    {
+      "id": 1399,
+      "name": "The University of Maine"
+    },
+    {
+      "id": 1400,
+      "name": "The University of Memphis"
+    },
+    {
+      "id": 1401,
+      "name": "The University of Montana"
+    },
+    {
+      "id": 1402,
+      "name": "The University of Montana Western"
+    },
+    {
+      "id": 1403,
+      "name": "The University of Oklahoma"
+    },
+    {
+      "id": 1404,
+      "name": "The University of Oklahoma Health Sciences Center"
+    },
+    {
+      "id": 1405,
+      "name": "The University of Tampa"
+    },
+    {
+      "id": 1406,
+      "name": "The University of Tennessee at Chattanooga"
+    },
+    {
+      "id": 1407,
+      "name": "The University of Tennessee at Martin"
+    },
+    {
+      "id": 1408,
+      "name": "The University of Tennessee Health Science Center"
+    },
+    {
+      "id": 1409,
+      "name": "The University of Tennessee, Knoxville"
+    },
+    {
+      "id": 1410,
+      "name": "The University of Texas at Arlington"
+    },
+    {
+      "id": 1411,
+      "name": "The University of Texas at Austin"
+    },
+    {
+      "id": 1412,
+      "name": "The University of Texas at Dallas"
+    },
+    {
+      "id": 1413,
+      "name": "The University of Texas at El Paso"
+    },
+    {
+      "id": 1414,
+      "name": "The University of Texas at San Antonio"
+    },
+    {
+      "id": 1415,
+      "name": "The University of Texas at Tyler"
+    },
+    {
+      "id": 1416,
+      "name": "The University of Texas Health Science Center at Houston"
+    },
+    {
+      "id": 1417,
+      "name": "The University of Texas Health Science Center at San Antonio"
+    },
+    {
+      "id": 1418,
+      "name": "The University of Texas Health Science Center at Tyler"
+    },
+    {
+      "id": 1419,
+      "name": "The University of Texas MD Anderson Cancer Center"
+    },
+    {
+      "id": 1420,
+      "name": "The University of Texas Medical Branch at Galveston"
+    },
+    {
+      "id": 1421,
+      "name": "The University of Texas of the Permian Basin"
+    },
+    {
+      "id": 1422,
+      "name": "The University of the Arts"
+    },
+    {
+      "id": 1423,
+      "name": "The University of Tulsa"
+    },
+    {
+      "id": 1424,
+      "name": "The University of Utah"
+    },
+    {
+      "id": 1425,
+      "name": "The University of Virginia's College at Wise"
+    },
+    {
+      "id": 1426,
+      "name": "The University of West Los Angeles"
+    },
+    {
+      "id": 1427,
+      "name": "The Wright Institute"
+    },
+    {
+      "id": 1428,
+      "name": "Thiel College"
+    },
+    {
+      "id": 1429,
+      "name": "Thomas Aquinas College"
+    },
+    {
+      "id": 1430,
+      "name": "Thomas College"
+    },
+    {
+      "id": 1431,
+      "name": "Thomas Edison State University"
+    },
+    {
+      "id": 1432,
+      "name": "Thomas Jefferson School of Law"
+    },
+    {
+      "id": 1433,
+      "name": "Thomas Jefferson University"
+    },
+    {
+      "id": 1434,
+      "name": "Thomas More College"
+    },
+    {
+      "id": 1435,
+      "name": "Thomas More College of Liberal Arts"
+    },
+    {
+      "id": 1436,
+      "name": "Thomas University"
+    },
+    {
+      "id": 1437,
+      "name": "Tiffin University"
+    },
+    {
+      "id": 1438,
+      "name": "Toccoa Falls College"
+    },
+    {
+      "id": 1439,
+      "name": "Tougaloo College"
+    },
+    {
+      "id": 1440,
+      "name": "Touro College"
+    },
+    {
+      "id": 1441,
+      "name": "Touro University California"
+    },
+    {
+      "id": 1442,
+      "name": "Towson University"
+    },
+    {
+      "id": 1443,
+      "name": "Transylvania University"
+    },
+    {
+      "id": 1444,
+      "name": "Trevecca Nazarene University"
+    },
+    {
+      "id": 1445,
+      "name": "Trine University"
+    },
+    {
+      "id": 1446,
+      "name": "Trinity Bible College"
+    },
+    {
+      "id": 1447,
+      "name": "Trinity Christian College"
+    },
+    {
+      "id": 1448,
+      "name": "Trinity College"
+    },
+    {
+      "id": 1449,
+      "name": "Trinity College of Florida"
+    },
+    {
+      "id": 1450,
+      "name": "Trinity College of Nursing & Health Sciences"
+    },
+    {
+      "id": 1451,
+      "name": "Trinity International University"
+    },
+    {
+      "id": 1452,
+      "name": "Trinity University"
+    },
+    {
+      "id": 1453,
+      "name": "Trinity Washington University"
+    },
+    {
+      "id": 1454,
+      "name": "Tri-State Bible College"
+    },
+    {
+      "id": 1455,
+      "name": "Trocaire College"
+    },
+    {
+      "id": 1456,
+      "name": "Troy University"
+    },
+    {
+      "id": 1457,
+      "name": "Truett-McConnell University"
+    },
+    {
+      "id": 1458,
+      "name": "Truman State University"
+    },
+    {
+      "id": 1459,
+      "name": "Tufts University"
+    },
+    {
+      "id": 1460,
+      "name": "Tulane University"
+    },
+    {
+      "id": 1461,
+      "name": "Tusculum College"
+    },
+    {
+      "id": 1462,
+      "name": "Tuskegee University"
+    },
+    {
+      "id": 1463,
+      "name": "Uniformed Services University of the Health Sciences"
+    },
+    {
+      "id": 1464,
+      "name": "Union College"
+    },
+    {
+      "id": 1465,
+      "name": "Union College, Kentucky"
+    },
+    {
+      "id": 1466,
+      "name": "Union College, Nebraska"
+    },
+    {
+      "id": 1467,
+      "name": "Union Institute & University"
+    },
+    {
+      "id": 1468,
+      "name": "Union University"
+    },
+    {
+      "id": 1469,
+      "name": "United States Air Force Academy"
+    },
+    {
+      "id": 1470,
+      "name": "United States Coast Guard Academy"
+    },
+    {
+      "id": 1471,
+      "name": "United States Merchant Marine Academy"
+    },
+    {
+      "id": 1472,
+      "name": "United States Military Academy"
+    },
+    {
+      "id": 1473,
+      "name": "United States Naval Academy"
+    },
+    {
+      "id": 1474,
+      "name": "United States Sports Academy"
+    },
+    {
+      "id": 1475,
+      "name": "United States University"
+    },
+    {
+      "id": 1476,
+      "name": "Unity College"
+    },
+    {
+      "id": 1477,
+      "name": "University at Albany, State University of New York"
+    },
+    {
+      "id": 1478,
+      "name": "University at Buffalo, State University of New York"
+    },
+    {
+      "id": 1479,
+      "name": "University of Advancing Technology"
+    },
+    {
+      "id": 1480,
+      "name": "University of Akron"
+    },
+    {
+      "id": 1481,
+      "name": "University of Alabama at Birmingham"
+    },
+    {
+      "id": 1482,
+      "name": "University of Alaska Anchorage"
+    },
+    {
+      "id": 1483,
+      "name": "University of Alaska Fairbanks"
+    },
+    {
+      "id": 1484,
+      "name": "University of Alaska Southeast"
+    },
+    {
+      "id": 1485,
+      "name": "University of Arkansas"
+    },
+    {
+      "id": 1486,
+      "name": "University of Arkansas - Fort Smith"
+    },
+    {
+      "id": 1487,
+      "name": "University of Arkansas at Little Rock"
+    },
+    {
+      "id": 1488,
+      "name": "University of Arkansas at Monticello"
+    },
+    {
+      "id": 1489,
+      "name": "University of Arkansas at Pine Bluff"
+    },
+    {
+      "id": 1490,
+      "name": "University of Arkansas for Medical Sciences"
+    },
+    {
+      "id": 1491,
+      "name": "University of Baltimore"
+    },
+    {
+      "id": 1492,
+      "name": "University of Bridgeport"
+    },
+    {
+      "id": 1493,
+      "name": "University of California, Berkeley"
+    },
+    {
+      "id": 1494,
+      "name": "University of California, Davis"
+    },
+    {
+      "id": 1495,
+      "name": "University of California, Hastings College of the Law"
+    },
+    {
+      "id": 1496,
+      "name": "University of California, Irvine"
+    },
+    {
+      "id": 1497,
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "id": 1498,
+      "name": "University of California, Merced"
+    },
+    {
+      "id": 1499,
+      "name": "University of California, Riverside"
+    },
+    {
+      "id": 1500,
+      "name": "University of California, San Diego"
+    },
+    {
+      "id": 1501,
+      "name": "University of California, San Francisco"
+    },
+    {
+      "id": 1502,
+      "name": "University of California, Santa Barbara"
+    },
+    {
+      "id": 1503,
+      "name": "University of California, Santa Cruz"
+    },
+    {
+      "id": 1504,
+      "name": "University of Central Arkansas"
+    },
+    {
+      "id": 1505,
+      "name": "University of Central Florida"
+    },
+    {
+      "id": 1506,
+      "name": "University of Central Missouri"
+    },
+    {
+      "id": 1507,
+      "name": "University of Central Oklahoma"
+    },
+    {
+      "id": 1508,
+      "name": "University of Charleston"
+    },
+    {
+      "id": 1509,
+      "name": "University of Chicago"
+    },
+    {
+      "id": 1510,
+      "name": "University of Cincinnati"
+    },
+    {
+      "id": 1511,
+      "name": "University of Colorado Boulder"
+    },
+    {
+      "id": 1512,
+      "name": "University of Colorado Colorado Springs"
+    },
+    {
+      "id": 1513,
+      "name": "University of Colorado Denver"
+    },
+    {
+      "id": 1514,
+      "name": "University of Connecticut"
+    },
+    {
+      "id": 1515,
+      "name": "University of Dallas"
+    },
+    {
+      "id": 1516,
+      "name": "University of Dayton"
+    },
+    {
+      "id": 1517,
+      "name": "University of Delaware"
+    },
+    {
+      "id": 1518,
+      "name": "University of Denver"
+    },
+    {
+      "id": 1519,
+      "name": "University of Detroit Mercy"
+    },
+    {
+      "id": 1520,
+      "name": "University of Dubuque"
+    },
+    {
+      "id": 1521,
+      "name": "University of Evansville"
+    },
+    {
+      "id": 1522,
+      "name": "University of Florida"
+    },
+    {
+      "id": 1523,
+      "name": "University of Georgia"
+    },
+    {
+      "id": 1524,
+      "name": "University of Hartford"
+    },
+    {
+      "id": 1525,
+      "name": "University of Hawaii at Hilo"
+    },
+    {
+      "id": 1526,
+      "name": "University of Hawaii at Manoa"
+    },
+    {
+      "id": 1527,
+      "name": "University of Hawaii-West Oahu"
+    },
+    {
+      "id": 1528,
+      "name": "University of Holy Cross"
+    },
+    {
+      "id": 1529,
+      "name": "University of Houston"
+    },
+    {
+      "id": 1530,
+      "name": "University of Houston-Clear Lake"
+    },
+    {
+      "id": 1531,
+      "name": "University of Houston-Downtown"
+    },
+    {
+      "id": 1532,
+      "name": "University of Houston-Victoria"
+    },
+    {
+      "id": 1533,
+      "name": "University of Idaho"
+    },
+    {
+      "id": 1534,
+      "name": "University of Illinois at Chicago"
+    },
+    {
+      "id": 1535,
+      "name": "University of Illinois at Springfield"
+    },
+    {
+      "id": 1536,
+      "name": "University of Illinois at Urbana-Champaign"
+    },
+    {
+      "id": 1537,
+      "name": "University of Indianapolis"
+    },
+    {
+      "id": 1538,
+      "name": "University of Iowa"
+    },
+    {
+      "id": 1539,
+      "name": "University of Jamestown"
+    },
+    {
+      "id": 1540,
+      "name": "University of Kansas"
+    },
+    {
+      "id": 1541,
+      "name": "University of Kentucky"
+    },
+    {
+      "id": 1542,
+      "name": "University of La Verne"
+    },
+    {
+      "id": 1543,
+      "name": "University of Louisiana at Lafayette"
+    },
+    {
+      "id": 1544,
+      "name": "University of Louisiana at Monroe"
+    },
+    {
+      "id": 1545,
+      "name": "University of Louisville"
+    },
+    {
+      "id": 1546,
+      "name": "University of Maine at Augusta"
+    },
+    {
+      "id": 1547,
+      "name": "University of Maine at Farmington"
+    },
+    {
+      "id": 1548,
+      "name": "University of Maine at Fort Kent"
+    },
+    {
+      "id": 1549,
+      "name": "University of Maine at Machias"
+    },
+    {
+      "id": 1550,
+      "name": "University of Maine at Presque Isle"
+    },
+    {
+      "id": 1551,
+      "name": "University of Mary"
+    },
+    {
+      "id": 1552,
+      "name": "University of Mary Hardin-Baylor"
+    },
+    {
+      "id": 1553,
+      "name": "University of Mary Washington"
+    },
+    {
+      "id": 1554,
+      "name": "University of Maryland"
+    },
+    {
+      "id": 1555,
+      "name": "University of Maryland Eastern Shore"
+    },
+    {
+      "id": 1556,
+      "name": "University of Maryland University College"
+    },
+    {
+      "id": 1557,
+      "name": "University of Maryland, Baltimore"
+    },
+    {
+      "id": 1558,
+      "name": "University of Maryland, Baltimore County"
+    },
+    {
+      "id": 1559,
+      "name": "University of Massachusetts Amherst"
+    },
+    {
+      "id": 1560,
+      "name": "University of Massachusetts Boston"
+    },
+    {
+      "id": 1561,
+      "name": "University of Massachusetts Dartmouth"
+    },
+    {
+      "id": 1562,
+      "name": "University of Massachusetts Lowell"
+    },
+    {
+      "id": 1563,
+      "name": "University of Massachusetts Medical School"
+    },
+    {
+      "id": 1564,
+      "name": "University of Miami"
+    },
+    {
+      "id": 1565,
+      "name": "University of Michigan"
+    },
+    {
+      "id": 1566,
+      "name": "University of Michigan-Dearborn"
+    },
+    {
+      "id": 1567,
+      "name": "University of Michigan-Flint"
+    },
+    {
+      "id": 1568,
+      "name": "University of Minnesota"
+    },
+    {
+      "id": 1569,
+      "name": "University of Mississippi"
+    },
+    {
+      "id": 1570,
+      "name": "University of Mississippi Medical Center"
+    },
+    {
+      "id": 1571,
+      "name": "University of Missouri"
+    },
+    {
+      "id": 1572,
+      "name": "University of Missouri-Kansas City"
+    },
+    {
+      "id": 1573,
+      "name": "University of Missouri-St. Louis"
+    },
+    {
+      "id": 1574,
+      "name": "University of Mobile"
+    },
+    {
+      "id": 1575,
+      "name": "University of Montevallo"
+    },
+    {
+      "id": 1576,
+      "name": "University of Mount Olive"
+    },
+    {
+      "id": 1577,
+      "name": "University of Mount Union"
+    },
+    {
+      "id": 1578,
+      "name": "University of Nebraska at Kearney"
+    },
+    {
+      "id": 1579,
+      "name": "University of Nebraska at Omaha"
+    },
+    {
+      "id": 1580,
+      "name": "University of Nebraska Medical Center"
+    },
+    {
+      "id": 1581,
+      "name": "University of Nebraska-Lincoln"
+    },
+    {
+      "id": 1582,
+      "name": "University of Nevada, Las Vegas"
+    },
+    {
+      "id": 1583,
+      "name": "University of Nevada, Reno"
+    },
+    {
+      "id": 1584,
+      "name": "University of New England"
+    },
+    {
+      "id": 1585,
+      "name": "University of New Hampshire"
+    },
+    {
+      "id": 1586,
+      "name": "University of New Haven"
+    },
+    {
+      "id": 1587,
+      "name": "University of New Mexico"
+    },
+    {
+      "id": 1588,
+      "name": "University of New Orleans"
+    },
+    {
+      "id": 1589,
+      "name": "University of North Alabama"
+    },
+    {
+      "id": 1590,
+      "name": "University of North Carolina at Asheville"
+    },
+    {
+      "id": 1591,
+      "name": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "id": 1592,
+      "name": "University of North Carolina at Charlotte"
+    },
+    {
+      "id": 1593,
+      "name": "University of North Carolina at Greensboro"
+    },
+    {
+      "id": 1594,
+      "name": "University of North Carolina at Pembroke"
+    },
+    {
+      "id": 1595,
+      "name": "University of North Carolina School of the Arts"
+    },
+    {
+      "id": 1596,
+      "name": "University of North Carolina Wilmington"
+    },
+    {
+      "id": 1597,
+      "name": "University of North Dakota"
+    },
+    {
+      "id": 1598,
+      "name": "University of North Florida"
+    },
+    {
+      "id": 1599,
+      "name": "University of North Georgia"
+    },
+    {
+      "id": 1600,
+      "name": "University of North Texas"
+    },
+    {
+      "id": 1601,
+      "name": "University of North Texas Health Science Center"
+    },
+    {
+      "id": 1602,
+      "name": "University of Northern Colorado"
+    },
+    {
+      "id": 1603,
+      "name": "University of Northern Iowa"
+    },
+    {
+      "id": 1604,
+      "name": "University of Northwestern - St. Paul"
+    },
+    {
+      "id": 1605,
+      "name": "University of Northwestern Ohio"
+    },
+    {
+      "id": 1606,
+      "name": "University of Notre Dame"
+    },
+    {
+      "id": 1607,
+      "name": "University of Oregon"
+    },
+    {
+      "id": 1608,
+      "name": "University of Pennsylvania"
+    },
+    {
+      "id": 1609,
+      "name": "University of Pikeville"
+    },
+    {
+      "id": 1610,
+      "name": "University of Pittsburgh"
+    },
+    {
+      "id": 1611,
+      "name": "University of Portland"
+    },
+    {
+      "id": 1612,
+      "name": "University of Providence"
+    },
+    {
+      "id": 1613,
+      "name": "University of Puget Sound"
+    },
+    {
+      "id": 1614,
+      "name": "University of Redlands"
+    },
+    {
+      "id": 1615,
+      "name": "University of Rhode Island"
+    },
+    {
+      "id": 1616,
+      "name": "University of Richmond"
+    },
+    {
+      "id": 1617,
+      "name": "University of Rio Grande"
+    },
+    {
+      "id": 1618,
+      "name": "University of Rochester"
+    },
+    {
+      "id": 1619,
+      "name": "University of Saint Francis"
+    },
+    {
+      "id": 1620,
+      "name": "University of Saint Joseph"
+    },
+    {
+      "id": 1621,
+      "name": "University of Saint Mary"
+    },
+    {
+      "id": 1622,
+      "name": "University of San Diego"
+    },
+    {
+      "id": 1623,
+      "name": "University of San Francisco"
+    },
+    {
+      "id": 1624,
+      "name": "University of Science and Arts of Oklahoma"
+    },
+    {
+      "id": 1625,
+      "name": "University of Scranton"
+    },
+    {
+      "id": 1626,
+      "name": "University of Sioux Falls"
+    },
+    {
+      "id": 1627,
+      "name": "University of South Alabama"
+    },
+    {
+      "id": 1628,
+      "name": "University of South Carolina"
+    },
+    {
+      "id": 1629,
+      "name": "University of South Carolina-Aiken"
+    },
+    {
+      "id": 1630,
+      "name": "University of South Carolina-Beaufort"
+    },
+    {
+      "id": 1631,
+      "name": "University of South Carolina-Upstate"
+    },
+    {
+      "id": 1632,
+      "name": "University of South Dakota"
+    },
+    {
+      "id": 1633,
+      "name": "University of South Florida"
+    },
+    {
+      "id": 1634,
+      "name": "University of Southern California"
+    },
+    {
+      "id": 1635,
+      "name": "University of Southern Indiana"
+    },
+    {
+      "id": 1636,
+      "name": "University of Southern Maine"
+    },
+    {
+      "id": 1637,
+      "name": "University of Southern Mississippi"
+    },
+    {
+      "id": 1638,
+      "name": "University of St Augustine for Health Sciences"
+    },
+    {
+      "id": 1639,
+      "name": "University of St Thomas"
+    },
+    {
+      "id": 1640,
+      "name": "University of St. Francis"
+    },
+    {
+      "id": 1641,
+      "name": "University of St. Thomas"
+    },
+    {
+      "id": 1642,
+      "name": "University of Texas Rio Grande Valley"
+    },
+    {
+      "id": 1643,
+      "name": "University of Texas Southwestern Medical Center"
+    },
+    {
+      "id": 1644,
+      "name": "University of the Cumberlands"
+    },
+    {
+      "id": 1645,
+      "name": "University of the District of Columbia"
+    },
+    {
+      "id": 1646,
+      "name": "University of the Incarnate Word"
+    },
+    {
+      "id": 1647,
+      "name": "University of the Ozarks"
+    },
+    {
+      "id": 1648,
+      "name": "University of the Pacific"
+    },
+    {
+      "id": 1649,
+      "name": "University of the Potomac"
+    },
+    {
+      "id": 1650,
+      "name": "University of the Rockies"
+    },
+    {
+      "id": 1651,
+      "name": "University of the Sciences in Philadelphia"
+    },
+    {
+      "id": 1652,
+      "name": "University of the Southwest"
+    },
+    {
+      "id": 1653,
+      "name": "University of the West"
+    },
+    {
+      "id": 1654,
+      "name": "University of Toledo"
+    },
+    {
+      "id": 1655,
+      "name": "University of Valley Forge"
+    },
+    {
+      "id": 1656,
+      "name": "University of Vermont"
+    },
+    {
+      "id": 1657,
+      "name": "University of Virginia"
+    },
+    {
+      "id": 1658,
+      "name": "University of Washington"
+    },
+    {
+      "id": 1659,
+      "name": "University of West Alabama"
+    },
+    {
+      "id": 1660,
+      "name": "University of West Florida"
+    },
+    {
+      "id": 1661,
+      "name": "University of West Georgia"
+    },
+    {
+      "id": 1662,
+      "name": "University of Western States"
+    },
+    {
+      "id": 1663,
+      "name": "University of Wisconsin-Eau Claire"
+    },
+    {
+      "id": 1664,
+      "name": "University of Wisconsin-Green Bay"
+    },
+    {
+      "id": 1665,
+      "name": "University of Wisconsin-La Crosse"
+    },
+    {
+      "id": 1666,
+      "name": "University of Wisconsin-Madison"
+    },
+    {
+      "id": 1667,
+      "name": "University of Wisconsin-Milwaukee"
+    },
+    {
+      "id": 1668,
+      "name": "University of Wisconsin-Oshkosh"
+    },
+    {
+      "id": 1669,
+      "name": "University of Wisconsin-Parkside"
+    },
+    {
+      "id": 1670,
+      "name": "University of Wisconsin-Platteville"
+    },
+    {
+      "id": 1671,
+      "name": "University of Wisconsin-River Falls"
+    },
+    {
+      "id": 1672,
+      "name": "University of Wisconsin-Stevens Point"
+    },
+    {
+      "id": 1673,
+      "name": "University of Wisconsin-Stout"
+    },
+    {
+      "id": 1674,
+      "name": "University of Wisconsin-Superior"
+    },
+    {
+      "id": 1675,
+      "name": "University of Wisconsin-Whitewater"
+    },
+    {
+      "id": 1676,
+      "name": "University of Wyoming"
+    },
+    {
+      "id": 1677,
+      "name": "Upper Iowa University"
+    },
+    {
+      "id": 1678,
+      "name": "Urbana University"
+    },
+    {
+      "id": 1679,
+      "name": "Ursinus College"
+    },
+    {
+      "id": 1680,
+      "name": "Ursuline College"
+    },
+    {
+      "id": 1681,
+      "name": "Utah State University"
+    },
+    {
+      "id": 1682,
+      "name": "Utah Valley University"
+    },
+    {
+      "id": 1683,
+      "name": "Utica College"
+    },
+    {
+      "id": 1684,
+      "name": "Valdosta State University"
+    },
+    {
+      "id": 1685,
+      "name": "Valencia College"
+    },
+    {
+      "id": 1686,
+      "name": "Valley City State University"
+    },
+    {
+      "id": 1687,
+      "name": "Valparaiso University"
+    },
+    {
+      "id": 1688,
+      "name": "Vanderbilt University"
+    },
+    {
+      "id": 1689,
+      "name": "VanderCook College of Music"
+    },
+    {
+      "id": 1690,
+      "name": "Vanguard University of Southern California"
+    },
+    {
+      "id": 1691,
+      "name": "Vassar College"
+    },
+    {
+      "id": 1692,
+      "name": "Vaughn College of Aeronautics and Technology"
+    },
+    {
+      "id": 1693,
+      "name": "Vermont College of Fine Arts"
+    },
+    {
+      "id": 1694,
+      "name": "Vermont Law School"
+    },
+    {
+      "id": 1695,
+      "name": "Vermont Technical College"
+    },
+    {
+      "id": 1696,
+      "name": "Villa Maria College"
+    },
+    {
+      "id": 1697,
+      "name": "Villanova University"
+    },
+    {
+      "id": 1698,
+      "name": "Vincennes University"
+    },
+    {
+      "id": 1699,
+      "name": "Virginia Commonwealth University"
+    },
+    {
+      "id": 1700,
+      "name": "Virginia Military Institute"
+    },
+    {
+      "id": 1701,
+      "name": "Virginia Polytechnic Institute and State University"
+    },
+    {
+      "id": 1702,
+      "name": "Virginia State University"
+    },
+    {
+      "id": 1703,
+      "name": "Virginia Union University"
+    },
+    {
+      "id": 1704,
+      "name": "Virginia Wesleyan University"
+    },
+    {
+      "id": 1705,
+      "name": "Viterbo University"
+    },
+    {
+      "id": 1706,
+      "name": "Voorhees College"
+    },
+    {
+      "id": 1707,
+      "name": "Wabash College"
+    },
+    {
+      "id": 1708,
+      "name": "Wade College"
+    },
+    {
+      "id": 1709,
+      "name": "Wagner College"
+    },
+    {
+      "id": 1710,
+      "name": "Wake Forest University"
+    },
+    {
+      "id": 1711,
+      "name": "Waldorf University"
+    },
+    {
+      "id": 1712,
+      "name": "Walla Walla University"
+    },
+    {
+      "id": 1713,
+      "name": "Walsh College"
+    },
+    {
+      "id": 1714,
+      "name": "Walsh University"
+    },
+    {
+      "id": 1715,
+      "name": "Warner Pacific College"
+    },
+    {
+      "id": 1716,
+      "name": "Warner University"
+    },
+    {
+      "id": 1717,
+      "name": "Warren Wilson College"
+    },
+    {
+      "id": 1718,
+      "name": "Wartburg College"
+    },
+    {
+      "id": 1719,
+      "name": "Washburn University"
+    },
+    {
+      "id": 1720,
+      "name": "Washington & Jefferson College"
+    },
+    {
+      "id": 1721,
+      "name": "Washington Adventist University"
+    },
+    {
+      "id": 1722,
+      "name": "Washington and Lee University"
+    },
+    {
+      "id": 1723,
+      "name": "Washington College"
+    },
+    {
+      "id": 1724,
+      "name": "Washington State University"
+    },
+    {
+      "id": 1725,
+      "name": "Washington University in St. Louis"
+    },
+    {
+      "id": 1726,
+      "name": "Watkins College of Art, Design & Film"
+    },
+    {
+      "id": 1727,
+      "name": "Wayland Baptist University"
+    },
+    {
+      "id": 1728,
+      "name": "Wayne State College"
+    },
+    {
+      "id": 1729,
+      "name": "Wayne State University"
+    },
+    {
+      "id": 1730,
+      "name": "Waynesburg University"
+    },
+    {
+      "id": 1731,
+      "name": "Webb Institute"
+    },
+    {
+      "id": 1732,
+      "name": "Webber International University"
+    },
+    {
+      "id": 1733,
+      "name": "Weber State University"
+    },
+    {
+      "id": 1734,
+      "name": "Webster University"
+    },
+    {
+      "id": 1735,
+      "name": "Welch College"
+    },
+    {
+      "id": 1736,
+      "name": "Wellesley College"
+    },
+    {
+      "id": 1737,
+      "name": "Wells College"
+    },
+    {
+      "id": 1738,
+      "name": "Wentworth Institute of Technology"
+    },
+    {
+      "id": 1739,
+      "name": "Wesley College"
+    },
+    {
+      "id": 1740,
+      "name": "Wesleyan College"
+    },
+    {
+      "id": 1741,
+      "name": "Wesleyan University"
+    },
+    {
+      "id": 1742,
+      "name": "West Chester University of Pennsylvania"
+    },
+    {
+      "id": 1743,
+      "name": "West Coast University-Los Angeles"
+    },
+    {
+      "id": 1744,
+      "name": "West Liberty University"
+    },
+    {
+      "id": 1745,
+      "name": "West Texas A&M University"
+    },
+    {
+      "id": 1746,
+      "name": "West Virginia School of Osteopathic Medicine"
+    },
+    {
+      "id": 1747,
+      "name": "West Virginia State University"
+    },
+    {
+      "id": 1748,
+      "name": "West Virginia University"
+    },
+    {
+      "id": 1749,
+      "name": "West Virginia University at Parkersburg"
+    },
+    {
+      "id": 1750,
+      "name": "West Virginia University Institute of Technology"
+    },
+    {
+      "id": 1751,
+      "name": "West Virginia Wesleyan College"
+    },
+    {
+      "id": 1752,
+      "name": "Western Carolina University"
+    },
+    {
+      "id": 1753,
+      "name": "Western Connecticut State University"
+    },
+    {
+      "id": 1754,
+      "name": "Western Illinois University"
+    },
+    {
+      "id": 1755,
+      "name": "Western Kentucky University"
+    },
+    {
+      "id": 1756,
+      "name": "Western Michigan University"
+    },
+    {
+      "id": 1757,
+      "name": "Western Nevada College"
+    },
+    {
+      "id": 1758,
+      "name": "Western New England University"
+    },
+    {
+      "id": 1759,
+      "name": "Western New Mexico University"
+    },
+    {
+      "id": 1760,
+      "name": "Western Oregon University"
+    },
+    {
+      "id": 1761,
+      "name": "Western State College of Law at Argosy University"
+    },
+    {
+      "id": 1762,
+      "name": "Western State Colorado University"
+    },
+    {
+      "id": 1763,
+      "name": "Western University of Health Sciences"
+    },
+    {
+      "id": 1764,
+      "name": "Western Washington University"
+    },
+    {
+      "id": 1765,
+      "name": "Westfield State University"
+    },
+    {
+      "id": 1766,
+      "name": "Westminster College"
+    },
+    {
+      "id": 1767,
+      "name": "Westminster College, Missouri"
+    },
+    {
+      "id": 1768,
+      "name": "Westminster College, Pennsylvania"
+    },
+    {
+      "id": 1769,
+      "name": "Westmont College"
+    },
+    {
+      "id": 1770,
+      "name": "Wheaton College"
+    },
+    {
+      "id": 1771,
+      "name": "Wheaton College, Massachusetts"
+    },
+    {
+      "id": 1772,
+      "name": "Wheeling Jesuit University"
+    },
+    {
+      "id": 1773,
+      "name": "Wheelock College"
+    },
+    {
+      "id": 1774,
+      "name": "Whitman College"
+    },
+    {
+      "id": 1775,
+      "name": "Whittier College"
+    },
+    {
+      "id": 1776,
+      "name": "Whitworth University"
+    },
+    {
+      "id": 1777,
+      "name": "Wichita State University"
+    },
+    {
+      "id": 1778,
+      "name": "Widener University"
+    },
+    {
+      "id": 1779,
+      "name": "Wilberforce University"
+    },
+    {
+      "id": 1780,
+      "name": "Wiley College"
+    },
+    {
+      "id": 1781,
+      "name": "Wilkes University"
+    },
+    {
+      "id": 1782,
+      "name": "Willamette University"
+    },
+    {
+      "id": 1783,
+      "name": "William Carey University"
+    },
+    {
+      "id": 1784,
+      "name": "William James College"
+    },
+    {
+      "id": 1785,
+      "name": "William Jessup University"
+    },
+    {
+      "id": 1786,
+      "name": "William Jewell College"
+    },
+    {
+      "id": 1787,
+      "name": "William Paterson University of New Jersey"
+    },
+    {
+      "id": 1788,
+      "name": "William Peace University"
+    },
+    {
+      "id": 1789,
+      "name": "William Penn University"
+    },
+    {
+      "id": 1790,
+      "name": "William Woods University"
+    },
+    {
+      "id": 1791,
+      "name": "Williams Baptist College"
+    },
+    {
+      "id": 1792,
+      "name": "Williams College"
+    },
+    {
+      "id": 1793,
+      "name": "Wilmington College"
+    },
+    {
+      "id": 1794,
+      "name": "Wilmington University"
+    },
+    {
+      "id": 1795,
+      "name": "Wilson College"
+    },
+    {
+      "id": 1796,
+      "name": "Wingate University"
+    },
+    {
+      "id": 1797,
+      "name": "Winona State University"
+    },
+    {
+      "id": 1798,
+      "name": "Winston-Salem State University"
+    },
+    {
+      "id": 1799,
+      "name": "Winthrop University"
+    },
+    {
+      "id": 1800,
+      "name": "Wisconsin Lutheran College"
+    },
+    {
+      "id": 1801,
+      "name": "Wisconsin School of Professional Psychology"
+    },
+    {
+      "id": 1802,
+      "name": "Wittenberg University"
+    },
+    {
+      "id": 1803,
+      "name": "Wofford College"
+    },
+    {
+      "id": 1804,
+      "name": "WON Institute of Graduate Studies"
+    },
+    {
+      "id": 1805,
+      "name": "Woodbury University"
+    },
+    {
+      "id": 1806,
+      "name": "Worcester Polytechnic Institute"
+    },
+    {
+      "id": 1807,
+      "name": "Worcester State University"
+    },
+    {
+      "id": 1808,
+      "name": "Wright State University"
+    },
+    {
+      "id": 1809,
+      "name": "Xavier University"
+    },
+    {
+      "id": 1810,
+      "name": "Xavier University of Louisiana"
+    },
+    {
+      "id": 1811,
+      "name": "Yale University"
+    },
+    {
+      "id": 1812,
+      "name": "Yeshiva University"
+    },
+    {
+      "id": 1813,
+      "name": "York College"
+    },
+    {
+      "id": 1814,
+      "name": "York College of Pennsylvania"
+    },
+    {
+      "id": 1815,
+      "name": "York College, City University of New York"
+    },
+    {
+      "id": 1816,
+      "name": "Young Harris College"
+    },
+    {
+      "id": 1817,
+      "name": "Youngstown State University"
+    }
+
+  ],
+  "Organizations": [
+    {
+      "id": 1,
+      "name": "Acacia"
+    },
+    {
+      "id": 2,
+      "name": "Alpha Chi Rho - ΑΧΡ"
+    },
+    {
+      "id": 3,
+      "name": "Alpha Chi Sigma - ΑΧΣ"
+    },
+    {
+      "id": 4,
+      "name": "Alpha Delta - ΑΔ"
+    },
+    {
+      "id": 5,
+      "name": "Alpha Delta Gamma - ΑΔΓ"
+    },
+    {
+      "id": 6,
+      "name": "Alpha Delta Phi - ΑΔΦ"
+    },
+    {
+      "id": 7,
+      "name": "Alpha Epsilon Pi - ΑΕΠ"
+    },
+    {
+      "id": 8,
+      "name": "Alpha Gamma Omega - ΑΓΩ"
+    },
+    {
+      "id": 9,
+      "name": "Alpha Gamma Rho - ΑΓΡ"
+    },
+    {
+      "id": 10,
+      "name": "Alpha Gamma Sigma - ΑΓΣ"
+    },
+    {
+      "id": 11,
+      "name": "Alpha Kappa Lambda - ΑΚΛ"
+    },
+    {
+      "id": 12,
+      "name": "Alpha Kappa Psi - ΑΚΨ"
+    },
+    {
+      "id": 13,
+      "name": "Alpha Nu Omega - ΑΝΩ"
+    },
+    {
+      "id": 14,
+      "name": "Alpha Phi Alpha - ΑΦΑ"
+    },
+    {
+      "id": 15,
+      "name": "Alpha Phi Delta - ΑΦΔ"
+    },
+    {
+      "id": 16,
+      "name": "Alpha Phi Omega - ΑΦΩ"
+    },
+    {
+      "id": 17,
+      "name": "Alpha Psi - ΑΨ"
+    },
+    {
+      "id": 18,
+      "name": "Alpha Psi Lambda - ΑΨΛ"
+    },
+    {
+      "id": 19,
+      "name": "Alpha Psi Rho - ΑΨΡ"
+    },
+    {
+      "id": 20,
+      "name": "Alpha Sigma Phi - ΑΣΦ"
+    },
+    {
+      "id": 21,
+      "name": "Alpha Tau Omega - ΑΤΩ"
+    },
+    {
+      "id": 22,
+      "name": "Beta Chi Theta - ΒΧΘ"
+    },
+    {
+      "id": 23,
+      "name": "Beta Gamma Nu - ΒΓΝ"
+    },
+    {
+      "id": 24,
+      "name": "Beta Kappa Gamma - ΒΚΓ"
+    },
+    {
+      "id": 25,
+      "name": "Beta Sigma Psi - ΒΣΨ"
+    },
+    {
+      "id": 26,
+      "name": "Beta Theta Pi - ΒΘΠ"
+    },
+    {
+      "id": 27,
+      "name": "Beta Upsilon Chi - ΒΥΧ"
+    },
+    {
+      "id": 28,
+      "name": "Chi Phi - ΧΦ"
+    },
+    {
+      "id": 29,
+      "name": "Chi Psi - ΧΨ"
+    },
+    {
+      "id": 30,
+      "name": "Chi Sigma Tau - ΧΣΤ"
+    },
+    {
+      "id": 31,
+      "name": "Chi Upsilon Zeta - ΧΥΖ"
+    },
+    {
+      "id": 32,
+      "name": "Delphic of Gamma Sigma Tau - ΓΣΤ"
+    },
+    {
+      "id": 33,
+      "name": "Delta Chi - ΔΧ"
+    },
+    {
+      "id": 34,
+      "name": "Delta Chi Xi - ΔΧΞ"
+    },
+    {
+      "id": 35,
+      "name": "Delta Epsilon Psi - ΔΕΨ"
+    },
+    {
+      "id": 36,
+      "name": "Delta Kappa Epsilon - ΔΚΕ"
+    },
+    {
+      "id": 37,
+      "name": "Delta Lambda Phi - ΔΛΦ"
+    },
+    {
+      "id": 38,
+      "name": "Delta Omega Epsilon - ΔΩΕ"
+    },
+    {
+      "id": 39,
+      "name": "Delta Phi - ΔΦ"
+    },
+    {
+      "id": 40,
+      "name": "Delta Psi - ΔΨ"
+    },
+    {
+      "id": 41,
+      "name": "Delta Sigma Iota - ΔΣΙ"
+    },
+    {
+      "id": 42,
+      "name": "Delta Sigma Phi - ΔΣΦ"
+    },
+    {
+      "id": 43,
+      "name": "Delta Sigma Pi - ΔΣΠ"
+    },
+    {
+      "id": 44,
+      "name": "Delta Tau Delta - ΔΤΔ"
+    },
+    {
+      "id": 45,
+      "name": "Delta Upsilon - ΔΥ"
+    },
+    {
+      "id": 46,
+      "name": "Farmhouse - FH"
+    },
+    {
+      "id": 47,
+      "name": "Gamma Zeta Alpha - ΓΖΑ"
+    },
+    {
+      "id": 48,
+      "name": "Iota Nu Delta - ΙΝΔ"
+    },
+    {
+      "id": 49,
+      "name": "Iota Phi Theta - ΙΦΘ"
+    },
+    {
+      "id": 50,
+      "name": "Kappa Alpha Order - ΚΑ"
+    },
+    {
+      "id": 51,
+      "name": "Kappa Alpha Psi - ΚΑΨ"
+    },
+    {
+      "id": 52,
+      "name": "Kappa Alpha Society - ΚΑ"
+    },
+    {
+      "id": 53,
+      "name": "Kappa Delta Phi - ΚΔΦ"
+    },
+    {
+      "id": 54,
+      "name": "Kappa Delta Rho - ΚΔΡ"
+    },
+    {
+      "id": 55,
+      "name": "Kappa Kappa Psi - ΚΚΨ"
+    },
+    {
+      "id": 56,
+      "name": "Kappa Sigma - ΚΣ"
+    },
+    {
+      "id": 57,
+      "name": "Kappa Upsilon Chi - ΚΥΧ"
+    },
+    {
+      "id": 58,
+      "name": "Lambda Alpha Upsilon - ΛΑΥ"
+    },
+    {
+      "id": 59,
+      "name": "Lambda Chi Alpha - ΛΧΑ"
+    },
+    {
+      "id": 60,
+      "name": "Lambda Phi Epsilon - ΛΦΕ"
+    },
+    {
+      "id": 61,
+      "name": "Lambda Sigma Phi - ΛΣΦ"
+    },
+    {
+      "id": 62,
+      "name": "Lambda Sigma Upsilon - ΛΣΥ"
+    },
+    {
+      "id": 63,
+      "name": "Lambda Theta Phi - ΛΘΦ"
+    },
+    {
+      "id": 64,
+      "name": "Lambda Upsilon Lambda - ΛΥΛ"
+    },
+    {
+      "id": 65,
+      "name": "Mu Beta Psi - ΜΒΨ"
+    },
+    {
+      "id": 66,
+      "name": "Nu Alpha Kappa - ΝΑΚ"
+    },
+    {
+      "id": 67,
+      "name": "Omega Delta - ΩΔ"
+    },
+    {
+      "id": 68,
+      "name": "Omega Delta Phi - ΩΔΦ"
+    },
+    {
+      "id": 69,
+      "name": "Omega Phi Kappa - ΩΦΚ"
+    },
+    {
+      "id": 70,
+      "name": "Omega Psi Phi - ΩΨΦ"
+    },
+    {
+      "id": 71,
+      "name": "Phi Alpha Delta - ΦΑΔ"
+    },
+    {
+      "id": 72,
+      "name": "Phi Alpha Epsilon - ΦΑΕ"
+    },
+    {
+      "id": 73,
+      "name": "Phi Beta Epsilon - ΦΒΕ"
+    },
+    {
+      "id": 74,
+      "name": "Phi Beta Kappa - ΦΒΚ"
+    },
+    {
+      "id": 75,
+      "name": "Phi Beta Sigma - ΦΒΣ"
+    },
+    {
+      "id": 76,
+      "name": "Phi Delta Epsilon - ΦΔΕ"
+    },
+    {
+      "id": 77,
+      "name": "Phi Delta Psi - ΦΔΨ"
+    },
+    {
+      "id": 78,
+      "name": "Phi Delta Theta - ΦΔΘ"
+    },
+    {
+      "id": 79,
+      "name": "Phi Gamma Delta - FIJI"
+    },
+    {
+      "id": 80,
+      "name": "Phi Iota Alpha - ΦΙΑ"
+    },
+    {
+      "id": 81,
+      "name": "Phi Kappa Pi - ΦΚΠ"
+    },
+    {
+      "id": 82,
+      "name": "Phi Kappa Psi - ΦΚΨ"
+    },
+    {
+      "id": 83,
+      "name": "Phi Kappa Sigma - ΦΚΣ"
+    },
+    {
+      "id": 84,
+      "name": "Phi Kappa Tau - ΦΚΤ"
+    },
+    {
+      "id": 85,
+      "name": "Phi Kappa Theta - ΦΚΘ"
+    },
+    {
+      "id": 86,
+      "name": "Phi Lambda Chi - ΦΛΧ"
+    },
+    {
+      "id": 87,
+      "name": "Phi Mu Alpha Sinfonia - ΦΜΑ"
+    },
+    {
+      "id": 88,
+      "name": "Phi Mu Delta - ΦΜΔ"
+    },
+    {
+      "id": 89,
+      "name": "Phi Rho Eta - ΦΡΗ"
+    },
+    {
+      "id": 90,
+      "name": "Phi Sigma Alpha - ΦΣΑ"
+    },
+    {
+      "id": 91,
+      "name": "Phi Sigma Kappa - ΦΣΚ"
+    },
+    {
+      "id": 92,
+      "name": "Phi Sigma Nu - ΦΣΝ"
+    },
+    {
+      "id": 93,
+      "name": "Phi Sigma Phi - ΦΣΦ"
+    },
+    {
+      "id": 94,
+      "name": "Pi Alpha Phi - ΠΑΦ"
+    },
+    {
+      "id": 95,
+      "name": "Pi Delta Psi - ΠΔΨ"
+    },
+    {
+      "id": 96,
+      "name": "Pi Kappa Alpha - ΠΚΑ"
+    },
+    {
+      "id": 97,
+      "name": "Pi Kappa Phi - ΠΚΦ"
+    },
+    {
+      "id": 98,
+      "name": "Pi Lambda Phi - ΠΛΦ"
+    },
+    {
+      "id": 99,
+      "name": "Psi Sigma Phi - ΨΣΦ"
+    },
+    {
+      "id": 100,
+      "name": "Psi Upsilon - ΨΥ"
+    },
+    {
+      "id": 101,
+      "name": "Sigma Alpha Epsilon - ΣΑΕ"
+    },
+    {
+      "id": 102,
+      "name": "Sigma Alpha Mu - ΣΑΜ"
+    },
+    {
+      "id": 103,
+      "name": "Sigma Beta Rho - ΣΒΡ"
+    },
+    {
+      "id": 104,
+      "name": "Sigma Chi - ΣΧ"
+    },
+    {
+      "id": 105,
+      "name": "Sigma Delta Alpha - ΣΔΑ"
+    },
+    {
+      "id": 106,
+      "name": "Sigma Lambda Beta - ΣΛΒ"
+    },
+    {
+      "id": 107,
+      "name": "Sigma Nu - ΣΝ"
+    },
+    {
+      "id": 108,
+      "name": "Sigma Phi Beta - ΣΦΒ"
+    },
+    {
+      "id": 109,
+      "name": "Sigma Phi Delta - ΣΦΔ"
+    },
+    {
+      "id": 110,
+      "name": "Sigma Phi Epsilon - ΣΦΕ"
+    },
+    {
+      "id": 111,
+      "name": "Sigma Phi Society - ΣΦ"
+    },
+    {
+      "id": 112,
+      "name": "Sigma Pi - ΣΠ"
+    },
+    {
+      "id": 113,
+      "name": "Sigma Tau Gamma - ΣΤΓ"
+    },
+    {
+      "id": 114,
+      "name": "Sigma Theta Pi - ΣΘΠ"
+    },
+    {
+      "id": 115,
+      "name": "Tau Alpha Upsilon ΤΑΥ"
+    },
+    {
+      "id": 116,
+      "name": "Tau Delta Phi - ΤΔΦ"
+    },
+    {
+      "id": 117,
+      "name": "Tau Epsilon Phi - ΤΕΦ"
+    },
+    {
+      "id": 118,
+      "name": "Tau Kappa Epsilon - ΤΚΕ"
+    },
+    {
+      "id": 119,
+      "name": "Tau Omega Rho - ΤΩΡ"
+    },
+    {
+      "id": 120,
+      "name": "Tau Phi Sigma - ΤΦΣ"
+    },
+    {
+      "id": 121,
+      "name": "Theta Chi - ΘΧ"
+    },
+    {
+      "id": 122,
+      "name": "Theta Delta Chi - ΘΔΧ"
+    },
+    {
+      "id": 123,
+      "name": "Theta Tau - ΘΤ"
+    },
+    {
+      "id": 124,
+      "name": "Theta Xi - ΘΞ"
+    },
+    {
+      "id": 125,
+      "name": "Triangle"
+    },
+    {
+      "id": 126,
+      "name": "X Club"
+    },
+    {
+      "id": 127,
+      "name": "Xi Kappa - ΞΚ"
+    },
+    {
+      "id": 128,
+      "name": "Zeta Beta Tau - ΖΒΤ"
+    },
+    {
+      "id": 129,
+      "name": "Zeta Phi Rho - ΖΦΡ"
+    },
+    {
+      "id": 130,
+      "name": "Zeta Psi - ΖΨ"
+    }
+  ],
+  "Chapters": [
+    {
+      "id": 1,
+      "name": "Alpha"
+    },
+    {
+      "id": 2,
+      "name": "Beta"
+    },
+    {
+      "id": 3,
+      "name": "Gamma"
+    },
+    {
+      "id": 4,
+      "name": "Delta"
+    },
+    {
+      "id": 5,
+      "name": "Epsilon"
+    },
+    {
+      "id": 6,
+      "name": "Zeta"
+    },
+    {
+      "id": 7,
+      "name": "Eta"
+    },
+    {
+      "id": 8,
+      "name": "Theta "
+    },
+    {
+      "id": 9,
+      "name": "Iota"
+    },
+    {
+      "id": 10,
+      "name": "Kappa"
+    },
+    {
+      "id": 11,
+      "name": "Lambda"
+    },
+    {
+      "id": 12,
+      "name": "Mu"
+    },
+    {
+      "id": 13,
+      "name": "Nu"
+    },
+    {
+      "id": 14,
+      "name": "Xi"
+    },
+    {
+      "id": 15,
+      "name": "Omicron"
+    },
+    {
+      "id": 16,
+      "name": "Pi"
+    },
+    {
+      "id": 17,
+      "name": "Rho"
+    },
+    {
+      "id": 18,
+      "name": "Sigma"
+    },
+    {
+      "id": 19,
+      "name": "Tau"
+    },
+    {
+      "id": 20,
+      "name": "Upsilon"
+    },
+    {
+      "id": 21,
+      "name": "Phi"
+    },
+    {
+      "id": 22,
+      "name": "Chi"
+    },
+    {
+      "id": 23,
+      "name": "Psi"
+    },
+    {
+      "id": 24,
+      "name": "Omega"
+    }
+  ],
+  "ChapterContributions": [
+    {
+      "id": 0,
+      "name": "$0"
+    },
+    {
+      "id": 1,
+      "name": "$1000"
+    },
+    {
+      "id": 2,
+      "name": "$2500"
+    }
+  ],
+  "Seasons": [
+    {
+      "id": 1,
+      "name": "Fall"
+    },
+    {
+      "id": 2,
+      "name": "Spring"
+    }
+  ],
+  "Years": [
+    {
+      "id": 2022,
+      "name": "2022"
+    },
+    {
+      "id": 2023,
+      "name": "2023"
+    }
+  ]
+}
